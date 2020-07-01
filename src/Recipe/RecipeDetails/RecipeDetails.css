@@ -1,0 +1,10 @@
+.RecipeDetails {
+    width: 100%;
+    background-color: var(--recipe-grey);
+}
+
+.RecipeDetails p {
+    background-color: var(--recipe-grey);
+    background-color: orange;
+}
+

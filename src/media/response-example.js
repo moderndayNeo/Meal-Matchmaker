@@ -1,4 +1,4 @@
-export const responseExample = {
+const data = {
     meals: [
         {
             idMeal: '52876',
@@ -57,3 +57,5 @@ export const responseExample = {
         },
     ],
 }
+
+export const meal = data.meals[0]

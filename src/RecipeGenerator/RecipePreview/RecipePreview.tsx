@@ -1,10 +1,9 @@
 import React from 'react'
 import './RecipePreview.css'
 import ViewRecipeButton from './ViewRecipeButton/ViewRecipeButton'
-import { responseExample } from '../../media/response-example'
+import { meal } from '../../media/response-example'
 
 export default function RecipePreview() {
-    const meal = responseExample.meals[0]
 
     return (
         <div className="RecipePreview">
@@ -16,6 +15,7 @@ export default function RecipePreview() {
     )
 }
 
+/*
 interface IMeal {
     idMeal: string
     strMeal: 'Minced Beef Pie'
@@ -69,3 +69,5 @@ interface IMeal {
     strSource: 'https://www.bbc.co.uk/food/recipes/mincedbeefpie_89198'
     dateModified: null
 }
+
+*/
