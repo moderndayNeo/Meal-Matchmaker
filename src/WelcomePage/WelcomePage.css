@@ -1,3 +1,27 @@
 .WelcomePage {
-    
+    margin: 0 20px;
+    padding-top: 160px;
+    position: relative;
+    height: calc(100vh - 200px);
+}
+
+.WelcomePage .title {
+    font-size: 50px;
+    margin: 0;
+}
+
+.WelcomePage .subtext {
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+.WelcomePage img {
+    width: 100%;
+    border-radius: 10%;
+}
+
+.WelcomePage button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
