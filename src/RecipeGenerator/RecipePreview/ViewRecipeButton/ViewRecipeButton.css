@@ -1,3 +1,19 @@
 .ViewRecipeButton {
-    
+    text-decoration: none;
+    background-color: white;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    color: black;
+    height: 50px;
+    width: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 15px;
 }
+
+/* .ViewRecipeButton .icon {
+    margin: 5px;
+} */
