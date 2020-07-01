@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import './WelcomePage.css'
 import foodImage from '../media/healthy-meal.jpg'
 import { Link } from 'react-router-dom'
