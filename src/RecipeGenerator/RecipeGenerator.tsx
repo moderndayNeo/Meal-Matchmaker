@@ -9,11 +9,7 @@ export default function RecipeGenerator() {
         <div className="RecipeGenerator">
             <p className="header-text">Meal Matchmaker</p>
             <InfoIcon />
-            <div className="preview-container">
-                <RecipePreview />
-                <RecipePreview />
-                <RecipePreview />
-            </div>
+            <RecipePreview />
             <NewRecipeButton />
         </div>
     )
