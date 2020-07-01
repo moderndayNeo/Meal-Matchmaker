@@ -1,5 +1,5 @@
 .RecipePreview {
-    width: 300px;
+    width: 250px;
     --recipe-grey: #f1efef;
     background-color: var(--recipe-grey);
     border-radius: 12px;
@@ -7,7 +7,7 @@
 }
 
 .RecipePreview img {
-    width: 80%;
+    width: 100%;
     border-radius: 12px;
 }
 
