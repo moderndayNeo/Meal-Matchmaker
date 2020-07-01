@@ -11,6 +11,7 @@ export default function RecipePreview() {
             <h4 className="preview-category">Duck</h4>
             <img src={pancakes} alt=""/>
             <Link to="/view-recipe">View Recipe</Link>
+            
         </div>
     )
 }
