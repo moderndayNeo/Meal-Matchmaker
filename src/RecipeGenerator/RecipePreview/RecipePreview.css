@@ -13,8 +13,23 @@
 
 .RecipePreview .preview-title {
     margin: 3px 0;
+    font-weight: 200;
 }
 
 .RecipePreview .preview-category {
     margin-top: 0;
+    font-weight: 200;
+}
+
+.RecipePreview a {
+    text-decoration: none;
+    background-color: white;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    color: black;
+    height: 50px;
+    width: 150px;
 }

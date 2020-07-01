@@ -2,6 +2,7 @@ import React from 'react'
 import './RecipePreview.css'
 import pancakes from '../../media/welcome-page-pancakes.jpg'
 import { Link } from 'react-router-dom'
+import IoMdArrowRoundForward from 'react-icons/io'
 
 export default function RecipePreview() {
     return (
