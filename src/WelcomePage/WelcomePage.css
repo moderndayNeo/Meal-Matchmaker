@@ -1,8 +1,11 @@
 .WelcomePage {
-    margin: 0 20px;
-    padding-top: 160px;
     position: relative;
-    height: calc(100vh - 200px);
+    margin: 0 20px;
+    padding-top: 6rem;
+    height: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .WelcomePage .title {
@@ -21,8 +24,8 @@
 }
 
 .WelcomePage a {
+    width: 100%;
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 10px;
     text-decoration: none;
 }
