@@ -5,7 +5,7 @@ import {IoMdArrowRoundForward} from 'react-icons/io'
 
 export default function ViewRecipeButton() {
     return (
-        <Link to="/view-recipe" className="ViewRecipeButton">
+        <Link to="/recipe" className="ViewRecipeButton">
             <p>View Recipe</p>
             <IoMdArrowRoundForward className="icon" />
         </Link>

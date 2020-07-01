@@ -1,3 +1,7 @@
 .Recipe {
     
 }
+
+.Recipe .recipe-image {
+    width: 100%;
+}
