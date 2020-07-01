@@ -4,6 +4,8 @@
     background-color: var(--recipe-grey);
     border-radius: 12px;
     padding: 10px 20px;
+    margin-top: 8vh;
+    margin-right: 30px;
 }
 
 .RecipePreview img {

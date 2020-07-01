@@ -9,7 +9,7 @@ export default function WelcomePage() {
             <h1 className="title">Meal Matchmaker</h1>
             <p className="subtext">Inspiration at the click of a button</p>
             <img src={foodImage} alt="pancakes"/>
-            <Link className="black-button" to="/recipe-generator">Give me a new recipe</Link>
+            <Link className="black-button" to="/recipe-generator">Find My Match!</Link>
         </div>
     )
 }
