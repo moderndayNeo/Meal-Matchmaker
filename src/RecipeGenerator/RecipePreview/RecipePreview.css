@@ -1,0 +1,20 @@
+.RecipePreview {
+    width: 300px;
+    --recipe-grey: #f1efef;
+    background-color: var(--recipe-grey);
+    border-radius: 12px;
+    padding: 10px 20px;
+}
+
+.RecipePreview img {
+    width: 80%;
+    border-radius: 12px;
+}
+
+.RecipePreview .preview-title {
+    margin: 3px 0;
+}
+
+.RecipePreview .preview-category {
+    margin-top: 0;
+}

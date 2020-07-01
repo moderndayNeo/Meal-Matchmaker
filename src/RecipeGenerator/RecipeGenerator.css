@@ -1,5 +1,11 @@
 .RecipeGenerator {
     --info-icon-dimensions: 30px;
+    position: relative;
+    margin: 0 20px;
+    height: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .RecipeGenerator .InfoIcon {
