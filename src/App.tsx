@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
+import WelcomePage from './WelcomePage/WelcomePage'
+import RecipeGenerator from './RecipeGenerator/RecipeGenerator'
+import ViewRecipe from './ViewRecipe/ViewRecipe'
+import ContactPage from './ContactPage/ContactPage'
+import {BrowserRouter, Route} from 'react-router-dom'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <div className="App">
+              <Route exact path="/" component={WelcomePage} />
+              <Route exact path="/recipe-generator" component={RecipeGenerator} />
+              <Route exact path="/view-recipe" component={ViewRecipe} />
+              <Route exact path="/contact" component={ContactPage} />
+            </div>
+        </BrowserRouter>
+    )
 }
 
-export default App;
+export default App
