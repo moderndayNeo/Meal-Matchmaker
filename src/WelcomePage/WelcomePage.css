@@ -20,8 +20,9 @@
     border-radius: 10%;
 }
 
-.WelcomePage button {
+.WelcomePage a {
     position: absolute;
     bottom: 0;
     left: 0;
+    text-decoration: none;
 }
