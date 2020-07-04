@@ -3,7 +3,7 @@
     flex-direction: column;
     position: absolute;
     padding: 24px 16px;
-    width: 100%;
+    width: 98%;
     top: 88px;
     background: var(--neutral-color-light);
     box-shadow: 1px 1px 4px rgba(44, 5, 106, 0.1);
@@ -17,7 +17,7 @@
 
 .RecipePreview .title {
     margin: 3px 0;
-    font-weight: 200;
+    font-weight: bold;
 }
 
 .RecipePreview .category {

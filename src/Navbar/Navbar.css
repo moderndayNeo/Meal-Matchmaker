@@ -5,7 +5,7 @@
     right: 0;
     display: flex;
     justify-content: space-between;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .Navbar .title {
@@ -13,5 +13,8 @@
 }
 
 .Navbar .infoIcon {
-    
+    --info-icon-dimensions: 35px;
+    height: var(--info-icon-dimensions);
+    width: var(--info-icon-dimensions);
+    align-self: center;
 }
