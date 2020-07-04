@@ -1,3 +1,6 @@
 .WelcomePageButton {
-    
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-decoration: none;
 }

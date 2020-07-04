@@ -21,7 +21,7 @@ html {
     color: var(--primary-color-dark);
 }
 
-.App .black-button {
+.App .generate-button {
     font-family: 'DM Sans';
     display: flex;
     justify-content: center;

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 export default function WelcomePageButton() {
     return (
-        <Link className="WelcomePageButton black-button" to="/recipe-generator">
+        <Link className="WelcomePageButton generate-button" to="/recipe-generator">
             Find My Match!
         </Link>
     )
