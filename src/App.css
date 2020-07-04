@@ -17,6 +17,7 @@ html {
     height: 100vh;
     --primary-color-dark: #2c056a;
     --primary-color-accent: #6610f2;
+    --neutral-color-light: #FFF1EC;
     --secondary-color-warning: #e46a0c;
     color: var(--primary-color-dark);
 }

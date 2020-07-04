@@ -1,10 +1,13 @@
 .RecipePreview {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 24px 16px;
     width: 100%;
-    --recipe-grey: #f1efef;
-    background-color: var(--recipe-grey);
-    border-radius: 12px;
-    padding: 10px 20px;
-    margin-top: 5vh;
+    top: 88px;
+    background: var(--neutral-color-light);
+    box-shadow: 1px 1px 4px rgba(44, 5, 106, 0.1);
+    border-radius: 24px;
 }
 
 .RecipePreview img {
@@ -12,12 +15,12 @@
     border-radius: 12px;
 }
 
-.RecipePreview .preview-title {
+.RecipePreview .title {
     margin: 3px 0;
     font-weight: 200;
 }
 
-.RecipePreview .preview-category {
+.RecipePreview .category {
     margin-top: 0;
     font-weight: 200;
 }

@@ -5,18 +5,7 @@ import NewRecipeButton from './NewRecipeButton/NewRecipeButton'
 import { meal } from '../media/response-example'
 import Navbar from '../Navbar/Navbar'
 
-export default function RecipeGenerator() {
-    return (
-        <div className="RecipeGenerator">
-            <Navbar />
-            
-            {/* <RecipePreview meal={meal} /> */}
-            {/* <NewRecipeButton /> */}
-        </div>
-    )
-}
-
-export interface Meal {
+export interface IMeal {
     dateModified: null
     idMeal: string
     strArea: string
@@ -69,3 +58,14 @@ export interface Meal {
     strTags: string
     strYoutube: string
 }
+
+export default function RecipeGenerator() {
+    return (
+        <div className="RecipeGenerator">
+            <Navbar />
+            <RecipePreview meal={meal}/>
+            {/* <NewRecipeButton /> */}
+        </div>
+    )
+}
+
