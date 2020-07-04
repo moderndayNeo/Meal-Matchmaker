@@ -17,11 +17,11 @@ export default function RecipeGenerator() {
 }
 
 export interface Meal {
-    dateModified: string
+    dateModified: null
     idMeal: string
     strArea: string
     strCategory: string
-    strDrinkAlternate: string
+    strDrinkAlternate: null
     strIngredient1: string
     strIngredient2: string
     strIngredient3: string
