@@ -1,8 +1,8 @@
 .WelcomePage {
     position: relative;
     margin: 0 20px;
-    padding-top: 6rem;
-    height: 100%;
+    padding-top: 5rem;
+    height: 100vh;
     min-height: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
