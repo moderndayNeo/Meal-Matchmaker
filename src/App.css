@@ -23,13 +23,11 @@ html {
 
 .App .black-button {
     font-family: 'DM Sans';
-    background-color: black;
-    color: white;
-    border-radius: 50px;
-    height: 70px;
-    font-size: 20px;
-    border-style: none;
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding: 24px;
+    background: var(--primary-color-accent);
+    color: white;
+    box-shadow: 1px 1px 25px rgba(102, 16, 242, 0.2);
+    border-radius: 24px;
 }
