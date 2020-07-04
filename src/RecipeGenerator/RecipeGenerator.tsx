@@ -64,7 +64,7 @@ export default function RecipeGenerator() {
         <div className="RecipeGenerator">
             <Navbar />
             <RecipePreview meal={meal}/>
-            {/* <NewRecipeButton /> */}
+            <NewRecipeButton />
         </div>
     )
 }
