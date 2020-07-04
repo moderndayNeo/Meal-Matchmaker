@@ -1,6 +1,6 @@
 import React from 'react'
 import './NewRecipeButton.css'
-import { MdSwapVerticalCircle } from 'react-icons/md'
+// import { MdSwapVerticalCircle } from 'react-icons/md'
 import regenerateIcon from '../../media/Icons_regenerate_dark.svg'
 
 

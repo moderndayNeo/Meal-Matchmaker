@@ -5,6 +5,7 @@ import RecipeGenerator from './RecipeGenerator/RecipeGenerator'
 import Recipe from './Recipe/Recipe'
 import ContactPage from './ContactPage/ContactPage'
 import {BrowserRouter, Route} from 'react-router-dom'
+import { meal } from '../src/media/response-example'
 
 function App() {
     return (
@@ -12,7 +13,7 @@ function App() {
             <div className="App">
               <Route exact path="/" component={WelcomePage} />
               <Route exact path="/recipe-generator" component={RecipeGenerator} />
-              <Route exact path="/recipe" component={Recipe} />
+              <Route exact path="/recipe" component={Recipe} meal={meal} />
               <Route exact path="/contact" component={ContactPage} />
             </div>
         </BrowserRouter>
