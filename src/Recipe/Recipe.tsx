@@ -3,7 +3,7 @@ import './Recipe.css'
 import RecipeDetails from './RecipeDetails/RecipeDetails'
 import {IMeal} from '../RecipeGenerator/RecipeGenerator'
 
-type RecipeProps = {
+export type RecipeProps = {
     meal: IMeal
 }
 
