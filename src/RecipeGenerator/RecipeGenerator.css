@@ -1,5 +1,4 @@
 .RecipeGenerator {
-    --info-icon-dimensions: 30px;
     position: relative;
     margin: 0 20px;
     height: 100%;
@@ -8,19 +7,4 @@
     overflow-y: hidden;
 }
 
-.RecipeGenerator .InfoIcon {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-}
-
-.RecipeGenerator .InfoIcon svg {
-    height: var(--info-icon-dimensions);
-    width: var(--info-icon-dimensions);
-}
-
-.RecipeGenerator .header-text {
-    font-size: 20px;
-    margin-left: 10px;
-}
 

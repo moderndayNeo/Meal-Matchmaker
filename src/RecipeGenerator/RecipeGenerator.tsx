@@ -3,13 +3,15 @@ import './RecipeGenerator.css'
 import RecipePreview from './RecipePreview/RecipePreview'
 import NewRecipeButton from './NewRecipeButton/NewRecipeButton'
 import { meal } from '../media/response-example'
+import Navbar from '../Navbar/Navbar'
 
 export default function RecipeGenerator() {
     return (
         <div className="RecipeGenerator">
-            <p className="header-text">Meal Matchmaker</p>
+            <Navbar />
+            
             {/* <RecipePreview meal={meal} /> */}
-            <NewRecipeButton />
+            {/* <NewRecipeButton /> */}
         </div>
     )
 }
