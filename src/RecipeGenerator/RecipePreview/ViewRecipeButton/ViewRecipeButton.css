@@ -1,16 +1,19 @@
 .ViewRecipeButton {
     text-decoration: none;
-    background-color: white;
-    border-radius: 12px;
+    color: var(--primary-color-dark);
+    border-radius: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
-    color: black;
+    border: 1px solid var(--primary-color-dark);
     height: 50px;
     width: 150px;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0 15px;
     margin: 10px;
+}
+
+.ViewRecipeButton .right-arrow {
+    width: 20px;
+    height: 20px;
+    background: var(--neutral-color-light);
+    margin: 0 5px;
 }
