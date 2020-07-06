@@ -1,10 +1,11 @@
 .RecipeDetails {
-    width: 100%;
-    background-color: var(--recipe-grey);
+    background: var(--neutral-color-light);
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    padding: 10px;
 }
 
-.RecipeDetails p {
-    background-color: var(--recipe-grey);
-    background-color: orange;
+.RecipeDetails section {
+    margin: 10px;
+    border-bottom: 1px grey solid;
 }
-

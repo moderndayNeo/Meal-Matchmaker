@@ -21,8 +21,7 @@ function App() {
                 <Route
                     exact
                     path="/recipe"
-                    // component={Recipe}
-                    render={(props) => (<Recipe meal={meal} />)}
+                    render={(props) => (<Recipe {...props} meal={meal} />)}
                 />
                 <Route exact path="/contact" component={ContactPage} />
             </div>
