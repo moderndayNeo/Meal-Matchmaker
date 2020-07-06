@@ -25,4 +25,10 @@
 
 .RecipeDetails .ingred-and-qty {
     display: flex;
+    /* justify-content: space-between; */
+    /* text-align: left; */
+}
+
+.RecipeDetails .measure {
+    width: 100px;
 }
