@@ -6,7 +6,6 @@ import Recipe from './Recipe/Recipe'
 import ContactPage from './ContactPage/ContactPage'
 import { BrowserRouter, Route } from 'react-router-dom'
 import { meal } from '../src/media/response-example'
-// import {RecipeProps} from './Recipe/Recipe'
 
 function App() {
     return (
@@ -16,12 +15,14 @@ function App() {
                 <Route
                     exact
                     path="/recipe-generator"
-                    component={RecipeGenerator}
+                    render={(props) => (
+                        <RecipeGenerator {...props} meal={meal} />
+                    )}
                 />
                 <Route
                     exact
                     path="/recipe"
-                    render={(props) => (<Recipe {...props} meal={meal} />)}
+                    render={(props) => <Recipe {...props} meal={meal} />}
                 />
                 <Route exact path="/contact" component={ContactPage} />
             </div>

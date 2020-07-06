@@ -1,7 +1,7 @@
 import React from 'react'
 import './Recipe.css'
 import RecipeDetails from './RecipeDetails/RecipeDetails'
-import {IMeal} from '../RecipeGenerator/RecipeGenerator'
+import { IMeal } from '../IMeal'
 
 export type RecipeProps = {
     meal: IMeal

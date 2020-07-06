@@ -1,6 +1,6 @@
 import React from 'react'
 import './RecipeDetails.css'
-import { IMeal } from '../../RecipeGenerator/RecipeGenerator'
+import { IMeal } from '../../IMeal'
 
 type RecipeDetailsProps = {
     meal: IMeal
