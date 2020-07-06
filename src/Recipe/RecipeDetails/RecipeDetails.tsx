@@ -26,13 +26,14 @@ export default function RecipeDetails({ meal }: any) {
         <div className="RecipeDetails">
             <section className="title-and-category">
                 <h1 className="title">{meal.strMeal}</h1>
-                <h4 className="recipe-category">{meal.strCategory}</h4>
+                <h4 className="category">{meal.strCategory}</h4>
             </section>
-            <section>
+            <section className="ingredients">
+                <h3 className="ingredients-title">Ingredients</h3>
                 {ingredients.map((ingredient, index) => (
-                    <div key={index}>
-                        <p>{measures[index]}</p>
-                        <p>{ingredient}</p>
+                    <div key={index} className="ingred-and-qty">
+                        <p className="measure">{measures[index]}</p>
+                        <p className="ingredient">{ingredient}</p>
                     </div>
                 ))}
             </section>

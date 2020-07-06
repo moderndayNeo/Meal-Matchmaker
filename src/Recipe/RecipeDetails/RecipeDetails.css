@@ -9,3 +9,20 @@
     margin: 10px;
     border-bottom: 1px grey solid;
 }
+
+.RecipeDetails .title {
+    margin-bottom: 0;
+}
+
+.RecipeDetails .ingredients-title {
+    font-size: 21px;
+}
+
+.RecipeDetails .category {
+    font-weight: 200;
+    margin-top: 10px
+}
+
+.RecipeDetails .ingred-and-qty {
+    display: flex;
+}
