@@ -23,7 +23,18 @@ function App() {
         <BrowserRouter>
             <div className="App">
                 <Switch>
-                    <Route exact path="/" component={WelcomePage} />
+
+                    <Route 
+                    exact 
+                    path="/"
+                    render={(props) => (
+                        <WelcomePage
+                            {...props}
+                            onClick={() => getRandomRecipe()}
+                        />
+                    )} />
+
+
                     <Route
                         path="/recipe-generator"
                         render={(props) => (
@@ -42,7 +53,7 @@ function App() {
                         )}
                     />
                     <Route exact path="/contact" component={ContactPage} />
-                    <Route component={WelcomePage} />
+                    {/* <Route component={WelcomePage} /> */}
                 </Switch>
             </div>
         </BrowserRouter>

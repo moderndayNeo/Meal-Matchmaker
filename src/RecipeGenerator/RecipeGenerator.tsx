@@ -7,10 +7,13 @@ import { IMeal } from '../IMeal'
 
 interface RecipeGeneratorProps {
     meal: IMeal
-    onClick: () => void;
+    onClick: () => void
 }
 
-export default function RecipeGenerator({ meal, onClick }: RecipeGeneratorProps) {
+export default function RecipeGenerator({
+    meal,
+    onClick,
+}: RecipeGeneratorProps) {
     return (
         <div className="RecipeGenerator">
             <Navbar />
