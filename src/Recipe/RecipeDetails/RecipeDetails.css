@@ -8,6 +8,8 @@
 .RecipeDetails section {
     margin: 10px;
     border-bottom: 1px grey solid;
+    /* padding-top: 5px; */
+    padding-bottom: 20px;
 }
 
 .RecipeDetails .title {
@@ -25,8 +27,10 @@
 
 .RecipeDetails .ingred-and-qty {
     display: flex;
-    /* justify-content: space-between; */
-    /* text-align: left; */
+}
+
+.RecipeDetails .ingred-and-qty p {
+    margin: 8px 0;
 }
 
 .RecipeDetails .measure {

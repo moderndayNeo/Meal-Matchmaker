@@ -11,13 +11,11 @@ export default function RecipeDetails({ meal }: any) {
     // export default function RecipeDetails({ meal }: RecipeDetailsProps) {
 
     const ingredients = Object.keys(meal)
-        .filter((key) => key.includes('strIngredient'))
+        .filter((key) => key.includes('strIngredient') && meal[key])
         .map((ingredient) => meal[ingredient])
 
-    console.log(ingredients)
-
     const measures = Object.keys(meal)
-        .filter((key) => key.includes('strMeasure'))
+        .filter((key) => key.includes('strMeasure') && meal[key])
         .map((measure) => meal[measure])
 
     console.log(measures)
@@ -30,6 +28,7 @@ export default function RecipeDetails({ meal }: any) {
             </section>
             <section className="ingredients">
                 <h3 className="ingredients-title">Ingredients</h3>
+
                 {ingredients.map((ingredient, index) => (
                     <div key={index} className="ingred-and-qty">
                         <p className="measure">{measures[index]}</p>
@@ -42,18 +41,20 @@ export default function RecipeDetails({ meal }: any) {
 }
 
 /*
-interface Cars {
-    car1: string
-    car2: string
-    car3: string
+interface IMeal {
+    strIngredient1: string,
+    strIngredient2: string
+    strIngredient3: string
+    dateModified: null
 }
 
-const cars: Cars = {
-    car1: 'mercedes',
-    car2: 'bmw',
-    car3: 'audi',
+const meal: IMeal = {
+    strIngredient1: 'Vegetable Oil',
+    strIngredient2: 'Minced Beef',
+    strIngredient3: 'Onion',
+    dateModified: null
 }
 
-const keys = Object.keys(cars)
-cars[keys[0]]
+const ingredientKeys = Object.keys(meal).filter(key => key.includes('strIngredient'))
+const ingredients = ingredientKeys.map(key => meal[key])
 */
