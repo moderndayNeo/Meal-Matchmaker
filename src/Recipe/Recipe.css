@@ -12,7 +12,9 @@
     right: 84.44%;
     top: 25%;
     bottom: 25%;
-    height: 24px;
+    --back-button-dimensions: 21px;
+    height: var(--back-button-dimensions);
+    width: var(--back-button-dimensions);
 }
 
 .Recipe .overlay {
