@@ -4,7 +4,7 @@ import WelcomePage from './WelcomePage/WelcomePage'
 import RecipeGenerator from './RecipeGenerator/RecipeGenerator'
 import Recipe from './Recipe/Recipe'
 import ContactPage from './ContactPage/ContactPage'
-import { BrowserRouter, Route } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { meal } from '../src/media/response-example'
 import { IMeal } from './IMeal'
 
@@ -22,27 +22,28 @@ function App() {
     return (
         <BrowserRouter>
             <div className="App">
-                <Route exact path="/" component={WelcomePage} />
-                <Route
-                    exact
-                    path="/recipe-generator"
-                    render={(props) => (
-                        <RecipeGenerator
-                            {...props}
-                            meal={randomRecipe}
-                            onClick={() => getRandomRecipe()}
-                        />
-                    )}
-                />
-                <Route
-                    exact
-                    path="/recipe"
-                    render={(props) => (
-                        <Recipe {...props} meal={randomRecipe} />
-                    )}
-                />
-                <Route exact path="/contact" component={ContactPage} />
-                <Route path="/:slug" component={WelcomePage} />
+                <Switch>
+                    <Route exact path="/" component={WelcomePage} />
+                    <Route
+                        path="/recipe-generator"
+                        render={(props) => (
+                            <RecipeGenerator
+                                {...props}
+                                meal={randomRecipe}
+                                onClick={() => getRandomRecipe()}
+                            />
+                        )}
+                    />
+                    <Route
+                        exact
+                        path="/recipe"
+                        render={(props) => (
+                            <Recipe {...props} meal={randomRecipe} />
+                        )}
+                    />
+                    <Route exact path="/contact" component={ContactPage} />
+                    <Route component={WelcomePage} />
+                </Switch>
             </div>
         </BrowserRouter>
     )
