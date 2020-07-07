@@ -1,5 +1,6 @@
 import React from 'react'
 import './RecipeDetails.css'
+import DetailsHeader from './DetailsHeader/DetailsHeader'
 // import { IMeal } from '../../IMeal'
 // import { meal } from '../../media/response-example'
 
@@ -20,11 +21,9 @@ export default function RecipeDetails({ meal }: any) {
 
     return (
         <div className="RecipeDetails">
+            <DetailsHeader meal={meal} />
 
-            <section className="title-and-category">
-                <h1 className="title">{meal.strMeal}</h1>
-                <h4 className="category">{meal.strCategory}</h4>
-            </section>
+            
             
             <section className="ingredients">
                 <h3 className="ingredients-title">Ingredients</h3>
