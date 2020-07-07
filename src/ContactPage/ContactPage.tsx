@@ -5,6 +5,7 @@ import { useHistory } from 'react-router-dom'
 import GithubIcon from '../media/Icons_Github_dark.svg'
 import LinkedInIcon from '../media/Icons_Linkedin_dark.svg'
 import FacebookIcon from '../media/Icons_Facebook_dark.svg'
+import developmentImage from '../media/contact-page-developer.jpg'
 
 export default function ContactPage() {
     const history = useHistory()
@@ -51,6 +52,12 @@ export default function ContactPage() {
                             className="facebook-icon"
                         />
                     </div>
+
+                    <img
+                        src={developmentImage}
+                        alt="development team"
+                        className="developer-image"
+                    />
                 </main>
             </div>
         </div>

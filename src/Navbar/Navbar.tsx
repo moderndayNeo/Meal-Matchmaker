@@ -6,7 +6,9 @@ import { Link } from 'react-router-dom'
 export default function Navbar() {
     return (
         <div className="Navbar">
+            <Link to="/">
             <p className="title">Meal Matchmaker</p>
+            </Link>
             <Link to="/contact">
                 <img className="infoIcon" src={infoIcon} alt="info icon" />
             </Link>

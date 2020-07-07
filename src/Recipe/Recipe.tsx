@@ -9,11 +9,9 @@ export type RecipeProps = {
     meal: IMeal
 }
 
-
 export default function Recipe({ meal }: RecipeProps) {
-    
     const history = useHistory()
-    
+
     const goBack = (): void => {
         history.goBack()
     }

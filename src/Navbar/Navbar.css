@@ -5,11 +5,14 @@
     right: 0;
     display: flex;
     justify-content: space-between;
-    /* border: 1px solid black; */
 }
 
 .Navbar .title {
     font-size: 18px;
+}
+
+.Navbar a {
+    text-decoration: none;
 }
 
 .Navbar .infoIcon {
