@@ -1,0 +1,15 @@
+.Instructions {
+    
+}
+
+.RecipeDetails .instruction-and-number {
+    display: flex;
+}
+
+.RecipeDetails .instruction-number {
+    margin-right: 5px;
+}
+
+.RecipeDetails .instructions-title {
+    margin-bottom: 5px;
+}
