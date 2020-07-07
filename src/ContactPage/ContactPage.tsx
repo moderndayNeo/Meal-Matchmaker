@@ -39,16 +39,29 @@ export default function ContactPage() {
                         </p>
                     </div>
                     <div className="links">
-                        <img
-                            src={GithubIcon}
-                            alt="github icon"
-                            className="github-icon"
-                        />
-                        <img
-                            src={LinkedInIcon}
-                            alt="linkedin icon"
-                            className="linkedin-icon"
-                        />
+                        <a
+                            href="https://github.com/moderndayNeo?tab=repositories"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img
+                                src={GithubIcon}
+                                alt="github icon"
+                                className="github-icon"
+                            />
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/in/adamzdrzalka/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img
+                                src={LinkedInIcon}
+                                alt="linkedin icon"
+                                className="linkedin-icon"
+                            />
+                        </a>
                         <img
                             src={FacebookIcon}
                             alt="facebook icon"
