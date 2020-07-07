@@ -28,13 +28,16 @@ export default function ContactPage() {
             <div className="main-wrapper">
                 <main>
                     <h1>Our Story</h1>
-                    <p className="summary">
+                    <div className="summary">
                         <p>Design: Putra Nasara</p>
                         <p>Developer: Adam Zdrzalka</p>
-                        We are growing digital team who focus on UI, UX & web
-                        development. We love to make enjoyable websites & apps.
-                        Contact us to say Hi or to ask about projects.
-                    </p>
+                        <p>
+                            We are growing digital team who focus on UI, UX &
+                            web development. We love to make enjoyable websites
+                            & apps. Contact us to say Hi or to ask about
+                            projects.
+                        </p>
+                    </div>
                     <div className="links">
                         <img
                             src={GithubIcon}
