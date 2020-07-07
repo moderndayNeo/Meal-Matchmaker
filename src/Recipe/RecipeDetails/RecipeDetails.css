@@ -16,7 +16,7 @@
     margin-bottom: 0;
 }
 
-.RecipeDetails .ingredients-title {
+.RecipeDetails section h3 {
     font-size: 21px;
 }
 
@@ -35,4 +35,16 @@
 
 .RecipeDetails .measure {
     width: 100px;
+}
+
+.RecipeDetails .instruction-and-number {
+    display: flex;
+}
+
+.RecipeDetails .instruction-number {
+    margin-right: 5px;
+}
+
+.RecipeDetails .instructions-title {
+    margin-bottom: 5px;
 }

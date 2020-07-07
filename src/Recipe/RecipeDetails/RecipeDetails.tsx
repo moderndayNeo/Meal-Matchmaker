@@ -18,7 +18,9 @@ export default function RecipeDetails({ meal }: any) {
         .filter((key) => key.includes('strMeasure') && meal[key])
         .map((measure) => meal[measure])
 
-    console.log(measures)
+    const instructions: Array<string> = meal.strInstructions.split('\n')
+
+    console.log(instructions)
 
     return (
         <div className="RecipeDetails">
@@ -33,6 +35,17 @@ export default function RecipeDetails({ meal }: any) {
                     <div key={index} className="ingred-and-qty">
                         <p className="measure">{measures[index]}</p>
                         <p className="ingredient">{ingredient}</p>
+                    </div>
+                ))}
+            </section>
+
+            <section className="instructions">
+            <h3 className="instructions-title">Instructions</h3>
+
+                {instructions.map((instruction, index) => (
+                    <div key={index} className="instruction-and-number">
+                        <p className="instruction-number">{index + 1}. </p>
+                        <p className="instruction">{instruction}</p>
                     </div>
                 ))}
             </section>
