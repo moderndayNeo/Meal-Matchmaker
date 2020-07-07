@@ -1,17 +1,13 @@
 .NewRecipeButton {
     position: absolute;
-    bottom: 24px;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 10px;
     width: 100%;
 }
 
 .NewRecipeButton .text-container {
     display: flex;
-    width: 50%;
-    justify-content: space-between;
 }
 
 .NewRecipeButton .text {
-    margin: 0;
+    margin: 0 5px 0 0;
 }
