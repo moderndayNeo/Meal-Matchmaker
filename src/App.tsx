@@ -27,13 +27,13 @@ function App() {
                     exact
                     path="/recipe-generator"
                     render={(props) => (
-                        <RecipeGenerator {...props} meal={meal} onClick={() => getRandomRecipe()} />
+                        <RecipeGenerator {...props} meal={randomRecipe} onClick={() => getRandomRecipe()} />
                     )}
                 />
                 <Route
                     exact
                     path="/recipe"
-                    render={(props) => <Recipe {...props} meal={meal} />}
+                    render={(props) => <Recipe {...props} meal={randomRecipe} />}
                 />
                 <Route exact path="/contact" component={ContactPage} />
             </div>
