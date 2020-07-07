@@ -2,18 +2,14 @@
     background: var(--neutral-color-light);
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
-    padding: 10px;
+    padding: 32px 24px;
     position: absolute;
     top: 250px;
 }
 
 .RecipeDetails section {
-    margin: 10px;
-    border-bottom: 1px grey solid;
-    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(44, 5, 106, 0.2);
 }
-
-
 
 .RecipeDetails section h3 {
     font-size: 21px;
@@ -21,18 +17,5 @@
 
 .RecipeDetails .category {
     font-weight: 200;
-    margin-top: 10px
+    margin-top: 10px;
 }
-
-.RecipeDetails .ingred-and-qty {
-    display: flex;
-}
-
-.RecipeDetails .ingred-and-qty p {
-    margin: 8px 0;
-}
-
-.RecipeDetails .measure {
-    width: 100px;
-}
-

@@ -3,16 +3,15 @@ import './RecipeDetails.css'
 import DetailsHeader from './DetailsHeader/DetailsHeader'
 import Instructions from './Instructions/Instructions'
 import Ingredients from './Ingredients/Ingredients'
-// import { IMeal } from '../../IMeal'
+import { IMeal } from '../../IMeal'
 // import { meal } from '../../media/response-example'
 
-// type RecipeDetailsProps = {
-//     meal: IMeal
-// }
+type RecipeDetailsProps = {
+    meal: IMeal
+}
 
-export default function RecipeDetails({ meal }: any) {
-    // export default function RecipeDetails({ meal }: RecipeDetailsProps) {
-
+// export default function RecipeDetails({ meal }: any) {
+export default function RecipeDetails({ meal }: RecipeDetailsProps) {
     return (
         <div className="RecipeDetails">
             <DetailsHeader meal={meal} />

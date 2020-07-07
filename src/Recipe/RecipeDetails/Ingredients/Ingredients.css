@@ -1,3 +1,12 @@
 .Ingredients {
-    
+    padding-bottom: 30px;
+}
+
+.Ingredients .ingred-and-qty {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.Ingredients .ingred-and-qty p {
+    margin: 8px 0;
 }
