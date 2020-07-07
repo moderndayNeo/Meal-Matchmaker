@@ -1,0 +1,9 @@
+.Header {
+    display: none;
+}
+
+@media (min-width: 800px) {
+    .Header {
+        display: flex;
+    }
+}

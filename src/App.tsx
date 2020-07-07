@@ -7,6 +7,7 @@ import ContactPage from './ContactPage/ContactPage'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { meal } from '../src/media/response-example'
 import { IMeal } from './IMeal'
+import Header from './Header/Header'
 
 function App() {
     const [randomRecipe, setRandomRecipe] = useState<IMeal>(meal)
@@ -22,18 +23,18 @@ function App() {
     return (
         <BrowserRouter>
             <div className="App">
+                <Header />
                 <Switch>
-
-                    <Route 
-                    exact 
-                    path="/"
-                    render={(props) => (
-                        <WelcomePage
-                            {...props}
-                            onClick={() => getRandomRecipe()}
-                        />
-                    )} />
-
+                    <Route
+                        exact
+                        path="/"
+                        render={(props) => (
+                            <WelcomePage
+                                {...props}
+                                onClick={() => getRandomRecipe()}
+                            />
+                        )}
+                    />
 
                     <Route
                         path="/recipe-generator"
