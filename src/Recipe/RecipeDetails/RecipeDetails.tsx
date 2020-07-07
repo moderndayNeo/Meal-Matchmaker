@@ -20,10 +20,12 @@ export default function RecipeDetails({ meal }: any) {
 
     return (
         <div className="RecipeDetails">
+
             <section className="title-and-category">
                 <h1 className="title">{meal.strMeal}</h1>
                 <h4 className="category">{meal.strCategory}</h4>
             </section>
+            
             <section className="ingredients">
                 <h3 className="ingredients-title">Ingredients</h3>
 

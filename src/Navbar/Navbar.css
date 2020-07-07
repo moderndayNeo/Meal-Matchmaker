@@ -13,6 +13,7 @@
 
 .Navbar a {
     text-decoration: none;
+    align-self: center;
 }
 
 .Navbar .infoIcon {
