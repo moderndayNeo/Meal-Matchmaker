@@ -4,7 +4,7 @@
 
 .Ingredients .ingred-and-qty {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 2fr;
 }
 
 .Ingredients .ingred-and-qty p {
