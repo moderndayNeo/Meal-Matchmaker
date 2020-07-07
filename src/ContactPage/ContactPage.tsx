@@ -31,7 +31,7 @@ export default function ContactPage() {
                         <p>Design: Putra Nasara</p>
                         <p>Developer: Adam Zdrzalka</p>
                         We are growing digital team who focus on UI, UX & web
-                        development. We love to make enjoyable website & apps.
+                        development. We love to make enjoyable websites & apps.
                         Contact us to say Hi or to ask about projects.
                     </p>
                     <div className="links">
