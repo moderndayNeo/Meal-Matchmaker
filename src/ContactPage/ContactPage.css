@@ -1,3 +1,35 @@
 .ContactPage {
-    
+}
+
+.ContactPage .contact-nav {
+    position: absolute;
+    height: 64px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+}
+
+.ContactPage .back-arrow {
+    position: absolute;
+    left: 6.67%;
+    right: 84.44%;
+    top: 25%;
+    bottom: 25%;
+    height: 32px;
+    width: 32px;
+    z-index: 1;
+}
+
+.ContactPage .main-wrapper {
+    padding: 30px 24px;
+    position: relative;
+}
+
+.ContactPage main {
+    position: absolute;
+    width: 100%;
+    height: 775px;
+    left: 0px;
+    top: 88px;
+    background: var(--neutral-color-light);
 }
