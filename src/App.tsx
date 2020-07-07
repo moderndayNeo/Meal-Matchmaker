@@ -6,9 +6,10 @@ import Recipe from './Recipe/Recipe'
 import ContactPage from './ContactPage/ContactPage'
 import { BrowserRouter, Route } from 'react-router-dom'
 import { meal } from '../src/media/response-example'
+import { IMeal } from './IMeal'
 
 function App() {
-    const [randomRecipe, setRandomRecipe] = useState(meal)
+    const [randomRecipe, setRandomRecipe] = useState<IMeal>(meal)
 
     async function getRandomRecipe(): Promise<void> {
         const response = await fetch(
@@ -16,7 +17,6 @@ function App() {
         )
         const data = await response.json()
         setRandomRecipe(data.meals[0])
-        console.log('clicked')
     }
 
     return (
@@ -27,15 +27,22 @@ function App() {
                     exact
                     path="/recipe-generator"
                     render={(props) => (
-                        <RecipeGenerator {...props} meal={randomRecipe} onClick={() => getRandomRecipe()} />
+                        <RecipeGenerator
+                            {...props}
+                            meal={randomRecipe}
+                            onClick={() => getRandomRecipe()}
+                        />
                     )}
                 />
                 <Route
                     exact
                     path="/recipe"
-                    render={(props) => <Recipe {...props} meal={randomRecipe} />}
+                    render={(props) => (
+                        <Recipe {...props} meal={randomRecipe} />
+                    )}
                 />
                 <Route exact path="/contact" component={ContactPage} />
+                <Route path="/:slug" component={WelcomePage} />
             </div>
         </BrowserRouter>
     )
