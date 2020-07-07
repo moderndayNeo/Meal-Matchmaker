@@ -5,7 +5,8 @@ import { useHistory } from 'react-router-dom'
 import GithubIcon from '../media/Icons_Github_dark.svg'
 import LinkedInIcon from '../media/Icons_Linkedin_dark.svg'
 import FacebookIcon from '../media/Icons_Facebook_dark.svg'
-import developmentImage from '../media/contact-page-developer.jpg'
+import developers from '../media/developers.jpeg'
+import ContactLink from './ContactLink/ContactLink'
 
 export default function ContactPage() {
     const history = useHistory()
@@ -27,10 +28,10 @@ export default function ContactPage() {
 
             <div className="main-wrapper">
                 <main>
-                    <h1>Our Story</h1>
+                    <h1>Our Team</h1>
                     <div className="summary">
-                        <p>Design: Putra Nasara</p>
-                        <p>Developer: Adam Zdrzalka</p>
+                        <p>Putra Nasara (Design)</p>
+                        <p>Adam Zdrzalka (Developer)</p>
                         <p>
                             We are growing digital team who focus on UI, UX &
                             web development. We love to make enjoyable websites
@@ -39,30 +40,20 @@ export default function ContactPage() {
                         </p>
                     </div>
                     <div className="links">
-                        <a
+                        <ContactLink
                             href="https://github.com/moderndayNeo?tab=repositories"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <img
-                                src={GithubIcon}
-                                alt="github icon"
-                                className="github-icon"
-                            />
-                        </a>
-
-                        <a
+                            src={GithubIcon}
+                            alt="github icon"
+                            className="github-icon"
+                        />
+                        <ContactLink
                             href="https://www.linkedin.com/in/adamzdrzalka/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <img
-                                src={LinkedInIcon}
-                                alt="linkedin icon"
-                                className="linkedin-icon"
-                            />
-                        </a>
-                        <img
+                            src={LinkedInIcon}
+                            alt="linkedin icon"
+                            className="linkedin-icon"
+                        />
+                        <ContactLink
+                            href="https://www.facebook.com/putra.narassa"
                             src={FacebookIcon}
                             alt="facebook icon"
                             className="facebook-icon"
@@ -70,7 +61,7 @@ export default function ContactPage() {
                     </div>
 
                     <img
-                        src={developmentImage}
+                        src={developers}
                         alt="development team"
                         className="developer-image"
                     />

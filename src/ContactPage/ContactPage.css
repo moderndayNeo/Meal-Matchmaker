@@ -1,5 +1,5 @@
 .ContactPage {
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .ContactPage .contact-nav {
@@ -16,8 +16,7 @@
     right: 84.44%;
     top: 25%;
     bottom: 25%;
-    height: 32px;
-    width: 32px;
+    height: 21px;
     z-index: 1;
 }
 
