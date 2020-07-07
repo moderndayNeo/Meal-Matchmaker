@@ -2,6 +2,7 @@ import React from 'react'
 import './RecipeDetails.css'
 import DetailsHeader from './DetailsHeader/DetailsHeader'
 import Instructions from './Instructions/Instructions'
+import Ingredients from './Ingredients/Ingredients'
 // import { IMeal } from '../../IMeal'
 // import { meal } from '../../media/response-example'
 
@@ -12,33 +13,11 @@ import Instructions from './Instructions/Instructions'
 export default function RecipeDetails({ meal }: any) {
     // export default function RecipeDetails({ meal }: RecipeDetailsProps) {
 
-    const ingredients = Object.keys(meal)
-        .filter((key) => key.includes('strIngredient') && meal[key])
-        .map((ingredient) => meal[ingredient])
-
-    const measures = Object.keys(meal)
-        .filter((key) => key.includes('strMeasure') && meal[key])
-        .map((measure) => meal[measure])
-
     return (
         <div className="RecipeDetails">
             <DetailsHeader meal={meal} />
-
-            
-            
-            <section className="ingredients">
-                <h3 className="ingredients-title">Ingredients</h3>
-
-                {ingredients.map((ingredient, index) => (
-                    <div key={index} className="ingred-and-qty">
-                        <p className="measure">{measures[index]}</p>
-                        <p className="ingredient">{ingredient}</p>
-                    </div>
-                ))}
-            </section>
-
-                <Instructions meal={meal}/>
-           
+            <Ingredients meal={meal} />
+            <Instructions meal={meal} />
         </div>
     )
 }
