@@ -1,5 +1,13 @@
 .Header {
     display: none;
+    height: 96px;
+    border: 1px solid black;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.Header .title {
+
 }
 
 @media (min-width: 800px) {

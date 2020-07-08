@@ -20,6 +20,7 @@ html {
     --neutral-color-light: #FFF1EC;
     --secondary-color-warning: #e46a0c;
     color: var(--primary-color-dark);
+    padding: 0 7.7%;
 }
 
 .App .generate-button {
@@ -31,4 +32,9 @@ html {
     color: white;
     box-shadow: 1px 1px 25px rgba(102, 16, 242, 0.2);
     border-radius: 24px;
+}
+
+
+@media (min-width: 800px) {
+
 }
