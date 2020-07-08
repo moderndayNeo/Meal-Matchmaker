@@ -1,19 +1,7 @@
 import React from 'react'
 import './Ingredients.css'
 
-// type stringIngredient = 'strIngredient1' | 'strIngredient2' | 'strIngredient3'
-
-// interface IMeal {
-//     [stringIngredient: string] : string
-// }
-
-// interface IngredientsProps {
-//     meal: IMeal
-// }
-
-// export default function Ingredients({ meal }: IngredientsProps) {
 export default function Ingredients({ meal }: any) {
-
     const ingredients = Object.keys(meal)
         .filter((key) => key.includes('strIngredient') && meal[key])
         .map((ingredient) => meal[ingredient])
@@ -35,4 +23,3 @@ export default function Ingredients({ meal }: any) {
         </section>
     )
 }
-
