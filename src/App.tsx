@@ -24,7 +24,7 @@ function App() {
     return (
         <BrowserRouter>
             <div className="App">
-                <Header />
+                <Header onClick={() => getRandomRecipe()} />
                 <Switch>
                     <Route
                         exact

@@ -5,6 +5,11 @@
     align-items: center;
 }
 
+.Header .NewRecipeButton {
+    position: relative;
+    width: 300px;
+}
+
 .Header .title {
     font-size: 28px;
 }

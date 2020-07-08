@@ -6,3 +6,9 @@
     overflow-x: hidden;
     overflow-y: hidden;
 }
+
+@media (min-width: 800px) {
+    .RecipeGenerator .NewRecipeButton {
+        display: none;
+    }
+}

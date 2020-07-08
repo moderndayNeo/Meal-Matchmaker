@@ -22,3 +22,10 @@
     width: var(--info-icon-dimensions);
     align-self: center;
 }
+
+@media (min-width: 800px) {
+    .Navbar {
+        display: none;
+
+    }
+}

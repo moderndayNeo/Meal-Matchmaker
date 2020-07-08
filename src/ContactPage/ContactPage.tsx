@@ -30,7 +30,7 @@ export default function ContactPage() {
                 <main>
                     <h1>Our Team</h1>
                     <div className="summary">
-                        <p>Putra Nasara (Design)</p>
+                        <p>Putra Narassa (Design)</p>
                         <p>Adam Zdrzalka (Developer)</p>
                         <p>
                             We are growing digital team who focus on UI, UX &
