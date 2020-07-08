@@ -2,6 +2,27 @@
     display: none;
 }
 
+.RecipeComponentsDesktop .title {
+    font-size: 67px;
+}
+
+.RecipeComponentsDesktop .details-container {
+    display: grid;
+    grid-template-columns: 33% 50%;
+    grid-gap: 20px;
+    margin-top: 5%;
+}
+
+.RecipeComponentsDesktop .Ingredients {
+    background: var(--neutral-color-light);
+}
+
+.RecipeComponentsDesktop .Instructions {
+    background: var(--neutral-color-light);
+}
+
+
+
 @media (min-width: 800px) {
     .RecipeComponentsDesktop {
         display: block;

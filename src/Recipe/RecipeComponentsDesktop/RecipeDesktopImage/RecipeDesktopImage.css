@@ -1,0 +1,11 @@
+.RecipeDesktopImage {
+    width: 100%;
+    --image-container-height: 424px;
+    height: var(--image-container-height);
+    overflow: hidden;
+}
+
+.RecipeComponentsDesktop .recipe-image {
+    width: 100%;
+    margin-top: -25%;
+}

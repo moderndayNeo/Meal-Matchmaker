@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 export default function Header() {
     return (
         <div className="Header">
-            <h1 className="title">Meal Matchmaker</h1>
+            <h2 className="title">Meal Matchmaker</h2>
             <nav>
                 <Link to="/">Home</Link>
                 <Link to="/contact">Contact</Link>

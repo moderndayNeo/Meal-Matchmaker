@@ -2,31 +2,7 @@
     position: relative;
 }
 
-.Recipe .recipe-image {
-    width: 100%;
-    margin-top: -20%;
-}
 
-.Recipe .back-button {
-    position: absolute;
-    left: 6.67%;
-    right: 84.44%;
-    top: 25%;
-    bottom: 25%;
-    --back-button-dimensions: 21px;
-    height: var(--back-button-dimensions);
-    width: var(--back-button-dimensions);
-}
-
-.Recipe .overlay {
-    height: 64px;
-    background: rgba(44, 5, 106, 0.3);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: block;
-}
 
 @media (min-width: 800px) {
     .Recipe {
