@@ -8,6 +8,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { meal } from '../src/media/response-example'
 import { IMeal } from './IMeal'
 import Header from './Header/Header'
+import Footer from './Footer/Footer'
 
 function App() {
     const [randomRecipe, setRandomRecipe] = useState<IMeal>(meal)
@@ -56,6 +57,7 @@ function App() {
                     <Route exact path="/contact" component={ContactPage} />
                     {/* <Route component={WelcomePage} /> */}
                 </Switch>
+                <Footer />
             </div>
         </BrowserRouter>
     )
