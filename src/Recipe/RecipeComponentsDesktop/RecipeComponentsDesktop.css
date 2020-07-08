@@ -1,0 +1,9 @@
+.RecipeComponentsDesktop {
+    display: none;
+}
+
+@media (min-width: 800px) {
+    .RecipeComponentsDesktop {
+        display: block;
+    }
+}
