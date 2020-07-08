@@ -8,17 +8,38 @@
 
 .RecipeComponentsDesktop .details-container {
     display: grid;
-    grid-template-columns: 33% 50%;
+    grid-template-columns: minmax(auto, 45%) 50%;
     grid-gap: 20px;
     margin-top: 5%;
 }
 
-.RecipeComponentsDesktop .Ingredients {
+.RecipeComponentsDesktop .Ingredients, .Instructions {
     background: var(--neutral-color-light);
+    padding: 2rem;
+    border-radius: 12px;
 }
 
-.RecipeComponentsDesktop .Instructions {
-    background: var(--neutral-color-light);
+.RecipeComponentsDesktop .Ingredients .title, .Instructions .title {
+    font-size: 2.375rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.RecipeComponentsDesktop .Ingredients .ingred-and-qty {
+    font-size: 20px;
+    grid-gap: 5px;
+}
+
+
+.RecipeComponentsDesktop .Instructions .instruction {
+    font-size: 20px;
+    align-self: center;
+}
+
+.RecipeComponentsDesktop .Instructions .number {
+    font-size: 28px;
+    margin-right: 15px;
+    align-self: center;
 }
 
 

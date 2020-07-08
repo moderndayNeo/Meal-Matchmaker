@@ -24,7 +24,7 @@ export default function Ingredients({ meal }: any) {
 
     return (
         <section className="Ingredients">
-            <h3 className="ingredients-title">Ingredients</h3>
+            <h3 className="title">Ingredients</h3>
 
             {ingredients.map((ingredient, index) => (
                 <div key={index} className="ingred-and-qty">

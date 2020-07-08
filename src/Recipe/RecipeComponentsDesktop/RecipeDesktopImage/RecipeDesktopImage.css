@@ -3,6 +3,7 @@
     --image-container-height: 424px;
     height: var(--image-container-height);
     overflow: hidden;
+    border-radius: 12px;
 }
 
 .RecipeComponentsDesktop .recipe-image {
