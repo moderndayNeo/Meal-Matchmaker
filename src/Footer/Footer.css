@@ -5,4 +5,12 @@
     right: 0;
     bottom: 0;
     height: 200px;
+    display: none;
 }
+
+@media (min-width: 800px) {
+    .Footer {
+        display: block;
+    }
+}
+

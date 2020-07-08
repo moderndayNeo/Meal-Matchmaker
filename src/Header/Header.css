@@ -3,11 +3,23 @@
     height: 96px;
     border: 1px solid black;
     justify-content: space-between;
-    padding: 10px;
+    align-items: center;
 }
 
 .Header .title {
+}
 
+.Header nav {
+    width: 12%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: normal;
+    font-size: 20px;
+    z-index: 1;
+}
+
+.Header nav a {
+    text-decoration: none;
 }
 
 @media (min-width: 800px) {
