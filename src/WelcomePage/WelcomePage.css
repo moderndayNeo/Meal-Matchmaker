@@ -23,3 +23,21 @@
     max-width: 697px;
 }
 
+@media (min-width: 800px) {
+    .WelcomePage {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 523fr 696fr;
+        align-items: center;
+        min-height: 0;
+    }
+
+    .WelcomePage .title,
+    .subtext {
+        margin: 5% 0;
+    }
+
+    .WelcomePage .WelcomePageButton {
+        margin: 10% 0;
+    }
+}

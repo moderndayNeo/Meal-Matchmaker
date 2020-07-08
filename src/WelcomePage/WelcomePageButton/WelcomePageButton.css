@@ -6,5 +6,8 @@
 }
 
 @media (min-width: 800px) {
-    
+    .WelcomePageButton {
+        position: relative;
+        max-width: 312px;
+    }
 }
