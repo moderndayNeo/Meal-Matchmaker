@@ -1,0 +1,8 @@
+.RecipeComponentsMobile {
+}
+
+@media (min-width: 800px) {
+    .RecipeComponentsMobile {
+        display: none;
+    }
+}

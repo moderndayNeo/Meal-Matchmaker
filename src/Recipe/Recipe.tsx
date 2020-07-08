@@ -1,28 +1,19 @@
 import React from 'react'
 import './Recipe.css'
-import RecipeDetails from './RecipeDetails/RecipeDetails'
-import { IMeal } from '../IMeal'
-import { ReactComponent as BackButton } from '../media/Icons_left_arrow_white.svg'
-import { useHistory } from 'react-router-dom'
+import {IMeal  } from '../IMeal'
 
-export type RecipeProps = {
+import RecipeComponentsMobile from './RecipeComponentsMobile/RecipeComponentsMobile'
+
+interface RecipeProps {
     meal: IMeal
 }
 
 export default function Recipe({ meal }: RecipeProps) {
-    const history = useHistory()
-
-    const goBack = (): void => {
-        history.goBack()
-    }
-
+  
     return (
         <div className="Recipe">
-            <nav className="overlay">
-                <BackButton className="back-button" onClick={goBack} />
-            </nav>
-            <img src={meal.strMealThumb} className="recipe-image" alt="meal" />
-            <RecipeDetails meal={meal} />
+            <RecipeComponentsMobile meal={meal} />
+       
         </div>
     )
 }
