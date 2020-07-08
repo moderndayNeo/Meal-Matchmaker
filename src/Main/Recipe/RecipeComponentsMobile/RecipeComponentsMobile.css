@@ -1,4 +1,6 @@
 .RecipeComponentsMobile {
+    position: relative;
+    width: 100%;
 }
 
 .RecipeComponentsMobile .recipe-image {
