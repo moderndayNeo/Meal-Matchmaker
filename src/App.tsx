@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './App.css'
+import Main from './Main/Main'
 import WelcomePage from './WelcomePage/WelcomePage'
 import RecipeGenerator from './RecipeGenerator/RecipeGenerator'
 import Recipe from './Recipe/Recipe'
@@ -24,7 +25,10 @@ function App() {
     return (
         <BrowserRouter>
             <div className="App">
+                <Main />
+
                 <Header onClick={() => getRandomRecipe()} />
+
                 <Switch>
                     <Route
                         exact
@@ -57,6 +61,8 @@ function App() {
                     <Route exact path="/contact" component={ContactPage} />
                     {/* <Route path="/:notfound" component={WelcomePage} /> */}
                 </Switch>
+
+
                 <Footer />
             </div>
         </BrowserRouter>
