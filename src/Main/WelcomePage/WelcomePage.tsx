@@ -1,6 +1,6 @@
 import * as React from 'react'
 import './WelcomePage.css'
-import coffee from '../media/welcome_page_coffee.svg'
+import coffee from '../../media/welcome_page_coffee.svg'
 import WelcomePageButton from './WelcomePageButton/WelcomePageButton'
 
 interface WelcomePageProps {

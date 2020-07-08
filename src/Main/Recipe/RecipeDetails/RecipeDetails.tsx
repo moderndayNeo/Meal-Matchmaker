@@ -3,7 +3,7 @@ import './RecipeDetails.css'
 import DetailsHeader from './DetailsHeader/DetailsHeader'
 import Instructions from './Instructions/Instructions'
 import Ingredients from './Ingredients/Ingredients'
-import { IMeal } from '../../IMeal'
+import { IMeal } from '../../../IMeal'
 
 type RecipeDetailsProps = {
     meal: IMeal

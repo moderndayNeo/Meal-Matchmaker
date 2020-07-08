@@ -15,11 +15,13 @@ html {
 .App {
     font-family: 'Public Sans', sans-serif;
     height: 100vh;
+    width: 100%;
     --primary-color-dark: #2c056a;
     --primary-color-accent: #6610f2;
     --neutral-color-light: #FFF1EC;
     --secondary-color-warning: #e46a0c;
     color: var(--primary-color-dark);
+    position: relative;
 }
 
 .App .generate-button {
@@ -31,11 +33,4 @@ html {
     color: white;
     box-shadow: 1px 1px 25px rgba(102, 16, 242, 0.2);
     border-radius: 24px;
-}
-
-
-@media (min-width: 800px) {
-    .App {
-        padding: 0 7.7%;
-    }
 }

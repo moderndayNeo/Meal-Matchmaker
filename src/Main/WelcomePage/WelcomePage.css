@@ -2,10 +2,9 @@
     position: relative;
     margin: 0 20px;
     padding-top: 5rem;
-    /* height: 100vh; */
-    min-height: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    height: 100vh;
+    /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
 }
 
 .WelcomePage .title {
@@ -20,6 +19,7 @@
 
 .WelcomePage img {
     width: 100%;
+    margin-top: 30px;
     max-width: 697px;
 }
 

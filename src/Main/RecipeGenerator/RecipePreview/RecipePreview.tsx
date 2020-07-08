@@ -1,7 +1,7 @@
 import React from 'react'
 import './RecipePreview.css'
 import ViewRecipeButton from './ViewRecipeButton/ViewRecipeButton'
-import { IMeal } from '../../IMeal'
+import { IMeal } from '../../../IMeal'
 
 type RecipePreviewProps = {
     meal: IMeal

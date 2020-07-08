@@ -5,10 +5,12 @@
     right: 0;
     display: flex;
     justify-content: space-between;
+    padding: 16px 0;
 }
 
 .Navbar .title {
     font-size: 18px;
+    margin: 0;
 }
 
 .Navbar a {

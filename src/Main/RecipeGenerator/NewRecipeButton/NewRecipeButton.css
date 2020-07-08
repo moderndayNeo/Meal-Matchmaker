@@ -1,7 +1,8 @@
 .NewRecipeButton {
     position: absolute;
-    bottom: 10px;
-    width: 100%;
+    right: 0;
+    left: 0;
+    bottom: 24px;
 }
 
 .NewRecipeButton .text-container {

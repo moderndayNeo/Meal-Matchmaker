@@ -1,8 +1,8 @@
 import React from 'react'
 import './RecipeComponentsMobile.css'
-import RecipeDetails from '.././RecipeDetails/RecipeDetails'
-import { IMeal } from '../../IMeal'
-import { ReactComponent as BackButton } from '../../media/Icons_left_arrow_white.svg'
+import RecipeDetails from '../RecipeDetails/RecipeDetails'
+import { IMeal } from '../../../IMeal'
+import { ReactComponent as BackButton } from '../../../media/Icons_left_arrow_white.svg'
 import { useHistory } from 'react-router-dom'
 
 interface RecipeComponentsMobileProps {

@@ -1,11 +1,11 @@
 import React from 'react'
 import './ContactPage.css'
-import backArrow from '../media/Icon_left_arrow.svg'
+import backArrow from '../../media/Icon_left_arrow.svg'
 import { useHistory } from 'react-router-dom'
-import GithubIcon from '../media/Icons_Github_dark.svg'
-import LinkedInIcon from '../media/Icons_Linkedin_dark.svg'
-import FacebookIcon from '../media/Icons_Facebook_dark.svg'
-import developers from '../media/developers.jpeg'
+import GithubIcon from '../../media/Icons_Github_dark.svg'
+import LinkedInIcon from '../../media/Icons_Linkedin_dark.svg'
+import FacebookIcon from '../../media/Icons_Facebook_dark.svg'
+import developers from '../../media/developers.jpeg'
 import ContactLink from './ContactLink/ContactLink'
 
 export default function ContactPage() {

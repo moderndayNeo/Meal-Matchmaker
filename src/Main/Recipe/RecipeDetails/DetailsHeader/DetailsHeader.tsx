@@ -1,6 +1,6 @@
 import React from 'react'
 import './DetailsHeader.css'
-import { IMeal } from '../../../IMeal'
+import { IMeal } from '../../../../IMeal'
 
 interface DetailsHeaderProps {
     meal: IMeal

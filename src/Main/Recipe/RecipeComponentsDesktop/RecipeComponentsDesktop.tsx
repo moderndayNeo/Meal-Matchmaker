@@ -1,6 +1,6 @@
 import React from 'react'
 import './RecipeComponentsDesktop.css'
-import { IMeal } from '../../IMeal'
+import { IMeal } from '../../../IMeal'
 import Ingredients from '../RecipeDetails/Ingredients/Ingredients'
 import Instructions from '../RecipeDetails/Instructions/Instructions'
 import RecipeDesktopImage from './RecipeDesktopImage/RecipeDesktopImage'

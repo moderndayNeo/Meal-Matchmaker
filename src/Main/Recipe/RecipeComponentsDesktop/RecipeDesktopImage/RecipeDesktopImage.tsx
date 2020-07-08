@@ -1,6 +1,6 @@
 import React from 'react'
 import './RecipeDesktopImage.css'
-import { IMeal } from '../../../IMeal'
+import { IMeal } from '../../../../IMeal'
 
 interface RecipeDesktopImageProps {
     meal: IMeal

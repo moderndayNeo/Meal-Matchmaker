@@ -1,6 +1,6 @@
 import React from 'react'
 import './NewRecipeButton.css'
-import regenerateIcon from '../../media/Icons_regenerate_dark.svg'
+import regenerateIcon from '../../../media/Icons_regenerate_dark.svg'
 
 interface NewRecipeButtonProps {
     onClick: () => void;

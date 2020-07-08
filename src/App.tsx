@@ -1,14 +1,9 @@
 import React, { useState } from 'react'
 import './App.css'
 import Main from './Main/Main'
-import WelcomePage from './WelcomePage/WelcomePage'
-import RecipeGenerator from './RecipeGenerator/RecipeGenerator'
-import Recipe from './Recipe/Recipe'
-import ContactPage from './ContactPage/ContactPage'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { BrowserRouter} from 'react-router-dom'
 import { meal } from '../src/media/response-example'
 import { IMeal } from './IMeal'
-import Header from './Header/Header'
 import Footer from './Footer/Footer'
 
 function App() {
@@ -25,44 +20,7 @@ function App() {
     return (
         <BrowserRouter>
             <div className="App">
-                <Main />
-
-                <Header onClick={() => getRandomRecipe()} />
-
-                <Switch>
-                    <Route
-                        exact
-                        path="/"
-                        render={(props) => (
-                            <WelcomePage
-                                {...props}
-                                onClick={() => getRandomRecipe()}
-                            />
-                        )}
-                    />
-
-                    <Route
-                        path="/recipe-generator"
-                        render={(props) => (
-                            <RecipeGenerator
-                                {...props}
-                                meal={randomRecipe}
-                                onClick={() => getRandomRecipe()}
-                            />
-                        )}
-                    />
-                    <Route
-                        exact
-                        path="/recipe"
-                        render={(props) => (
-                            <Recipe {...props} meal={randomRecipe} />
-                        )}
-                    />
-                    <Route exact path="/contact" component={ContactPage} />
-                    {/* <Route path="/:notfound" component={WelcomePage} /> */}
-                </Switch>
-
-
+                <Main onClick={() => getRandomRecipe()} meal={randomRecipe}  />
                 <Footer />
             </div>
         </BrowserRouter>
