@@ -1,11 +1,12 @@
 .Recipe {
     position: relative;
+    height: 100%;
 }
 
 
 
 @media (min-width: 800px) {
     .Recipe {
-
+        overflow: scroll;
     }
 }

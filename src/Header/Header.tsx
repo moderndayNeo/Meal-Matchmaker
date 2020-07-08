@@ -7,14 +7,16 @@ interface HeaderProps {
     onClick: () => void
 }
 
-export default function Header({ onClick}: HeaderProps) {
+export default function Header({ onClick }: HeaderProps) {
     return (
         <div className="Header">
-            <h2 className="title">Meal Matchmaker</h2>
-            <NewRecipeButton onClick={onClick} />
+            <Link to="/">
+                <h2 className="title">Meal Matchmaker</h2>
+            </Link>
             <nav>
                 <Link to="/">Home</Link>
                 <Link to="/contact">Contact</Link>
+                <NewRecipeButton onClick={onClick} />
             </nav>
         </div>
     )

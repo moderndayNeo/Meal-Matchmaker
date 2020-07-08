@@ -14,6 +14,7 @@
 .Navbar a {
     text-decoration: none;
     align-self: center;
+    color: var(--primary-color-dark);
 }
 
 .Navbar .infoIcon {

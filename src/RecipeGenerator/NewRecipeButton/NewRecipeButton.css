@@ -6,6 +6,7 @@
 
 .NewRecipeButton .text-container {
     display: flex;
+    align-items: center;
 }
 
 .NewRecipeButton .text {

@@ -8,6 +8,10 @@
 }
 
 @media (min-width: 800px) {
+    .RecipeGenerator {
+        margin: 0;
+    }
+
     .RecipeGenerator .NewRecipeButton {
         display: none;
     }

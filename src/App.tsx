@@ -55,7 +55,7 @@ function App() {
                         )}
                     />
                     <Route exact path="/contact" component={ContactPage} />
-                    {/* <Route component={WelcomePage} /> */}
+                    {/* <Route path="/:notfound" component={WelcomePage} /> */}
                 </Switch>
                 <Footer />
             </div>

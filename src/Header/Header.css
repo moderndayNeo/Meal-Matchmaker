@@ -6,8 +6,9 @@
 }
 
 .Header .NewRecipeButton {
-    position: relative;
-    width: 300px;
+    position: static;
+    width: 208px;
+    height: 66px;
 }
 
 .Header .title {
@@ -15,16 +16,15 @@
 }
 
 .Header nav {
-    width: 20%;
-    display: flex;
     justify-content: space-between;
-    font-weight: normal;
-    font-size: 20px;
-    z-index: 1;
+    display: flex;
+    width: 35%;
+    align-items: center;
 }
 
-.Header nav a {
+.Header a {
     text-decoration: none;
+    color: var(--primary-color-dark);
 }
 
 @media (min-width: 800px) {
