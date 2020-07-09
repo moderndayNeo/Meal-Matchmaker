@@ -1,11 +1,13 @@
 .RecipeComponentsMobile {
-    position: relative;
-    width: 100%;
+    /* position: relative; */
+    /* width: 100%; */
 }
 
 .RecipeComponentsMobile .recipe-image {
+    /* position: absolute; */
     width: 100%;
     margin-top: -20%;
+    /* z-index: -1; */
 }
 
 .RecipeComponentsMobile .back-button {
@@ -28,6 +30,8 @@
     right: 0;
     display: block;
 }
+
+
 
 @media (min-width: 800px) {
     .RecipeComponentsMobile {

@@ -14,7 +14,7 @@ export default function RecipeGenerator({
     meal,
     onClick,
 }: RecipeGeneratorProps) {
-    console.log(meal.strInstructions)
+    // console.log(meal.strInstructions)
 
     return (
         <div className="RecipeGenerator">

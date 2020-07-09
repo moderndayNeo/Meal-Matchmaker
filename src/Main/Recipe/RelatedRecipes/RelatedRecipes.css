@@ -1,16 +1,22 @@
 .RelatedRecipes {
     width: 100%;
-    position: relative;
 }
 
 .RelatedRecipes .slider-container {
     display: flex;
     overflow: scroll;
-    width: 100%;
-    position: absolute;
+    position: relative;
+    /* width: 80vw; */
 }
 
 .RelatedRecipes .RecipePreview {
     background: white;
     margin-right: 15px;
+    position: relative;
+    top: 0;
+}
+
+
+.RelatedRecipes .ViewRecipeButton .right-arrow {
+    background: white;
 }
