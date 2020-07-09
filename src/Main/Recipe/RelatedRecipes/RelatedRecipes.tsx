@@ -10,7 +10,7 @@ interface RelatedRecipesProps {
 export default function RelatedRecipes({ meal }: RelatedRecipesProps) {
     return (
         <section className="RelatedRecipes">
-            <h1 className="title">Related recipes</h1>
+            <h3 className="title">Related recipes</h3>
             <div className="slider-container">
                 <RecipePreview meal={meal} />
                 <RecipePreview meal={meal} />

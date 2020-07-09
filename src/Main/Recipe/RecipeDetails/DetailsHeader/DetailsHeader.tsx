@@ -9,7 +9,7 @@ interface DetailsHeaderProps {
 export default function DetailsHeader({ meal }: DetailsHeaderProps) {
     return (
         <section className="DetailsHeader">
-            <h1 className="title">{meal.strMeal}</h1>
+            <h2 className="title">{meal.strMeal}</h2>
             <h4 className="category">{meal.strCategory}</h4>
         </section>
     )
