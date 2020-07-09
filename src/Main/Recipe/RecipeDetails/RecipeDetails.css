@@ -3,6 +3,9 @@
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
     padding: 32px 24px;
+    position: absolute;
+    width: 100%;
+    top: 250px;
 }
 
 .RecipeDetails section {
