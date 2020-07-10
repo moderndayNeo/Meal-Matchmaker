@@ -3,6 +3,7 @@
     height: 96px;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
 }
 
 .Header .NewRecipeButton {

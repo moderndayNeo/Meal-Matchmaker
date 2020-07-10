@@ -25,25 +25,30 @@ export default function ContactPage() {
 
             <div className="main-wrapper">
                 <main>
-                    <h2>Our Team</h2>
+                    <h2 className="title">Our Team</h2>
                     <p className="summary">
                         Meal Matchmaker is a random recipe generator so you
-                        never run out of ideas in the kitchen. Meal Matchmaker
-                        is made by Putra and Adam. Feel free to contact us to
-                        talk about projects or discuss UX and web-mobile
+                        never run out of ideas in the kitchen. After discussing
+                        ideas on a UI Forum, Putra and Adam teamed up to build
+                        the app; overcoming timezones and lockdown. Feel free
+                        to contact us for work or to discuss UX and web-mobile
                         development.
                     </p>
                     <TeamMember
-                        title="Putra Narassa (UI Designer)"
+                        name="Putra Narassa (UI Designer)"
                         github=""
                         facebook="https://www.facebook.com/putra.narassa"
                         linkedin=""
-                    />
+                        location="London, England"
+                        mailto="adamzdrzalka@outlook.com" // Putra's email
+                        />
                     <TeamMember
-                        title="Adam Zdrzalka (Web Developer)"
+                        name="Adam Zdrzalka (Web Developer)"
                         github="https://github.com/moderndayNeo?tab=repositories"
                         facebook=""
                         linkedin="https://www.linkedin.com/in/adamzdrzalka/"
+                        location="London, England"
+                        mailto="adamzdrzalka@outlook.com"
                     />
 
                     <img

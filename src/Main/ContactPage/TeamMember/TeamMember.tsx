@@ -4,23 +4,29 @@ import ContactLink from '../ContactLink/ContactLink'
 import GithubIcon from '../../../media/Icons_Github_dark.svg'
 import LinkedInIcon from '../../../media/Icons_Linkedin_dark.svg'
 import FacebookIcon from '../../../media/Icons_Facebook_dark.svg'
+import EmailButton from './EmailButton/EmailButton'
 
 interface TeamMemberProps {
-    title: string
+    name: string
     github: string
     facebook: string
     linkedin: string
+    location: string
+    mailto: string
 }
 
 export default function TeamMember({
-    title,
+    name,
     github,
     facebook,
     linkedin,
+    location,
+    mailto
 }: TeamMemberProps) {
     return (
         <div className="TeamMember">
-            <h3>{title}</h3>
+            <h3 className="name">{name}</h3>
+            <h4 className="location">{location}</h4>
 
             <div className="links">
                 {facebook && (
@@ -47,6 +53,7 @@ export default function TeamMember({
                         className="linkedin-icon"
                     />
                 )}
+                <EmailButton mailto={mailto} name={name}  />
             </div>
         </div>
     )

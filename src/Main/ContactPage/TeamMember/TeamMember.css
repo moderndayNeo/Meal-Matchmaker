@@ -1,3 +1,16 @@
-.TeamMember {
-    
+.TeamMember .links {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.TeamMember .name {
+    margin: 8px 0;
+}
+
+.TeamMember .location {
+    font-weight: 200;
+    margin: 0;
 }

@@ -30,11 +30,12 @@
     padding: 33px 24px;
 }
 
-.ContactPage .links {
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    margin: 30px 0;
+.ContactPage .title {
+    margin-top: 0;
+}
+
+.ContactPage .summary {
+    margin-bottom: 25px;
 }
 
 .ContactPage .developer-image {
