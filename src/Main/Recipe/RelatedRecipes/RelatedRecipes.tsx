@@ -41,7 +41,7 @@ export default function RelatedRecipes({ meal }: RelatedRecipesProps) {
             <h3 className="title">Related recipes</h3>
             <div className="slider-container">
                 {relatedMealsList.map((meal) => (
-                    <RecipePreview key={meal.idMeal} meal={meal} />
+                    <RecipePreview key={meal.idMeal} meal={meal} setRandomRecipe={setRandomRecipe} />
                 ))}
             </div>
         </section>

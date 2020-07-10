@@ -13,7 +13,7 @@ export default function RecipePreview({ meal }: RecipePreviewProps) {
             <h1 className="title">{meal.strMeal}</h1>
             <h4 className="category">{meal.strCategory}</h4>
             <img src={meal.strMealThumb} alt={meal.idMeal} />
-            <ViewRecipeButton />
+            <ViewRecipeButton setRandomRecipe={setRandomRecipe} meal={meal} />
         </div>
     )
 }

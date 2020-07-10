@@ -16,7 +16,7 @@ export default function RecipeDetails({ meal }: RecipeDetailsProps) {
             <DetailsHeader meal={meal} />
             <Ingredients meal={meal} />
             <Instructions meal={meal} />
-            <RelatedRecipes meal={meal} />
+            <RelatedRecipes meal={meal} setRandomRecipe={setRandomRecipe} />
         </div>
     )
 }

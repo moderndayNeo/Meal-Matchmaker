@@ -11,7 +11,7 @@ interface RecipeProps {
 export default function Recipe({ meal }: RecipeProps) {
     return (
         <div className="Recipe">
-            <RecipeComponentsMobile meal={meal} />
+            <RecipeComponentsMobile meal={meal} setRandomRecipe={setRandomRecipe} />
             <RecipeComponentsDesktop meal={meal} />
         </div>
     )

@@ -24,7 +24,7 @@ export default function RecipeComponentsMobile({
                 <BackButton className="back-button" onClick={goBack} />
             </nav>
             <img src={meal.strMealThumb} className="recipe-image" alt="meal" />
-            <RecipeDetails meal={meal} />
+            <RecipeDetails meal={meal} setRandomRecipe={setRandomRecipe} />
         </div>
     )
 }

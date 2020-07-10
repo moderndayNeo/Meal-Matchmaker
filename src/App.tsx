@@ -20,7 +20,8 @@ function App() {
     return (
         <BrowserRouter>
             <div className="App">
-                <Main onClick={() => getRandomRecipe()} meal={randomRecipe}  />
+                <Main onClick={() => getRandomRecipe()} meal={randomRecipe} 
+                setRandomRecipe={setRandomRecipe} /> // Set props throughout
                 <Footer />
             </div>
         </BrowserRouter>

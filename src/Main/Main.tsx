@@ -40,7 +40,7 @@ export default function Main({ onClick, meal }: MainProps) {
                 <Route
                     exact
                     path="/recipe"
-                    render={(props) => <Recipe {...props} meal={meal} />}
+                    render={(props) => <Recipe {...props} meal={meal} setRandomRecipe={setRandomRecipe} />}
                 />
                 <Route exact path="/contact" component={ContactPage} />
                 {/* <Route path="/:notfound" component={WelcomePage} /> */}
