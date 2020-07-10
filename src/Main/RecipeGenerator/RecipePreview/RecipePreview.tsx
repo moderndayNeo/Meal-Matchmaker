@@ -14,7 +14,7 @@ export default function RecipePreview({
 }: RecipePreviewProps) {
     
     const shorten = (str: string) => {
-        return str.length < 40 ? str : str.slice(0, 40).trim() + '...'
+        return str.length < 30 ? str : str.slice(0, 30).trim() + '...'
     }
 
     return (

@@ -30,3 +30,9 @@
         width: 60%;
     }
 }
+
+@media (max-height: 700px) {
+    .RecipePreview {
+        top: 60px;
+    }
+}
