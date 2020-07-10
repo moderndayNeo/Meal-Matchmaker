@@ -13,7 +13,7 @@
 
 .Footer .text-container {
     text-align: center;
-    width: 30%;
+    width: 50%;
     border: 1px solid white;
     height: 80%;
 }
@@ -21,6 +21,11 @@
 .Footer .title {
     font-size: 28px;
     line-height: 30px;
+}
+
+.Footer .developers {
+    display: flex;
+    width: 100%;
 }
 
 .Footer .copyright {

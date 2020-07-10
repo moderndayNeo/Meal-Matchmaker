@@ -1,3 +1,13 @@
 .FooterContact {
-     
+     border: 1px solid yellow;
+     width: 100%;
+}
+
+.FooterContact .links {
+    padding: 20px;
+}
+
+.FooterContact .email {
+    text-decoration: underline;
+    color: white;
 }

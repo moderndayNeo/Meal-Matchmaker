@@ -1,9 +1,9 @@
 import React from 'react'
 import './FooterContact.css'
-import ContactLink from '../../Main/ContactPage/ContactLink/ContactLink'
-import GithubIcon from '../../media/Icons_Github_dark.svg'
-import LinkedInIcon from '../../media/Icons_Linkedin_dark.svg'
-import FacebookIcon from '../../media/Icons_Facebook_dark.svg'
+import FooterLink from './FooterLink/FooterLink'
+import GithubIcon from '../../media/Icons_Github_white.svg'
+import LinkedInIcon from '../../media/Icons_Linkedin_white.svg'
+import FacebookIcon from '../../media/Icons_Facebook_white.svg'
 
 interface FooterContactProps {
     github: string
@@ -20,31 +20,38 @@ export default function FooterContact({
 }: FooterContactProps) {
     return (
         <div className="FooterContact">
-            <p className="title">Name</p>
-            {facebook && (
-                <ContactLink
-                    href={facebook}
-                    src={FacebookIcon}
-                    alt="facebook icon"
-                    className="facebook-icon"
-                />
-            )}
-            {github && (
-                <ContactLink
-                    href={github}
-                    src={GithubIcon}
-                    alt="github icon"
-                    className="github-icon"
-                />
-            )}
-            {linkedin && (
-                <ContactLink
-                    href={linkedin}
-                    src={LinkedInIcon}
-                    alt="linkedin icon"
-                    className="linkedin-icon"
-                />
-            )}
+            <a className="email" href={`mailto:${mailto}`}>
+                <h3>
+
+                {mailto}
+                </h3>
+            </a>
+            <div className="links">
+                {facebook && (
+                    <FooterLink
+                        src={FacebookIcon}
+                        alt="facebook icon"
+                        className="facebook-icon"
+                        href={facebook}
+                    />
+                )}
+                {github && (
+                    <FooterLink
+                        src={GithubIcon}
+                        alt="github icon"
+                        className="github-icon"
+                        href={github}
+                    />
+                )}
+                {linkedin && (
+                    <FooterLink
+                        src={LinkedInIcon}
+                        alt="linkedin icon"
+                        className="linkedin-icon"
+                        href={linkedin}
+                    />
+                )}
+            </div>
         </div>
     )
 }
