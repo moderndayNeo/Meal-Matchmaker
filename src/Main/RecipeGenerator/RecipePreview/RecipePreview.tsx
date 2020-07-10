@@ -17,3 +17,13 @@ export default function RecipePreview({ meal }: RecipePreviewProps) {
         </div>
     )
 }
+
+/*
+Recipe RecipePreview takes a meal
+Click View Recipe, take that meal, set it to the meal in app, which then gets passed down to recipe, which should re-render.
+Hopefully the user gets sent to the top of the page again (can code this.)
+
+What do I want?
+User clicks View Recipe -> Is sent to the top of the Recipe page with the new recipe now displayed.
+
+*/
