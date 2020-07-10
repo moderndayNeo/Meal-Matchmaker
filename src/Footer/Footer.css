@@ -4,13 +4,32 @@
     left: 0;
     right: 0;
     bottom: 0;
-    height: 150px;
+    height: 250px;
     display: none;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.Footer .text-container {
+    text-align: center;
+    width: 30%;
+    border: 1px solid white;
+    height: 80%;
+}
+
+.Footer .title {
+    font-size: 28px;
+    line-height: 30px;
+}
+
+.Footer .copyright {
+    font-size: 16px;
+    line-height: 16px;
 }
 
 @media (min-width: 800px) {
     .Footer {
-        display: block;
+        display: flex;
     }
 }
-
