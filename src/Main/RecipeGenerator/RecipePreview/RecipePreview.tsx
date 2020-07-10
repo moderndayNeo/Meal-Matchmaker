@@ -12,9 +12,14 @@ export default function RecipePreview({
     meal,
     setRandomRecipe,
 }: RecipePreviewProps) {
+    
+    const shorten = (str: string) => {
+        return str.length < 50 ? str : str.slice(0, 50).trim() + '...'
+    }
+
     return (
         <div className="RecipePreview">
-            <h1 className="title">{meal.strMeal}</h1>
+            <h1 className="title">{shorten(meal.strMeal)}</h1>
             <h4 className="category">{meal.strCategory}</h4>
             <img src={meal.strMealThumb} alt={meal.idMeal} />
             <ViewRecipeButton setRandomRecipe={setRandomRecipe} meal={meal} />

@@ -19,17 +19,13 @@ export default function Instructions({ meal }: InstructionsProps) {
                         <p className="instruction">{instruction}</p>
                     </div>
                 ))} */}
-            {
-                meal.strInstructions
-                    .split('\n')
-                    .map((instruction: string, index: number) => (
-                        <div key={index}>
-                            <p>
-                                {instruction}
-                            </p>
-                        </div>
-                    ))
-            }
+            {meal.strInstructions
+                .split('\n')
+                .map((instruction: string, index: number) => (
+                    <div key={index}>
+                        <p>{instruction}</p>
+                    </div>
+                ))}
         </section>
     )
 }
