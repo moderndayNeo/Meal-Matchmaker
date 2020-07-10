@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect} from 'react'
 import './RecipePreview.css'
 import ViewRecipeButton from './ViewRecipeButton/ViewRecipeButton'
 import { IMeal } from '../../../IMeal'

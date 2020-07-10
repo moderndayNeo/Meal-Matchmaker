@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Recipe.css'
 import { IMeal } from '../../IMeal'
 import RecipeComponentsMobile from './RecipeComponentsMobile/RecipeComponentsMobile'
@@ -10,6 +10,8 @@ interface RecipeProps {
 }
 
 export default function Recipe({ meal, setRandomRecipe }: RecipeProps) {
+  
+
     return (
         <div className="Recipe">
             <RecipeComponentsMobile
