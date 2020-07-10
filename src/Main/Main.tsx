@@ -11,9 +11,10 @@ import { IMeal } from '../IMeal'
 interface MainProps {
     onClick: () => void
     meal: IMeal
+    setRandomRecipe: (meal: IMeal) => void
 }
 
-export default function Main({ onClick, meal }: MainProps) {
+export default function Main({ onClick, meal, setRandomRecipe }: MainProps) {
     return (
         <div className="Main">
             <Header onClick={onClick} />
@@ -40,7 +41,13 @@ export default function Main({ onClick, meal }: MainProps) {
                 <Route
                     exact
                     path="/recipe"
-                    render={(props) => <Recipe {...props} meal={meal} setRandomRecipe={setRandomRecipe} />}
+                    render={(props) => (
+                        <Recipe
+                            {...props}
+                            meal={meal}
+                            setRandomRecipe={setRandomRecipe}
+                        />
+                    )}
                 />
                 <Route exact path="/contact" component={ContactPage} />
                 {/* <Route path="/:notfound" component={WelcomePage} /> */}

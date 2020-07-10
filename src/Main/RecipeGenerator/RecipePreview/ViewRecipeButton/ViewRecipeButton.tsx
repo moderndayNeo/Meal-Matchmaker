@@ -2,11 +2,23 @@ import React from 'react'
 import './ViewRecipeButton.css'
 import { Link } from 'react-router-dom'
 import { IoMdArrowRoundForward } from 'react-icons/io'
-import { meal } from '../../../../media/response-example'
+import { IMeal } from '../../../../IMeal'
 
-export default function ViewRecipeButton() {
+interface ViewRecipeButtonProps {
+    setRandomRecipe?: (meal: IMeal) => void
+    meal: IMeal
+}
+
+export default function ViewRecipeButton({
+    setRandomRecipe,
+    meal,
+}: ViewRecipeButtonProps) {
     return (
-        <Link to="/recipe" className="ViewRecipeButton" onClick={setRandomRecipe(meal)}>
+        <Link
+            to="/recipe"
+            className="ViewRecipeButton"
+            onClick={setRandomRecipe ? () => setRandomRecipe(meal) : undefined}
+        >
             <p>View Recipe</p>
             <IoMdArrowRoundForward className="right-arrow" />
         </Link>

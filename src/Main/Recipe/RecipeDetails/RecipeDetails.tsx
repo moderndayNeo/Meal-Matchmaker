@@ -8,9 +8,13 @@ import RelatedRecipes from '../RelatedRecipes/RelatedRecipes'
 
 type RecipeDetailsProps = {
     meal: IMeal
+    setRandomRecipe: (meal: IMeal) => void
 }
 
-export default function RecipeDetails({ meal }: RecipeDetailsProps) {
+export default function RecipeDetails({
+    meal,
+    setRandomRecipe,
+}: RecipeDetailsProps) {
     return (
         <div className="RecipeDetails">
             <DetailsHeader meal={meal} />

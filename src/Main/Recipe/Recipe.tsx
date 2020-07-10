@@ -6,12 +6,16 @@ import RecipeComponentsDesktop from './RecipeComponentsDesktop/RecipeComponentsD
 
 interface RecipeProps {
     meal: IMeal
+    setRandomRecipe: (meal: IMeal) => void
 }
 
-export default function Recipe({ meal }: RecipeProps) {
+export default function Recipe({ meal, setRandomRecipe }: RecipeProps) {
     return (
         <div className="Recipe">
-            <RecipeComponentsMobile meal={meal} setRandomRecipe={setRandomRecipe} />
+            <RecipeComponentsMobile
+                meal={meal}
+                setRandomRecipe={setRandomRecipe}
+            />
             <RecipeComponentsDesktop meal={meal} />
         </div>
     )

@@ -7,10 +7,12 @@ import { useHistory } from 'react-router-dom'
 
 interface RecipeComponentsMobileProps {
     meal: IMeal
+    setRandomRecipe: (meal: IMeal) => void
 }
 
 export default function RecipeComponentsMobile({
     meal,
+    setRandomRecipe,
 }: RecipeComponentsMobileProps) {
     const history = useHistory()
 
