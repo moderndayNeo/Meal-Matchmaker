@@ -14,7 +14,8 @@
 .Footer .text-container {
     text-align: center;
     width: 50%;
-    border: 1px solid white;
+    margin: 25px;
+    /* border: 1px solid white; */
     height: 80%;
 }
 

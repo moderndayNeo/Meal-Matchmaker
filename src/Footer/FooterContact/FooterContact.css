@@ -1,13 +1,13 @@
 .FooterContact {
-     border: 1px solid yellow;
-     /* width: 100%; */
+     /* border: 1px solid yellow; */
+     width: 100%;
 }
 
 .FooterContact .links {
     padding: 20px;
     width: 50%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: auto;
 }
 
