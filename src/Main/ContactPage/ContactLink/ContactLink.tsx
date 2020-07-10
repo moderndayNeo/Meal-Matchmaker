@@ -5,18 +5,17 @@ interface ContactLinkProps {
     href: string
     src: string
     alt: string
-    className: string
 }
 
-export default function ContactLink({
-    href,
-    src,
-    alt,
-    className,
-}: ContactLinkProps) {
+export default function ContactLink({ href, src, alt }: ContactLinkProps) {
     return (
-        <a href={href} target="_blank" rel="noopener noreferrer">
-            <img src={src} alt={alt} className={className} />
+        <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ContactLink"
+        >
+            <img src={src} alt={alt} />
         </a>
     )
 }

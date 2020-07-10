@@ -34,7 +34,6 @@ export default function TeamMember({
                         href={facebook}
                         src={FacebookIcon}
                         alt="facebook icon"
-                        className="facebook-icon"
                     />
                 )}
                 {github && (
@@ -42,7 +41,6 @@ export default function TeamMember({
                         href={github}
                         src={GithubIcon}
                         alt="github icon"
-                        className="github-icon"
                     />
                 )}
                 {linkedin && (
@@ -50,7 +48,6 @@ export default function TeamMember({
                         href={linkedin}
                         src={LinkedInIcon}
                         alt="linkedin icon"
-                        className="linkedin-icon"
                     />
                 )}
                 <EmailButton mailto={mailto} name={name}  />

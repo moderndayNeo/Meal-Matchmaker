@@ -1,9 +1,9 @@
 import React from 'react'
 import './FooterContact.css'
-import FooterLink from './FooterLink/FooterLink'
 import GithubIcon from '../../media/Icons_Github_white.svg'
 import LinkedInIcon from '../../media/Icons_Linkedin_white.svg'
 import FacebookIcon from '../../media/Icons_Facebook_white.svg'
+import ContactLink from '../../Main/ContactPage/ContactLink/ContactLink'
 
 interface FooterContactProps {
     github: string
@@ -21,33 +21,27 @@ export default function FooterContact({
     return (
         <div className="FooterContact">
             <a className="email" href={`mailto:${mailto}`}>
-                <h3>
-
-                {mailto}
-                </h3>
+                <h3>{mailto}</h3>
             </a>
             <div className="links">
                 {facebook && (
-                    <FooterLink
+                    <ContactLink
                         src={FacebookIcon}
                         alt="facebook icon"
-                        className="facebook-icon"
                         href={facebook}
                     />
                 )}
                 {github && (
-                    <FooterLink
+                    <ContactLink
                         src={GithubIcon}
                         alt="github icon"
-                        className="github-icon"
                         href={github}
                     />
                 )}
                 {linkedin && (
-                    <FooterLink
+                    <ContactLink
                         src={LinkedInIcon}
                         alt="linkedin icon"
-                        className="linkedin-icon"
                         href={linkedin}
                     />
                 )}
