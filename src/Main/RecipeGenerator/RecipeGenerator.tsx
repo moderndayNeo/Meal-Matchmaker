@@ -10,12 +10,14 @@ interface RecipeGeneratorProps {
     meal: IMeal
     onClick: () => void
     loading: boolean
+    setLoading: (arg0: boolean) => void
 }
 
 export default function RecipeGenerator({
     meal,
     onClick,
     loading,
+    setLoading
 }: RecipeGeneratorProps) {
     return (
         <div className="RecipeGenerator">
@@ -24,7 +26,7 @@ export default function RecipeGenerator({
                 <Loader />
             ) : (
                 <div>
-                    <RecipePreview meal={meal} />
+                    <RecipePreview meal={meal} setLoading={setLoading} />
                     <NewRecipeButton onClick={onClick} />
                 </div>
             )}

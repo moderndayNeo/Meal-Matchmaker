@@ -35,7 +35,7 @@ function App() {
                     meal={randomRecipe}
                     setRandomRecipe={setRandomRecipe}
                     loading={loading}
-                    // setLoading={setLoading}
+                    setLoading={setLoading}
                 />
                 <Footer />
             </div>
