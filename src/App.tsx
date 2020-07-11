@@ -22,7 +22,7 @@ function App() {
         getRandomRecipe()
         setLoading(true)
         setTimeout(() => {
-            setLoading(true)
+            setLoading(false)
         }, 1000);
     }
 
@@ -35,6 +35,7 @@ function App() {
                     meal={randomRecipe}
                     setRandomRecipe={setRandomRecipe}
                     loading={loading}
+                    // setLoading={setLoading}
                 />
                 <Footer />
             </div>

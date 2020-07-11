@@ -20,7 +20,11 @@ export default function RecipePreview({
         <div className="RecipePreview">
             <h1 className="title">{shorten(meal.strMeal)}</h1>
             <h4 className="category">{meal.strCategory}</h4>
-            <img src={meal.strMealThumb} alt={meal.idMeal} />
+            <img
+                // onLoad={setLoading(false)}
+                src={meal.strMealThumb}
+                alt={meal.idMeal}
+            />
             <ViewRecipeButton setRandomRecipe={setRandomRecipe} meal={meal} />
         </div>
     )
