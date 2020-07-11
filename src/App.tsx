@@ -8,6 +8,7 @@ import Footer from './Footer/Footer'
 
 function App() {
     const [randomRecipe, setRandomRecipe] = useState<IMeal>(meal)
+    const [loading, setLoading] = useState<boolean>(true)
 
     async function getRandomRecipe(): Promise<void> {
         const response = await fetch(
@@ -21,7 +22,7 @@ function App() {
         <BrowserRouter>
             <div className="App">
                 <Main onClick={() => getRandomRecipe()} meal={randomRecipe} 
-                setRandomRecipe={setRandomRecipe} />
+                setRandomRecipe={setRandomRecipe} loading={loading} />
                 <Footer />
             </div>
         </BrowserRouter>
