@@ -22,7 +22,7 @@ function App() {
         getRandomRecipe()
         setLoading(true)
         setTimeout(() => {
-            setLoading(false)
+            setLoading(true)
         }, 1000);
     }
 

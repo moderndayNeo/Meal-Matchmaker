@@ -1,5 +1,17 @@
 .Loader {
     border: 1px solid var(--primary-color-dark);
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
+}
+
+.Loader .loading-icon {
+    --loading-icon-dimensions: 80px;
+    width: var(--loading-icon-dimensions);
+    height: var(--loading-icon-dimensions);
+    border-radius: 50%;
+    border: 10px solid var(--primary-color-accent);
+    border-right-color: rgba(104, 18, 243, 0.5);
 }
