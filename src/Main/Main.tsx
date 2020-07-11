@@ -52,7 +52,7 @@ export default function Main({ onClick, meal, setRandomRecipe, loading }: MainPr
                     )}
                 />
                 <Route exact path="/contact" component={ContactPage} />
-                {/* <Route path="/:notfound" component={WelcomePage} /> */}
+                <Route path="/:notfound" component={WelcomePage} />
             </Switch>
         </div>
     )

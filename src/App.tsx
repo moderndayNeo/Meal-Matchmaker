@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './App.css'
 import Main from './Main/Main'
-import { BrowserRouter} from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 import { meal } from '../src/media/response-example'
 import { IMeal } from './IMeal'
 import Footer from './Footer/Footer'
@@ -26,8 +26,12 @@ function App() {
     return (
         <BrowserRouter>
             <div className="App">
-                <Main onClick={handleClick} meal={randomRecipe} 
-                setRandomRecipe={setRandomRecipe} loading={loading} />
+                <Main
+                    onClick={handleClick}
+                    meal={randomRecipe}
+                    setRandomRecipe={setRandomRecipe}
+                    loading={loading}
+                />
                 <Footer />
             </div>
         </BrowserRouter>
