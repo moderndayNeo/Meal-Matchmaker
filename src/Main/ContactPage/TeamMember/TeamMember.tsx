@@ -11,7 +11,6 @@ interface TeamMemberProps {
     github: string
     facebook: string
     linkedin: string
-    location: string
     mailto: string
 }
 
@@ -20,14 +19,11 @@ export default function TeamMember({
     github,
     facebook,
     linkedin,
-    location,
-    mailto
+    mailto,
 }: TeamMemberProps) {
     return (
         <div className="TeamMember">
             <h3 className="name">{name}</h3>
-            <h4 className="location">{location}</h4>
-
             <div className="links">
                 {facebook && (
                     <ContactLink
@@ -50,8 +46,8 @@ export default function TeamMember({
                         alt="linkedin icon"
                     />
                 )}
-                <EmailButton mailto={mailto} name={name}  />
             </div>
+            <EmailButton mailto={mailto} name={name} />
         </div>
     )
 }

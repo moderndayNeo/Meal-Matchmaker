@@ -1,4 +1,4 @@
-import React, { useEffect} from 'react'
+import React from 'react'
 import './RecipePreview.css'
 import ViewRecipeButton from './ViewRecipeButton/ViewRecipeButton'
 import { IMeal } from '../../../IMeal'
@@ -12,7 +12,6 @@ export default function RecipePreview({
     meal,
     setRandomRecipe,
 }: RecipePreviewProps) {
-    
     const shorten = (str: string) => {
         return str.length < 30 ? str : str.slice(0, 30).trim() + '...'
     }

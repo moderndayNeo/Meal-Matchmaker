@@ -9,7 +9,7 @@ interface EmailButtonProps {
 export default function EmailButton({ mailto, name }: EmailButtonProps) {
     return (
         <a className="EmailButton" href={`mailto:${mailto}`}>
-            Email {name.split(' ')[0]}
+            Send An Email To {name.split(' ')[0]}
         </a>
     )
 }

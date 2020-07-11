@@ -30,8 +30,8 @@ export default function ContactPage() {
                         Meal Matchmaker is a random recipe generator so you
                         never run out of ideas in the kitchen. After discussing
                         ideas on a UI Forum, Putra and Adam teamed up to build
-                        the app; overcoming timezones and lockdown. Feel free
-                        to contact us for work or to discuss UX and web-mobile
+                        the app; overcoming timezones and lockdown. Feel free to
+                        contact us for work or to discuss UX and web-mobile
                         development.
                     </p>
                     <TeamMember
@@ -39,15 +39,13 @@ export default function ContactPage() {
                         github=""
                         facebook="https://www.facebook.com/putra.narassa"
                         linkedin=""
-                        location="London, England"
-                        mailto="adamzdrzalka@outlook.com" // Putra's email
-                        />
+                        mailto="putraanrss20@gmail.com"
+                    />
                     <TeamMember
                         name="Adam Zdrzalka (Web Developer)"
                         github="https://github.com/moderndayNeo?tab=repositories"
                         facebook=""
                         linkedin="https://www.linkedin.com/in/adamzdrzalka/"
-                        location="London, England"
                         mailto="adamzdrzalka@outlook.com"
                     />
 
