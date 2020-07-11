@@ -21,7 +21,11 @@ function App() {
     const handleClick = (): void => {
         getRandomRecipe()
         setLoading(true)
+        setTimeout(() => {
+            setLoading(false)
+        }, 1000);
     }
+
 
     return (
         <BrowserRouter>
