@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import './RecipePreview.css'
 import ViewRecipeButton from './ViewRecipeButton/ViewRecipeButton'
 import { IMeal } from '../../../IMeal'
@@ -17,16 +17,11 @@ export default function RecipePreview({
     const shorten = (str: string) => {
         return str.length < 30 ? str : str.slice(0, 30).trim() + '...'
     }
-    // const [imageLoaded, setImageLoaded] = useState(false)
-
-    // useEffect(() => {
-    //     setLoading(false)
-    // }, [imageLoaded])
 
     const handleImageLoaded = () => {
-        // setLoading && setLoading(false)
         console.log('Image loaded')
     }
+
 
     return (
         <div className="RecipePreview">
