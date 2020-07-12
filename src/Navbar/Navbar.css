@@ -6,6 +6,7 @@
     display: flex;
     justify-content: space-between;
     padding: 16px 0;
+    z-index: 3;
 }
 
 .Navbar .title {

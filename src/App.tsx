@@ -5,10 +5,11 @@ import { BrowserRouter } from 'react-router-dom'
 import { meal } from '../src/media/response-example'
 import { IMeal } from './IMeal'
 import Footer from './Footer/Footer'
+import Loader from './Main/RecipeGenerator/Loader/Loader'
 
 function App() {
     const [randomRecipe, setRandomRecipe] = useState<IMeal>(meal)
-    const [loading, setLoading] = useState<boolean>(true)
+    const [loading, setLoading] = useState<boolean>(false)
 
     async function getRandomRecipe(): Promise<void> {
         const response = await fetch(
@@ -29,6 +30,10 @@ function App() {
     return (
         <BrowserRouter>
             <div className="App">
+                {
+                    loading && 
+                    <Loader loading={loading} />
+                }
                 <Main
                     onClick={handleClick}
                     meal={randomRecipe}

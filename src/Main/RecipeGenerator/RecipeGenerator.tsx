@@ -4,7 +4,6 @@ import RecipePreview from './RecipePreview/RecipePreview'
 import NewRecipeButton from './NewRecipeButton/NewRecipeButton'
 import Navbar from '../../Navbar/Navbar'
 import { IMeal } from '../../IMeal'
-import Loader from './Loader/Loader'
 
 interface RecipeGeneratorProps {
     meal: IMeal
@@ -17,19 +16,13 @@ export default function RecipeGenerator({
     meal,
     onClick,
     loading,
-    setLoading
+    setLoading,
 }: RecipeGeneratorProps) {
     return (
         <div className="RecipeGenerator">
             <Navbar />
-            {loading ? (
-                <Loader />
-            ) : (
-                <div>
-                    <RecipePreview meal={meal} />
-                    <NewRecipeButton onClick={onClick} />
-                </div>
-            )}
+            <RecipePreview meal={meal} />
+            <NewRecipeButton onClick={onClick} />
         </div>
     )
 }

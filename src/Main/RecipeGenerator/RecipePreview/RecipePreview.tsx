@@ -6,7 +6,7 @@ import { IMeal } from '../../../IMeal'
 type RecipePreviewProps = {
     meal: IMeal
     setRandomRecipe?: (meal: IMeal) => void
-    setLoading?: (arg0: boolean) => void
+    // setLoading?: (arg0: boolean) => void
 }
 
 export default function RecipePreview({
