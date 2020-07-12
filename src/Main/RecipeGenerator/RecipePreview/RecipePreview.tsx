@@ -12,23 +12,16 @@ type RecipePreviewProps = {
 export default function RecipePreview({
     meal,
     setRandomRecipe,
-    setLoading
 }: RecipePreviewProps) {
     const shorten = (str: string) => {
         return str.length < 30 ? str : str.slice(0, 30).trim() + '...'
     }
-
-    const handleImageLoaded = () => {
-        console.log('Image loaded')
-    }
-
 
     return (
         <div className="RecipePreview">
             <h1 className="title">{shorten(meal.strMeal)}</h1>
             <h4 className="category">{meal.strCategory}</h4>
             <img
-                onLoad={handleImageLoaded}
                 src={meal.strMealThumb}
                 alt={meal.idMeal}
             />

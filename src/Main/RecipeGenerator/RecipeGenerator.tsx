@@ -26,7 +26,7 @@ export default function RecipeGenerator({
                 <Loader />
             ) : (
                 <div>
-                    <RecipePreview meal={meal} setLoading={setLoading} />
+                    <RecipePreview meal={meal} />
                     <NewRecipeButton onClick={onClick} />
                 </div>
             )}

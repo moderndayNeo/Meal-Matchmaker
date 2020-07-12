@@ -7,19 +7,6 @@
     background: var(--neutral-color-light);
     box-shadow: 1px 1px 4px rgba(44, 5, 106, 0.1);
     border-radius: 24px;
-    animation: appear 0.8s 1 ease;
-}
-
-@keyframes appear {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
 }
 
 .RecipePreview img {

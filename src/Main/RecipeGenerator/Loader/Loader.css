@@ -1,8 +1,15 @@
 .Loader {
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.Loader .text {
+    text-align: center;
+    width: 70%;
+    margin: 20px 0;
 }
 
 .Loader .loading-icon {
@@ -11,8 +18,8 @@
     height: var(--loading-icon-dimensions);
     border-radius: 50%;
     border: 10px solid var(--primary-color-accent);
-    border-right-color: rgba(104, 18, 243, 0.5);
-    animation: spin 300ms infinite linear;
+    border-bottom-color: rgba(104, 18, 243, 0.5);
+    animation: spin 2s infinite linear;
 }
 
 @keyframes spin {
