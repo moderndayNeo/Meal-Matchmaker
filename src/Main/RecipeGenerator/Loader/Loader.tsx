@@ -10,9 +10,6 @@ const messages: string[] = [
     `Tonight I'm going to eat...`,
     `Chef Ramsay has chosen...`,
     `The results are in!`,
-    `I WILL NEVER RUN OUT OF RECIPES
-    I WILL NEVER RUN OUT OF RECIPES
-    I WILL NEVER RUN OUT OF RECIPES`
 ]
 
 export default function Loader() {
