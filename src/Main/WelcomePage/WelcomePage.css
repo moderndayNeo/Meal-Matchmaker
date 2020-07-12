@@ -1,8 +1,13 @@
 .WelcomePage {
     position: relative;
     margin: 0 20px;
-    padding-top: 5rem;
     height: 100vh;
+}
+
+.WelcomePage .text-and-image {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
 }
 
 .WelcomePage .title {

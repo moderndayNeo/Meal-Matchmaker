@@ -10,12 +10,16 @@ interface WelcomePageProps {
 export default function WelcomePage({ onClick }: WelcomePageProps) {
     return (
         <div className="WelcomePage">
-            <div className="text-container">
-                <h1 className="title">Meal Matchmaker</h1>
-                <p className="subtext">Inspiration at the click of a button</p>
-                <WelcomePageButton onClick={onClick} />
+            <div className="text-and-image">
+                <div className="text-container">
+                    <h1 className="title">Meal Matchmaker</h1>
+                    <p className="subtext">
+                        Inspiration at the click of a button
+                    </p>
+                </div>
+                <img src={coffee} alt="man hugging coffee cup" />
             </div>
-            <img src={coffee} alt="man hugging coffee cup" />
+            <WelcomePageButton onClick={onClick} />
         </div>
     )
 }
