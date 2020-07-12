@@ -42,7 +42,7 @@ export default function RelatedRecipes({
 
     return (
         <section className="RelatedRecipes">
-            <h3 className="title">Related recipes</h3>
+            <h3 className="section-title">Related recipes</h3>
             <div className="slider-container">
                 {relatedMealsList.map((meal) => (
                     <RecipePreview

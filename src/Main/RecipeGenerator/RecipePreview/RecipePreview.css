@@ -32,8 +32,8 @@
     }
 }
 
-/* @media (max-height: 700px) {
+@media (max-height: 700px) {
     .RecipePreview {
         top: 60px;
     }
-} */
+}

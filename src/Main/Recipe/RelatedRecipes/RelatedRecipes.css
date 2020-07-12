@@ -1,16 +1,22 @@
 .RelatedRecipes {
     padding-bottom: 30px;
+    overflow: scroll;
 }
 
 .RelatedRecipes .slider-container {
     display: flex;
-    overflow: scroll;
+    width: 800px;
+}
+
+.RelatedRecipes .section-title {
+    position: absolute;
 }
 
 .RelatedRecipes .RecipePreview {
     background: white;
     margin-right: 15px;
     position: relative;
+    margin-top: 70px;
     top: 0;
     padding: 24px 16px;
 }
