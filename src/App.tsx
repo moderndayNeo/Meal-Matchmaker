@@ -24,16 +24,13 @@ function App() {
         setLoading(true)
         setTimeout(() => {
             setLoading(false)
-        }, 400)
+        }, 1000)
     }
 
     return (
         <BrowserRouter>
             <div className="App">
-                {
-                    loading && 
-                    <Loader loading={loading} />
-                }
+                {loading && <Loader />}
                 <Main
                     onClick={handleClick}
                     meal={randomRecipe}
@@ -47,23 +44,3 @@ function App() {
     )
 }
 export default App
-
-/*
-User clicks button => setLoading true
-Loading true => Loader is rendered, loader spins for 400ms
-After 400ms, a purple expanding div appears, covers the whole screen (200ms)
-Then Recipe appears (Loader can fade out (opacity), then display none once faded out)
-
-Loader is an overlay over the preview, within generator
-
-So Loader is not conditionally rendered. It is always present
-and controlled by opacity.
-Loader container both the loading icon and the purple colour
-
-
-For recipe preview, the components-appearing effect can be brought about on 
-every render.
-Simply apply a 'fade-in' animation to the elements, top to bottom, with incrementing
-animation delay times (of 100ms each)
-
- */

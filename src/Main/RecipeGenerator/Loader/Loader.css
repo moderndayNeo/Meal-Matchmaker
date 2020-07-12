@@ -9,9 +9,6 @@
     background-color: white;
 }
 
-.Loader.loading {
-}
-
 .Loader .text {
     text-align: center;
     width: 70%;
@@ -25,7 +22,22 @@
     border-radius: 50%;
     border: 10px solid var(--primary-color-accent);
     border-bottom-color: rgba(104, 18, 243, 0.5);
-    animation: spin 2s infinite linear;
+    --spin-duration: 2s;
+    --disappearing-duration: 500ms;
+    --disappearing-timing-function: cubic-bezier(0.15, -1.03, 1, 1);
+    --disappearing-delay: 400ms;
+    animation: spin var(--spin-duration) linear infinite,
+        disappear var(--disappearing-duration)
+            var(--disappearing-timing-function) var(--disappearing-delay);
+}
+
+@keyframes disappear {
+    from {
+        transform: scale(1, 1);
+    }
+    to {
+        transform: scale(0, 0);
+    }
 }
 
 @keyframes spin {
@@ -34,5 +46,28 @@
     }
     100% {
         transform: rotateZ(360deg);
+    }
+}
+
+.Loader .expanding-overlay {
+    position: absolute;
+    bottom: -100px;
+    --overlay-height: 100px;
+    width: 100px;
+    height: var(--overlay-height);
+    border-radius: 50%;
+    background-color: var(--primary-color-accent);
+    animation-name: expand;
+    animation-duration: 500ms;
+    animation-delay: 500ms;
+    animation-timing-function: ease-in;
+}
+
+@keyframes expand {
+    from {
+        transform: scale(1, 1);
+    }
+    to {
+        transform: scale(20, 20);
     }
 }
