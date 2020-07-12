@@ -27,6 +27,7 @@
     height: var(--info-icon-dimensions);
     width: var(--info-icon-dimensions);
     align-self: center;
+    border-radius: 50%;
 }
 
 @media (min-width: 800px) {
