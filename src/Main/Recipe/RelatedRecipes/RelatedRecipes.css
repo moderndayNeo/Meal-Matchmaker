@@ -4,8 +4,13 @@
 }
 
 .RelatedRecipes .slider-container {
-    display: flex;
-    width: 800px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: var(--grid-gap);
+    --preview-width: 264px;
+    --grid-gap: 15px;
+    /* width: 822px; */
+    width: calc((3 * var(--preview-width)) + (2 * var(--grid-gap)));
 }
 
 .RelatedRecipes .section-title {
@@ -14,7 +19,6 @@
 
 .RelatedRecipes .RecipePreview {
     background: white;
-    margin-right: 15px;
     position: relative;
     margin-top: 70px;
     top: 0;

@@ -9,6 +9,9 @@
     height: 50px;
     width: 150px;
     margin: 15px 10px 0px 10px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: medium;
 }
 
 .ViewRecipeButton .right-arrow {
