@@ -12,6 +12,15 @@
     margin-right: 15px;
     position: relative;
     top: 0;
+    padding: 24px 16px;
+}
+
+.RelatedRecipes .RecipePreview .text {
+    margin: 0;
+}
+
+.RelatedRecipes .RecipePreview img {
+    border-radius: 12px;
 }
 
 .RelatedRecipes .RecipePreview .title {
