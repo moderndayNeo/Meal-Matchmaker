@@ -1,9 +1,13 @@
 .Header {
     display: none;
-    height: 96px;
+    /* z-index: 3; */
+    background-color: white;
+    height: var(--header-height);
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    width: 100%;
+    /* padding: 0 var(--desktop-side-padding); */
 }
 
 .Header .NewRecipeButton {

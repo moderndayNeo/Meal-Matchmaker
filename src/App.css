@@ -23,6 +23,7 @@ html {
     --primary-color-accent: #6610f2;
     --neutral-color-light: #FFF1EC;
     --secondary-color-warning: #e46a0c;
+    --header-height: 96px;
     color: var(--primary-color-dark);
     position: relative;
 }
