@@ -35,7 +35,6 @@ function App() {
                     onClick={handleClick}
                     meal={randomRecipe}
                     setRandomRecipe={setRandomRecipe}
-                    loading={loading}
                     setLoading={setLoading}
                 />
                 <Footer />

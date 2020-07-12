@@ -8,15 +8,11 @@ import { IMeal } from '../../IMeal'
 interface RecipeGeneratorProps {
     meal: IMeal
     onClick: () => void
-    loading: boolean
-    setLoading: (arg0: boolean) => void
 }
 
 export default function RecipeGenerator({
     meal,
     onClick,
-    loading,
-    setLoading,
 }: RecipeGeneratorProps) {
     return (
         <div className="RecipeGenerator">

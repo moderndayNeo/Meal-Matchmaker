@@ -12,11 +12,10 @@ interface MainProps {
     onClick: () => void
     meal: IMeal
     setRandomRecipe: (meal: IMeal) => void
-    loading: boolean
     setLoading: (arg0: boolean) => void
 }
 
-export default function Main({ onClick, meal, setRandomRecipe, loading, setLoading }: MainProps) {
+export default function Main({ onClick, meal, setRandomRecipe }: MainProps) {
     return (
         <div className="Main">
             <Header onClick={onClick} />
@@ -37,8 +36,6 @@ export default function Main({ onClick, meal, setRandomRecipe, loading, setLoadi
                             {...props}
                             meal={meal}
                             onClick={onClick}
-                            loading={loading}
-                            setLoading={setLoading}
                         />
                     )}
                 />
