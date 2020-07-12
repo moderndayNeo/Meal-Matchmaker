@@ -9,7 +9,7 @@ import Loader from './Main/RecipeGenerator/Loader/Loader'
 
 function App() {
     const [randomRecipe, setRandomRecipe] = useState<IMeal>(meal)
-    const [loading, setLoading] = useState<boolean>(true)
+    const [loading, setLoading] = useState<boolean>(false)
 
     async function getRandomRecipe(): Promise<void> {
         const response = await fetch(
