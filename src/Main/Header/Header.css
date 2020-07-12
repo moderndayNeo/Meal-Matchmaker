@@ -1,13 +1,13 @@
 .Header {
     display: none;
-    /* z-index: 3; */
     background-color: white;
     height: var(--header-height);
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    width: 100%;
-    /* padding: 0 var(--desktop-side-padding); */
+    left: 0;
+    right: 0;
+    padding: 0 var(--desktop-side-padding);
 }
 
 .Header .NewRecipeButton {
@@ -23,7 +23,7 @@
 .Header nav {
     justify-content: space-between;
     display: flex;
-    width: 35%;
+    /* width: 35%; */
     align-items: center;
 }
 
