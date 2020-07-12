@@ -10,11 +10,15 @@ const messages: string[] = [
     `Tonight I'm going to eat...`,
     `Chef Ramsay has chosen...`,
     `The results are in!`,
+    `Chop, chop`,
+    `Ready, Steady, Cook!`,
+    `Cooking inspiration in 3, 2, 1...`
 ]
 
 export default function Loader() {
     const [message] = useState(
         messages[Math.floor(Math.random() * messages.length)]
+        // messages[10]
     )
 
     return (
