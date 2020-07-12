@@ -4,6 +4,8 @@
     left: 0;
     right: 0;
     text-decoration: none;
+    font-weight: bold;
+    line-height: 18px;
 }
 
 @media (min-width: 800px) {

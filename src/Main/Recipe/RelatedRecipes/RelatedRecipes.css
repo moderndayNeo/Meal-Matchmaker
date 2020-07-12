@@ -14,6 +14,10 @@
     top: 0;
 }
 
+.RelatedRecipes .RecipePreview .title {
+    font-size: 21px;
+}
+
 .RelatedRecipes .ViewRecipeButton .right-arrow {
     background: white;
 }
