@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import './Loader.css'
 
 const messages: string[] = [
@@ -12,7 +12,7 @@ const messages: string[] = [
     `The results are in!`,
     `Chop, chop`,
     `Ready, Steady, Cook!`,
-    `Cooking inspiration in 3, 2, 1...`
+    `Cooking inspiration in 3, 2, 1...`,
 ]
 
 export default function Loader() {
@@ -20,10 +20,6 @@ export default function Loader() {
         messages[Math.floor(Math.random() * messages.length)]
         // messages[10]
     )
-
-    useEffect(() => {
-        console.log('Loader rendered')
-    }, [])
 
     return (
         <div className="Loader">

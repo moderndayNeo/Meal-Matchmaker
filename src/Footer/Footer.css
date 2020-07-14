@@ -4,7 +4,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    /* height: 250px; */
+    height: 312px;
     display: none;
     color: white;
     justify-content: center;
@@ -13,25 +13,22 @@
 
 .Footer .text-container {
     text-align: center;
-    width: 50%;
-    margin: 25px;
-    /* border: 1px solid white; */
-    height: 80%;
 }
 
 .Footer .title {
-    font-size: 28px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 28px;
 }
 
 .Footer .developers {
-    display: flex;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
 }
 
 .Footer .copyright {
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 18px;
 }
 
 @media (min-width: 800px) {

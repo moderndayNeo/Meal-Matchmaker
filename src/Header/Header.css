@@ -1,13 +1,17 @@
 .Header {
+    /* position: relative; */
     display: none;
     background-color: white;
     height: var(--header-height);
+    /* background-color: teal; */
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    left: 0;
-    right: 0;
-    padding: 0 var(--desktop-side-padding);
+    /* position: absolute; */
+    /* left: 0; */
+    left: 50px;
+    margin-left: 20px;
+    /* right: 0; */
+    /* padding: 0 var(--desktop-side-gutter); */
 }
 
 .Header .NewRecipeButton {
@@ -42,6 +46,6 @@
 
 @media (min-width: 800px) {
     .Header {
-        display: flex;
+        /* display: flex; */
     }
 }

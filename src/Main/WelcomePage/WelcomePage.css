@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* background-color: red; */
 }
 
 .WelcomePage .text-and-image {
@@ -37,11 +38,16 @@
 
 @media (min-width: 800px) {
     .WelcomePage {
+        padding: 0;
         /* margin: 0; */
         /* display: grid; */
         /* grid-template-columns: 523fr 696fr; */
         /* align-items: center; */
         /* min-height: 0; */
+    }
+
+    .WelcomePage .text-and-image {
+        display: flex;
     }
 
     .WelcomePage .title,

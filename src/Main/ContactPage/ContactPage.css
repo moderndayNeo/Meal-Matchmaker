@@ -1,6 +1,10 @@
 .ContactPage {
 }
 
+.ContactPage .ContactLink {
+    margin-right: 30px;
+}
+
 .ContactPage .contact-nav {
     position: absolute;
     height: 64px;

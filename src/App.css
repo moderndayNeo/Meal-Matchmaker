@@ -19,7 +19,8 @@ body {
     height: 100vh;
     width: 100vw;
     position: relative;
-    --desktop-side-padding: 7.7%;
+    --desktop-side-gutter: 7.7%;
+    --desktop-side-gutter: 32px;
     --mobile-side-padding: 24px;
     --primary-color-dark: #2c056a;
     --primary-color-accent: #6610f2;

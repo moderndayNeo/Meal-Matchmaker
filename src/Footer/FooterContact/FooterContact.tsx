@@ -21,7 +21,7 @@ export default function FooterContact({
     return (
         <div className="FooterContact">
             <a className="email" href={`mailto:${mailto}`}>
-                <h3>{mailto}</h3>
+                <p>{mailto}</p>
             </a>
             <div className="links">
                 {facebook && (
