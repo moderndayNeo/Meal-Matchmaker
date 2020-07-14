@@ -37,7 +37,8 @@
 
 @media (min-width: 800px) {
     .WelcomePage {
-        padding: 0;
+        width: 400px;
+        /* padding: 0; */
         /* margin: 0; */
         /* display: grid; */
         /* grid-template-columns: 523fr 696fr; */

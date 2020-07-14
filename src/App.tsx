@@ -4,9 +4,9 @@ import Main from './Main/Main'
 import { BrowserRouter } from 'react-router-dom'
 import { meal } from '../src/media/response-example'
 import { IMeal } from './IMeal'
-import Footer from './Footer/Footer'
+// import Footer from './Footer/Footer'
 import Loader from './Main/RecipeGenerator/Loader/Loader'
-import Header from './Main/Header/Header'
+import Header from './Header/Header'
 
 function App() {
     const [randomRecipe, setRandomRecipe] = useState<IMeal>(meal)
@@ -39,7 +39,7 @@ function App() {
                         setRandomRecipe={setRandomRecipe}
                         setLoading={setLoading}
                     />
-                    <Footer />
+                    {/* <Footer /> */}
                 </div>
                 {loading && <Loader />}
             </div>

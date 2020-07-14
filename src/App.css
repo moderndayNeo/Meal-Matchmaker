@@ -49,3 +49,9 @@ body {
     border-radius: 24px;
     font-weight: bold;
 }
+
+@media (min-width: 800px) {
+    .App .components-and-footer {
+        /* height: auto; */
+    }
+}

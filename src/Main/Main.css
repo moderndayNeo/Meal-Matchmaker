@@ -8,7 +8,7 @@
 @media (min-width: 800px) {
     .Main {
         /* padding: 0 var(--desktop-side-padding); */
-        margin: 0 var(--desktop-side-gutter);
+        /* margin: 0 var(--desktop-side-gutter); */
     }
 }
 

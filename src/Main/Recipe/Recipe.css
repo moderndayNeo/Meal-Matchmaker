@@ -6,6 +6,9 @@
 
 @media (min-width: 800px) {
     .Recipe {
+        width: 400px;
+        height: 400px;
+        top: 200px;
         /* overflow: scroll; */
     }
 }
