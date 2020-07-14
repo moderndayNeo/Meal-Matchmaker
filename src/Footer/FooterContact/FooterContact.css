@@ -3,7 +3,7 @@
 }
 
 .FooterContact .links {
-    width: 50%;
+    width: 70%;
     display: flex;
     justify-content: space-around;
     margin: auto;
@@ -17,4 +17,5 @@
 .FooterContact .email {
     text-decoration: none;
     color: white;
+    line-height: 24px;
 }

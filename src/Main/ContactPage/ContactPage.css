@@ -51,10 +51,9 @@
 @media (min-width: 800px) {
     .ContactPage {
         width: 500px;
-        height: 400px;
         position: relative;
+        height: 300px;
         margin: auto;
-        margin-top: 150px;
         
     }
 }

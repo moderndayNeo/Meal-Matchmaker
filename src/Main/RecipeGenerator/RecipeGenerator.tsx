@@ -16,9 +16,11 @@ export default function RecipeGenerator({
 }: RecipeGeneratorProps) {
     return (
         <div className="RecipeGenerator">
-            <Navbar />
-            <RecipePreview meal={meal} />
-            <NewRecipeButton onClick={onClick} />
+            <div className="generator-mobile">
+                <Navbar />
+                <RecipePreview meal={meal} />
+                <NewRecipeButton onClick={onClick} />
+            </div>
         </div>
     )
 }

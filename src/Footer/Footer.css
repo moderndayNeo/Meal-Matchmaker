@@ -1,10 +1,10 @@
 .Footer {
     background-color: var(--primary-color-dark);
-    position: absolute;
+    /* position: absolute; */
     left: 0;
     right: 0;
-    bottom: 0;
-    height: 312px;
+    /* bottom: 0; */
+    height: var(--footer-height);
     display: none;
     color: white;
     justify-content: center;
@@ -29,6 +29,7 @@
 .Footer .copyright {
     font-size: 14px;
     line-height: 18px;
+    margin-top: 32px;
 }
 
 @media (min-width: 800px) {

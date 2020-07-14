@@ -1,19 +1,10 @@
 .WelcomePage {
     position: relative;
     height: 100%;
-    /* height: 100vh; */
     padding: 0 var(--mobile-side-padding);
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.WelcomePage .text-and-image {
-    /* position: absolute; */
-    /* margin: 0 var(--mobile-side-padding); */
-    /* width: 100%; */
-    /* transform: translateY(-50%); */
-    /* top: 50%; */
 }
 
 .WelcomePage .title {
@@ -36,15 +27,14 @@
 
 @media (min-width: 800px) {
     .WelcomePage {
-        /* width: 400px; */
         width: 100%;
         padding: 0;
-        /* margin: 0; */
-        /* display: grid; */
         /* grid-template-columns: 523fr 696fr; */
         /* align-items: center; */
         /* min-height: 0; */
     }
+
+
 
     .WelcomePage img {
         max-width: 400px;
@@ -54,14 +44,6 @@
         display: flex;
     }
 
-    .WelcomePage .title,
-    .subtext {
-        /* margin: 5% 0; */
-    }
-
-    .WelcomePage .WelcomePageButton {
-        /* margin: 10% 0; */
-    }
 }
 
 @media (max-height: 700px) {
