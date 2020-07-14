@@ -4,6 +4,7 @@ import RecipePreview from './RecipePreview/RecipePreview'
 import NewRecipeButton from './NewRecipeButton/NewRecipeButton'
 import Navbar from '../../Navbar/Navbar'
 import { IMeal } from '../../IMeal'
+import GeneratorDesktop from './GeneratorDesktop/GeneratorDesktop'
 
 interface RecipeGeneratorProps {
     meal: IMeal
@@ -21,6 +22,7 @@ export default function RecipeGenerator({
                 <RecipePreview meal={meal} />
                 <NewRecipeButton onClick={onClick} />
             </div>
+            <GeneratorDesktop meal={meal} onClick={onClick} />
         </div>
     )
 }
