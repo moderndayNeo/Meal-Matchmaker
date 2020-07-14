@@ -20,7 +20,7 @@ export default function WelcomePage({ onClick }: WelcomePageProps) {
                 <img src={coffee} alt="man hugging coffee cup" />
             </div>
             <WelcomePageButton onClick={onClick} />
-            <p>
+            <p className="example-text">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley

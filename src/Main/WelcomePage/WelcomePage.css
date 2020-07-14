@@ -25,16 +25,14 @@
     max-width: 697px;
 }
 
+.WelcomePage .example-text {
+    display: none;
+}
+
 @media (min-width: 800px) {
     .WelcomePage {
-        width: 100%;
-        padding: 0;
-        /* grid-template-columns: 523fr 696fr; */
-        /* align-items: center; */
-        /* min-height: 0; */
+        padding: calc(143px - var(--header-height)) 0;
     }
-
-
 
     .WelcomePage img {
         max-width: 400px;
@@ -43,7 +41,6 @@
     .WelcomePage .text-and-image {
         display: flex;
     }
-
 }
 
 @media (max-height: 700px) {

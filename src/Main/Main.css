@@ -7,7 +7,7 @@
 
 @media (min-width: 800px) {
     .Main {
-        /* width: auto; */
-        /* margin: 0 var(--desktop-side-gutter); */
+        width: auto;
+        margin: 0 var(--desktop-side-gutter);
     }
 }
