@@ -4,6 +4,10 @@
     margin: 0 var(--mobile-side-padding);
 }
 
+.RecipeGenerator .GeneratorDesktop {
+    display: none;
+}
+
 @media (min-width: 800px) {
     .RecipeGenerator {
         /* width: 400px; */
@@ -14,6 +18,10 @@
 
     .RecipeGenerator .generator-mobile {
         display: none;
+    }
+
+    .RecipeGenerator .GeneratorDesktop {
+        display: block;
     }
 
     .RecipeGenerator .NewRecipeButton {

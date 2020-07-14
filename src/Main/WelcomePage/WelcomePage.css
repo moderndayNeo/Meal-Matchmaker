@@ -31,7 +31,7 @@
 
 @media (min-width: 800px) {
     .WelcomePage {
-        padding: calc(143px - var(--header-height)) 0;
+        /* padding: calc(143px - var(--header-height)) 0; */
     }
 
     .WelcomePage img {
