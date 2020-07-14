@@ -24,7 +24,7 @@ export default function GeneratorDesktop({
             </div>
 
             <div className="image-container">
-                <img src={meal.strMealThumb} alt="meal" />
+                <img className="recipe-image" src={meal.strMealThumb} alt="meal" />
             </div>
         </div>
     )

@@ -3,8 +3,8 @@
     right: 0;
     left: 0;
     bottom: var(--generate-button-bottom);
-    font-weight: bold;
     line-height: 18px;
+    z-index: 2;
 }
 
 .NewRecipeButton .text-container {
