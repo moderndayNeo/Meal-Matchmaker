@@ -16,7 +16,10 @@ export default function Recipe({ meal, setRandomRecipe }: RecipeProps) {
                 meal={meal}
                 setRandomRecipe={setRandomRecipe}
             />
-            <RecipeComponentsDesktop meal={meal} />
+            <RecipeComponentsDesktop
+                meal={meal}
+                setRandomRecipe={setRandomRecipe}
+            />
         </div>
     )
 }
