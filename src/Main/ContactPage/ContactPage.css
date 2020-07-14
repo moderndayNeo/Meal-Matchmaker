@@ -50,10 +50,24 @@
 
 @media (min-width: 800px) {
     .ContactPage {
-        width: 500px;
-        position: relative;
-        height: 300px;
-        margin: auto;
+        height: auto;
         
+    }
+
+    .ContactPage .team-members {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .ContactPage .contact-nav {
+        display: none;
+    }
+    .ContactPage .main-wrapper {
+        position: relative;
+        background: white;
+        top: 0;
+        border: 2px solid aqua;
+        border-radius: 0;
+        padding: 0;
     }
 }

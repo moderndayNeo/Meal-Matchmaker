@@ -34,20 +34,22 @@ export default function ContactPage() {
                         contact us for work or to discuss UX and web-mobile
                         development.
                     </p>
-                    <TeamMember
-                        name="Putra Narassa (UI Designer)"
-                        github=""
-                        facebook="https://www.facebook.com/putra.narassa"
-                        linkedin=""
-                        mailto="putraanrss20@gmail.com"
-                    />
-                    <TeamMember
-                        name="Adam Zdrzalka (Web Developer)"
-                        github="https://github.com/moderndayNeo?tab=repositories"
-                        facebook=""
-                        linkedin="https://www.linkedin.com/in/adamzdrzalka/"
-                        mailto="adamzdrzalka@outlook.com"
-                    />
+                    <div className="team-members">
+                        <TeamMember
+                            name="Putra Narassa (UI Designer)"
+                            github=""
+                            facebook="https://www.facebook.com/putra.narassa"
+                            linkedin=""
+                            mailto="putraanrss20@gmail.com"
+                        />
+                        <TeamMember
+                            name="Adam Zdrzalka (Web Developer)"
+                            github="https://github.com/moderndayNeo?tab=repositories"
+                            facebook=""
+                            linkedin="https://www.linkedin.com/in/adamzdrzalka/"
+                            mailto="adamzdrzalka@outlook.com"
+                        />
+                    </div>
 
                     <img
                         src={developers}

@@ -5,4 +5,5 @@
     border: 1px solid var(--primary-color-dark);
     border-radius: 14px;
     color: var(--primary-color-dark);
+    font-weight: bold;
 }
