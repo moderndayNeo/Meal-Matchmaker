@@ -38,6 +38,61 @@
 .RecipeComponentsDesktop .Instructions .instruction {
 }
 
+
+
+
+
+.RecipeComponentsDesktop .RelatedRecipes {
+    padding-bottom: 0;
+    /* background-color: red; */
+    /* overflow: scroll; */
+}
+
+.RecipeComponentsDesktop .RelatedRecipes .slider-container {
+    display: grid;
+    /* display: flex; */
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: var(--grid-gap);
+    /* --preview-width: 264px; */
+    /* --preview-width: 80%; */
+    --grid-gap: 20px;
+    width: 100%;
+    /* width: calc((3 * var(--preview-width)) + (2 * var(--grid-gap))); */
+}
+
+.RecipeComponentsDesktop .RelatedRecipes .section-title {
+    /* position: absolute; */
+    position: relative;
+}
+
+.RecipeComponentsDesktop .RelatedRecipes .RecipePreview {
+    width: auto;
+    margin-top: 0;
+}
+
+.RecipeComponentsDesktop .RelatedRecipes .RecipePreview .text {
+    margin: 0;
+}
+
+
+.RecipeComponentsDesktop .RelatedRecipes .RecipePreview .title {
+    /* font-size: 21px; */
+}
+
+.RecipeComponentsDesktop .RelatedRecipes .ViewRecipeButton .right-arrow {
+    background: white;
+}
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 800px) {
     .RecipeComponentsDesktop {
         display: block;
