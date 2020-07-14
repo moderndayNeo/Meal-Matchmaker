@@ -31,19 +31,23 @@
 
 .WelcomePage img {
     width: 100%;
-    /* margin-top: 30px; */
     max-width: 697px;
 }
 
 @media (min-width: 800px) {
     .WelcomePage {
-        width: 400px;
-        /* padding: 0; */
+        /* width: 400px; */
+        width: 100%;
+        padding: 0;
         /* margin: 0; */
         /* display: grid; */
         /* grid-template-columns: 523fr 696fr; */
         /* align-items: center; */
         /* min-height: 0; */
+    }
+
+    .WelcomePage img {
+        max-width: 400px;
     }
 
     .WelcomePage .text-and-image {

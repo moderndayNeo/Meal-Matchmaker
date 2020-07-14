@@ -6,7 +6,9 @@
 
 @media (min-width: 800px) {
     .RecipeGenerator {
-        width: 400px;
+        /* width: 400px; */
+        width: 100%;
+        /* height: 200px; */
         margin: 0;
     }
 

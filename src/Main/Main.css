@@ -2,13 +2,14 @@
     width: 100%;
     height: 100%;
     position: relative;
+    border: 1px solid brown;
     /* overflow: scroll; */
 }
 
 @media (min-width: 800px) {
     .Main {
-        /* padding: 0 var(--desktop-side-padding); */
-        /* margin: 0 var(--desktop-side-gutter); */
+        margin: 0 var(--desktop-side-gutter);
+        width: auto;
     }
 }
 

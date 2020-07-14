@@ -27,9 +27,15 @@
     width: 100%;
 }
 
+
+
 @media (min-width: 800px) {
+    .RecipePreview {
+        width: 300px;
+    }
+
     .RecipePreview img {
-        width: 60%;
+        /* width: 60%; */
     }
 }
 

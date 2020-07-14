@@ -52,6 +52,7 @@ body {
 
 @media (min-width: 800px) {
     .App .components-and-footer {
+        position: relative;
         /* height: auto; */
     }
 }
