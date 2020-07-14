@@ -29,14 +29,6 @@
     display: none;
 }
 
-.GeneratorDesktop .image-container {
-    height: 424px;
-    overflow: hidden;
-    border-radius: 24px;
+.GeneratorDesktop .RecipeDesktopImage {
     margin-top: 48px;
-}
-
-.GeneratorDesktop .recipe-image {
-    margin-top: -25%;
-    width: 100%;
 }

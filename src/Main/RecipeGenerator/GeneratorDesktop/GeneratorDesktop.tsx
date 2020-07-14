@@ -3,6 +3,7 @@ import './GeneratorDesktop.css'
 import { IMeal } from '../../../IMeal'
 import NewRecipeButton from '../NewRecipeButton/NewRecipeButton'
 import ViewRecipeButton from '../RecipePreview/ViewRecipeButton/ViewRecipeButton'
+import RecipeDesktopImage from '../../Recipe/RecipeComponentsDesktop/RecipeDesktopImage/RecipeDesktopImage'
 
 interface GeneratorDesktopProps {
     meal: IMeal
@@ -22,10 +23,7 @@ export default function GeneratorDesktop({
                     <ViewRecipeButton meal={meal} />
                 </div>
             </div>
-
-            <div className="image-container">
-                <img className="recipe-image" src={meal.strMealThumb} alt="meal" />
-            </div>
+            <RecipeDesktopImage meal={meal} />
         </div>
     )
 }

@@ -1,12 +1,11 @@
 .RecipeDesktopImage {
-    width: 100%;
     --image-container-height: 424px;
     height: var(--image-container-height);
     overflow: hidden;
-    border-radius: 12px;
+    border-radius: 24px;
 }
 
-.RecipeComponentsDesktop .recipe-image {
+.RecipeDesktopImage .recipe-image {
     width: 100%;
     margin-top: -25%;
 }

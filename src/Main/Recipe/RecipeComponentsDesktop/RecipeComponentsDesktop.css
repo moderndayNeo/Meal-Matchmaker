@@ -3,7 +3,10 @@
 }
 
 .RecipeComponentsDesktop .title {
-    font-size: 67px;
+    /* font-size: 67px; */
+    font-size: 50px;
+line-height: 58px;
+/* margin: 0; */
 }
 
 .RecipeComponentsDesktop .details-container {
@@ -47,6 +50,6 @@
 @media (min-width: 800px) {
     .RecipeComponentsDesktop {
         display: block;
-        margin-top: var(--header-height);
+        /* margin-top: var(--header-height); */
     }
 }
