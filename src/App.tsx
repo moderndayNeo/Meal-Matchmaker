@@ -32,13 +32,15 @@ function App() {
         <BrowserRouter>
             <div className="App">
                 <Header onClick={handleClick} />
-                <Main
-                    onClick={handleClick}
-                    meal={randomRecipe}
-                    setRandomRecipe={setRandomRecipe}
-                    setLoading={setLoading}
-                />
-                <Footer />
+                <div className="components-and-footer">
+                    <Main
+                        onClick={handleClick}
+                        meal={randomRecipe}
+                        setRandomRecipe={setRandomRecipe}
+                        setLoading={setLoading}
+                    />
+                    <Footer />
+                </div>
                 {loading && <Loader />}
             </div>
         </BrowserRouter>

@@ -1,4 +1,7 @@
 .ContactPage {
+    height: 100%;
+    overflow: scroll;
+    position: relative;
 }
 
 .ContactPage .ContactLink {
