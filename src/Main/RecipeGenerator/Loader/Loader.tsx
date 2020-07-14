@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Loader.css'
 
 const messages: string[] = [
@@ -20,6 +20,10 @@ export default function Loader() {
         messages[Math.floor(Math.random() * messages.length)]
         // messages[10]
     )
+
+    useEffect(() => {
+        console.log('Loader rendered')
+    }, [])
 
     return (
         <div className="Loader">
