@@ -1,13 +1,19 @@
 .WelcomePage {
     position: relative;
-    margin: 0 20px;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
+    padding: 0 var(--mobile-side-padding);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .WelcomePage .text-and-image {
-    position: absolute;
-    transform: translateY(-50%);
-    top: 50%;
+    /* position: absolute; */
+    /* margin: 0 var(--mobile-side-padding); */
+    /* width: 100%; */
+    /* transform: translateY(-50%); */
+    /* top: 50%; */
 }
 
 .WelcomePage .title {
@@ -25,31 +31,31 @@
 
 .WelcomePage img {
     width: 100%;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     max-width: 697px;
 }
 
 @media (min-width: 800px) {
     .WelcomePage {
-        margin: 0;
-        display: grid;
-        grid-template-columns: 523fr 696fr;
-        align-items: center;
-        min-height: 0;
+        /* margin: 0; */
+        /* display: grid; */
+        /* grid-template-columns: 523fr 696fr; */
+        /* align-items: center; */
+        /* min-height: 0; */
     }
 
     .WelcomePage .title,
     .subtext {
-        margin: 5% 0;
+        /* margin: 5% 0; */
     }
 
     .WelcomePage .WelcomePageButton {
-        margin: 10% 0;
+        /* margin: 10% 0; */
     }
 }
 
 @media (max-height: 700px) {
     .WelcomePage {
-        padding-top: 2rem;
+        /* padding-top: 2rem; */
     }
 }

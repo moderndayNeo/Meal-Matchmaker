@@ -6,6 +6,7 @@ import { meal } from '../src/media/response-example'
 import { IMeal } from './IMeal'
 import Footer from './Footer/Footer'
 import Loader from './Main/RecipeGenerator/Loader/Loader'
+import Header from './Main/Header/Header'
 
 function App() {
     const [randomRecipe, setRandomRecipe] = useState<IMeal>(meal)
@@ -30,14 +31,15 @@ function App() {
     return (
         <BrowserRouter>
             <div className="App">
-                {loading && <Loader />}
+                <Header onClick={handleClick} />
                 <Main
                     onClick={handleClick}
                     meal={randomRecipe}
                     setRandomRecipe={setRandomRecipe}
                     setLoading={setLoading}
-                />
+                    />
                 <Footer />
+                    {loading && <Loader />}
             </div>
         </BrowserRouter>
     )

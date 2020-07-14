@@ -1,11 +1,11 @@
 .WelcomePageButton {
     position: absolute;
-    bottom: 10px;
+    bottom: 24px;
     left: 0;
     right: 0;
     text-decoration: none;
-    font-weight: bold;
     line-height: 18px;
+    margin: 0 var(--mobile-side-padding);
 }
 
 @media (min-width: 800px) {

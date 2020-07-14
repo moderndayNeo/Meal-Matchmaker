@@ -14,7 +14,7 @@ export default function WelcomePage({ onClick }: WelcomePageProps) {
                 <div className="text-container">
                     <h1 className="title">Meal Matchmaker</h1>
                     <p className="subtext">
-                        Inspiration at the click of a button
+                        Get inspiration at the click of a button
                     </p>
                 </div>
                 <img src={coffee} alt="man hugging coffee cup" />

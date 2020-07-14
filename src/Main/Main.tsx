@@ -4,7 +4,6 @@ import WelcomePage from './WelcomePage/WelcomePage'
 import RecipeGenerator from './RecipeGenerator/RecipeGenerator'
 import Recipe from './Recipe/Recipe'
 import ContactPage from './ContactPage/ContactPage'
-import Header from './Header/Header'
 import { Route, Switch } from 'react-router-dom'
 import { IMeal } from '../IMeal'
 
@@ -18,8 +17,6 @@ interface MainProps {
 export default function Main({ onClick, meal, setRandomRecipe }: MainProps) {
     return (
         <div className="Main">
-            <Header onClick={onClick} />
-
             <Switch>
                 <Route
                     exact
