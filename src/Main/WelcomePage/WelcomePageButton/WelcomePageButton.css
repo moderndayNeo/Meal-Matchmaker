@@ -1,6 +1,6 @@
 .WelcomePageButton {
     position: absolute;
-    bottom: 24px;
+    bottom: var(--generate-button-bottom);
     left: 0;
     right: 0;
     text-decoration: none;

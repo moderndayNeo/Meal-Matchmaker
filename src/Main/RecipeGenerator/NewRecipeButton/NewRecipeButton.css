@@ -2,7 +2,7 @@
     position: absolute;
     right: 0;
     left: 0;
-    bottom: 10px;
+    bottom: var(--generate-button-bottom);
     font-weight: bold;
     line-height: 18px;
 }

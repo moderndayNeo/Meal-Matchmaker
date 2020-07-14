@@ -8,8 +8,6 @@ html {
 }
 
 body {
-    /* width: 100vw; */
-    /* height: 100vh; */
     overflow: hidden;
 }
 
@@ -20,7 +18,7 @@ body {
 .App {
     height: 100vh;
     width: 100vw;
-    /* background-color: yellowgreen; */
+    position: relative;
     --desktop-side-padding: 7.7%;
     --mobile-side-padding: 24px;
     --primary-color-dark: #2c056a;
@@ -33,6 +31,7 @@ body {
 }
 
 .App .generate-button {
+    --generate-button-bottom: 24px;
     font-family: 'DM Sans';
     display: flex;
     justify-content: center;

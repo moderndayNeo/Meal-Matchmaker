@@ -37,9 +37,9 @@ function App() {
                     meal={randomRecipe}
                     setRandomRecipe={setRandomRecipe}
                     setLoading={setLoading}
-                    />
+                />
                 <Footer />
-                    {loading && <Loader />}
+                {loading && <Loader />}
             </div>
         </BrowserRouter>
     )

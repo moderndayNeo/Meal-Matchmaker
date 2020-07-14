@@ -21,12 +21,11 @@
 
 .ContactPage .main-wrapper {
     position: absolute;
-    width: 100%;
     background: var(--neutral-color-light);
     top: 88px;
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
-    padding: 33px 24px;
+    padding: 33px var(--mobile-side-padding);
 }
 
 .ContactPage .title {
