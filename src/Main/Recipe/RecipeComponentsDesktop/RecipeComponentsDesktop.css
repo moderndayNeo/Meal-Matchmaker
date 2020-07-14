@@ -32,25 +32,19 @@
 .RecipeComponentsDesktop .Ingredients .ingred-and-qty {
     font-size: 16px;
     line-height: 24px;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 5px;
 }
 
 .RecipeComponentsDesktop .Instructions .instruction {
 }
 
-
-
-
-
 .RecipeComponentsDesktop .RelatedRecipes {
     padding-bottom: 0;
-    /* background-color: red; */
-    /* overflow: scroll; */
 }
 
 .RecipeComponentsDesktop .RelatedRecipes .slider-container {
     display: grid;
-    /* display: flex; */
     grid-template-columns: repeat(3, 1fr);
     grid-gap: var(--grid-gap);
     /* --preview-width: 264px; */
@@ -61,37 +55,33 @@
 }
 
 .RecipeComponentsDesktop .RelatedRecipes .section-title {
-    /* position: absolute; */
     position: relative;
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 0;
 }
 
 .RecipeComponentsDesktop .RelatedRecipes .RecipePreview {
     width: auto;
     margin-top: 0;
+    box-shadow: none;
 }
 
 .RecipeComponentsDesktop .RelatedRecipes .RecipePreview .text {
     margin: 0;
 }
 
-
 .RecipeComponentsDesktop .RelatedRecipes .RecipePreview .title {
-    /* font-size: 21px; */
+    min-height: 50px;
+    line-height: normal;
+}
+
+.RecipeComponentsDesktop .RelatedRecipes .RecipePreview img {
 }
 
 .RecipeComponentsDesktop .RelatedRecipes .ViewRecipeButton .right-arrow {
     background: white;
 }
-
-
-
-
-
-
-
-
-
-
 
 @media (min-width: 800px) {
     .RecipeComponentsDesktop {
