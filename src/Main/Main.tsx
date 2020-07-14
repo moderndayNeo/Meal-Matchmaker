@@ -24,7 +24,7 @@ export default function Main({ onClick, meal, setRandomRecipe }: MainProps) {
                     render={(props) => (
                         <WelcomePage {...props} onClick={onClick} />
                     )}
-                />
+                />w
 
                 <Route
                     path="/recipe-generator"
