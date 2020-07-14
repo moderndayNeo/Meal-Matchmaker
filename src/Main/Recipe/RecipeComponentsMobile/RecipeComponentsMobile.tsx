@@ -16,7 +16,7 @@ export default function RecipeComponentsMobile({
 }: RecipeComponentsMobileProps) {
     return (
         <div className="RecipeComponentsMobile">
-            <nav className="overlay">
+            <nav className="recipe-nav">
                 <Link to="/recipe-generator">
                     <BackButton
                         className="back-button"

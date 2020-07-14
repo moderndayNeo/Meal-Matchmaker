@@ -6,20 +6,20 @@
     margin-top: -20%;
 }
 
-.RecipeComponentsMobile .overlay {
+.RecipeComponentsMobile .recipe-nav {
     height: 64px;
     background: rgba(44, 5, 106, 0.3);
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    display: block;
+    /* display: block; */
 }
 
 .RecipeComponentsMobile .back-button {
     position: absolute;
     left: 6.67%;
-    right: 84.44%;
+    /* right: 84.44%; */
     top: 25%;
     bottom: 25%;
     --back-button-dimensions: 21px;
@@ -29,6 +29,6 @@
 
 @media (min-width: 800px) {
     .RecipeComponentsMobile {
-        display: none;
+        /* display: none; */
     }
 }

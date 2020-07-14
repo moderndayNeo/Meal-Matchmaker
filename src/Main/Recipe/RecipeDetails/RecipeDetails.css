@@ -2,7 +2,7 @@
     background: var(--neutral-color-light);
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
-    padding: 32px 24px;
+    padding: 32px var(--mobile-side-padding);
     position: absolute;
     width: 100%;
     top: 250px;
