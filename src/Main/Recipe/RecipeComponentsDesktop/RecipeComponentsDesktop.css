@@ -82,11 +82,11 @@
 
 .RecipeComponentsDesktop .RelatedRecipes .RecipePreview .ViewRecipeButton {
     order: var(--button-order);
-    margin-left: 0; 
+    margin-left: 0;
 }
 .RecipeComponentsDesktop .RelatedRecipes .RecipePreview .title {
     min-height: 120px;
-    font-size: 28px;    
+    font-size: 28px;
     line-height: 32px;
     padding-top: 24px;
 }

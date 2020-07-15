@@ -14,16 +14,13 @@ export default function ViewRecipeButton({
     meal,
 }: ViewRecipeButtonProps) {
     const handleClick = () => {
-        window.focus()
-        window.scroll({
-            top: 0,
-            left: 0,
-            behavior: 'smooth',
-        })
+        // const body = document.querySelector('body')
+        // body && body.scrollTo(0, 0)
+        // console.log(window)
+        window.scrollTo(0, 0)
+
         return setRandomRecipe ? setRandomRecipe(meal) : undefined
     }
-
-    // setRandomRecipe ? () => setRandomRecipe(meal) : undefined
 
     return (
         <Link to="/recipe" className="ViewRecipeButton" onClick={handleClick}>
