@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import NewRecipeButton from '../Main/RecipeGenerator/NewRecipeButton/NewRecipeButton'
 import './Header.css'
+import HeaderLink from './HeaderLink/HeaderLink'
 
 interface HeaderProps {
     onClick: () => void
@@ -18,37 +19,9 @@ export default function Header({ onClick }: HeaderProps) {
             </Link>
             <nav>
                 <div className="text-links">
-                    <Link to="/">
-                        <span
-                            className={
-                                location.pathname === '/' ? 'bold' : undefined
-                            }
-                        >
-                            Home
-                        </span>
-                    </Link>
-                    <Link to="/recipe">
-                        <span
-                            className={
-                                location.pathname === '/recipe'
-                                    ? 'bold'
-                                    : undefined
-                            }
-                        >
-                            Recipe
-                        </span>
-                    </Link>
-                    <Link to="/contact">
-                        <span
-                            className={
-                                location.pathname === '/contact'
-                                    ? 'bold'
-                                    : undefined
-                            }
-                        >
-                            Contact
-                        </span>
-                    </Link>
+                    <HeaderLink destination="/" text="Home" />
+                    <HeaderLink destination="/recipe" text="Recipe" />
+                    <HeaderLink destination="/contact" text="Contact" />
                 </div>
                 {!hideButtonURLs.includes(location.pathname) && (
                     <NewRecipeButton onClick={onClick} />
