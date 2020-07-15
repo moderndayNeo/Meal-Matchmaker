@@ -8,6 +8,8 @@
     box-shadow: 1px 1px 4px rgba(44, 5, 106, 0.1);
     border-radius: 24px;
     z-index: 1;
+    text-decoration: none;
+    color: var(--primary-color-dark);
 }
 
 .RecipePreview .text {

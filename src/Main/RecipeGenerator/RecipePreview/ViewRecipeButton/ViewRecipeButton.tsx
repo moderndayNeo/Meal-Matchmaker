@@ -13,14 +13,8 @@ export default function ViewRecipeButton({
     setRandomRecipe,
     meal,
 }: ViewRecipeButtonProps) {
-    const handleClick = () => {
-        window.scrollTo(0, 0)
-
-        return setRandomRecipe ? setRandomRecipe(meal) : undefined
-    }
-
     return (
-        <Link to="/recipe" className="ViewRecipeButton" onClick={handleClick}>
+        <Link to="/recipe" className="ViewRecipeButton">
             <p>View Recipe</p>
             <IoMdArrowRoundForward className="right-arrow" />
         </Link>
