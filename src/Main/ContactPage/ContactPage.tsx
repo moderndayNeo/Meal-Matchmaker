@@ -2,7 +2,8 @@ import React from 'react'
 import './ContactPage.css'
 import backArrow from '../../media/Icon_left_arrow.svg'
 import { useHistory } from 'react-router-dom'
-import developers from '../../media/developers.jpeg'
+import developers from '../../media/developers-mobile.jpeg'
+import developersDesktopImg from '../../media/developers-desktop.jpg'
 import TeamMember from './TeamMember/TeamMember'
 
 export default function ContactPage() {
@@ -59,7 +60,12 @@ export default function ContactPage() {
                     <img
                         src={developers}
                         alt="development team"
-                        className="developer-image"
+                        className="developer-image mobile-image"
+                    />
+                    <img
+                        src={developersDesktopImg}
+                        alt="development team"
+                        className="developer-image desktop-image"
                     />
                 </main>
             </div>
