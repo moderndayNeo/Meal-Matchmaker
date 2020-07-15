@@ -10,6 +10,7 @@
     transform: translateY(-50%);
     z-index: 3;
     background-color: white;
+    --expand-limit: 20;
 }
 
 .Loader .text {
@@ -71,6 +72,12 @@
         transform: scale(1, 1);
     }
     to {
-        transform: scale(20, 20);
+        transform: scale(var(--expand-limit), var(--expand-limit));
+    }
+}
+
+@media (min-width: 1440px) {
+    .Loader {
+        --expand-limit: 35;
     }
 }
