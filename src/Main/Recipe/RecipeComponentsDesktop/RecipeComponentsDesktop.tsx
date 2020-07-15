@@ -13,11 +13,11 @@ interface RecipeComponentsDesktopProps {
 
 export default function RecipeComponentsDesktop({
     meal,
-    setRandomRecipe
+    setRandomRecipe,
 }: RecipeComponentsDesktopProps) {
     return (
         <div className="RecipeComponentsDesktop">
-            <h1 className="title">{meal.strMeal}</h1>
+            <h2 className="title">{meal.strMeal}</h2>
             <RecipeDesktopImage meal={meal} />
             <div className="details-container">
                 <Ingredients meal={meal} />
