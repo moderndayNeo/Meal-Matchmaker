@@ -41,6 +41,6 @@
 
 @media (max-height: 700px) {
     .RecipePreview {
-        top: 60px;
+        /* top: 60px; */
     }
 }
