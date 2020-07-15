@@ -2,10 +2,6 @@
     padding-bottom: 10px;
 }
 
-.Instructions .instruction-and-number {
-    display: flex;
-}
-
-.Instructions .number {
-    margin-right: 5px;
+.Instructions p {
+    line-height: 32px;
 }
