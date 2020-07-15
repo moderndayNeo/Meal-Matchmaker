@@ -11,7 +11,6 @@
     top: 0;
     padding: 0 var(--desktop-side-gutter);
     z-index: 5;
-    /* opacity: 0.3; */
 }
 
 .Header .NewRecipeButton {
@@ -26,8 +25,10 @@
 }
 
 .Header .title {
-    font-size: 28px;
-    line-height: 30px;
+    /* font-size: 28px;
+    line-height: 30px; */
+    font-size: 20px;
+    line-height: 28px;
 }
 
 .Header nav {
@@ -35,8 +36,8 @@
     display: flex;
     width: 40%;
     align-items: center;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .Header a {
@@ -47,5 +48,16 @@
 @media (min-width: 800px) {
     .Header {
         display: flex;
+    }
+}
+
+@media (min-width: 1440px) {
+    .Header nav {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .Header .title {
+        font-size: 28px;
+        line-height: 30px;
     }
 }

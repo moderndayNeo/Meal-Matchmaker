@@ -1,5 +1,7 @@
 .GeneratorDesktop .title {
     text-align: center;
+    font-size: 50px;
+    line-height: 58px;
 }
 
 .GeneratorDesktop .title-and-buttons {
@@ -30,5 +32,5 @@
 }
 
 .GeneratorDesktop .RecipeDesktopImage {
-    margin-top: 48px;
+    margin: 48px 0;
 }
