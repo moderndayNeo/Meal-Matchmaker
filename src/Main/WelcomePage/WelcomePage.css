@@ -16,7 +16,6 @@
 
 .WelcomePage .subtext {
     margin: 15px 0;
-    font-size: 16px;
     line-height: 24px;
 }
 
@@ -32,6 +31,23 @@
 @media (min-width: 800px) {
     .WelcomePage {
         /* padding: calc(143px - var(--header-height)) 0; */
+        min-height: 400px;
+        padding: 0;
+    }
+
+    .WelcomePage .title {
+        font-size: 50px;
+        line-height: 58px;
+    }
+
+    .WelcomePage .WelcomePageButton {
+        max-width: 312px;
+        margin: 0;
+    }
+
+    .WelcomePage .text-container {
+        position: relative;
+        padding-top: 20px;
     }
 
     .WelcomePage img {
