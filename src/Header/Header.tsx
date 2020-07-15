@@ -17,8 +17,28 @@ export default function Header({ onClick }: HeaderProps) {
                 <h2 className="title">Meal Matchmaker</h2>
             </Link>
             <nav>
-                <Link to="/">Home</Link>
-                <Link to="/contact">Contact</Link>
+                <div className="text-links">
+                    <Link to="/">
+                        <span
+                            className={
+                                location.pathname === '/' ? 'bold' : undefined
+                            }
+                        >
+                            Home
+                        </span>
+                    </Link>
+                    <Link to="/contact">
+                        <span
+                            className={
+                                location.pathname === '/contact'
+                                    ? 'bold'
+                                    : undefined
+                            }
+                        >
+                            Contact
+                        </span>
+                    </Link>
+                </div>
                 {!hideButtonURLs.includes(location.pathname) && (
                     <NewRecipeButton onClick={onClick} />
                 )}

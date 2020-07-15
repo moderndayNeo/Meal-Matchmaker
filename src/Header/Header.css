@@ -1,7 +1,7 @@
 .Header {
     display: none;
     background-color: white;
-    border: 1px solid var(--primary-color-dark);
+    /* border: 1px solid var(--primary-color-dark); */
     height: var(--header-height);
     justify-content: space-between;
     align-items: center;
@@ -15,26 +15,39 @@
 
 .Header .NewRecipeButton {
     position: relative;
-    /* width: 164px; */
+    --header-button-width: 164px;
+    width: var(--header-button-width);
     height: 48px;
     align-self: center;
     font-size: 14px;
     border-radius: 14px;
     line-height: 16px;
     bottom: 0;
+    padding: 16px;
+    margin-left: 32px;
+}
+
+.Header .bold {
+    font-weight: bold;
 }
 
 .Header .title {
-    /* font-size: 28px;
-    line-height: 30px; */
     font-size: 20px;
     line-height: 28px;
+    /* border: 3px solid rgb(68, 83, 170); */
+}
+
+.Header .text-links {
+    width: 164px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: right;
 }
 
 .Header nav {
     justify-content: space-between;
+    /* border: 3px solid rgb(34, 148, 53); */
     display: flex;
-    width: 40%;
     align-items: center;
     font-size: 16px;
     line-height: 24px;

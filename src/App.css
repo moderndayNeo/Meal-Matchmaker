@@ -56,7 +56,7 @@ body {
     .App .components-and-footer {
         height: auto;
         margin-top: var(--header-height);
-        border: 1px solid green;
+        /* border: 1px solid green; */
     }
     .App .generate-button {
         --generate-button-bottom: 0;
