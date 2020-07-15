@@ -20,6 +20,7 @@ body {
     width: 100vw;
     /* --desktop-side-gutter: 7.7%; */
     --desktop-side-gutter: 32px;
+    --desktop-side-gutter: 4%;
     --mobile-side-padding: 24px;
     --primary-color-dark: #2c056a;
     --primary-color-accent: #6610f2;
@@ -59,5 +60,12 @@ body {
     }
     .App .generate-button {
         --generate-button-bottom: 0;
+    }
+}
+
+@media (min-width: 1440px) {
+    .App {
+        --desktop-side-gutter: 112px;
+
     }
 }

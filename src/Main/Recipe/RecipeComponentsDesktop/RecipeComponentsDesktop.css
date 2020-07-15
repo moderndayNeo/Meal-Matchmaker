@@ -11,6 +11,7 @@
     display: grid;
     grid-template-columns: 3fr 3fr;
     grid-gap: 8px;
+    /* display: flex; */
     margin-top: 5%;
 }
 
@@ -27,6 +28,10 @@
     line-height: 32px;
     margin-top: 0;
     margin-bottom: 1rem;
+}
+
+.RecipeComponentsDesktop .Ingredients {
+    /* max-width: 397px; */
 }
 
 .RecipeComponentsDesktop .Ingredients .ingred-and-qty {
@@ -68,6 +73,12 @@
     --text-order: 1;
     --image-order: 0;
     --button-order: 2;
+}
+
+.RecipeComponentsDesktop .RelatedRecipes .RecipePreview:hover,
+.RecipeComponentsDesktop .RelatedRecipes .RecipePreview:hover .right-arrow {
+    background-color: var(--neutral-color-light);
+    transition: background-color 0.2s linear;
 }
 
 .RecipeComponentsDesktop .RelatedRecipes .RecipePreview .text {
