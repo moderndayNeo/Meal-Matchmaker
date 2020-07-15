@@ -65,18 +65,35 @@
     width: auto;
     margin-top: 0;
     box-shadow: none;
+    --text-order: 1;
+    --image-order: 0;
+    --button-order: 2;
 }
 
 .RecipeComponentsDesktop .RelatedRecipes .RecipePreview .text {
     margin: 0;
-}
-
-.RecipeComponentsDesktop .RelatedRecipes .RecipePreview .title {
-    min-height: 50px;
-    line-height: normal;
+    order: var(--text-order);
 }
 
 .RecipeComponentsDesktop .RelatedRecipes .RecipePreview img {
+    order: var(--image-order);
+    width: 95%;
+}
+
+.RecipeComponentsDesktop .RelatedRecipes .RecipePreview .ViewRecipeButton {
+    order: var(--button-order);
+    margin-left: 0; 
+}
+.RecipeComponentsDesktop .RelatedRecipes .RecipePreview .title {
+    min-height: 120px;
+    font-size: 28px;    
+    line-height: 32px;
+    padding-top: 24px;
+}
+.RecipeComponentsDesktop .RelatedRecipes .RecipePreview .category {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
 }
 
 .RecipeComponentsDesktop .RelatedRecipes .ViewRecipeButton .right-arrow {
