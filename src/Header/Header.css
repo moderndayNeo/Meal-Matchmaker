@@ -39,9 +39,10 @@
 }
 
 .Header .text-links {
-    width: 164px;
+    /* width: 164px; */
+    width: 300px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     text-align: right;
 }
 

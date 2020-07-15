@@ -1,6 +1,7 @@
 import React from 'react'
 import './NewRecipeButton.css'
 import regenerateIcon from '../../../media/Icons_regenerate_dark.svg'
+import {Link} from 'react-router-dom'
 
 interface NewRecipeButtonProps {
     onClick: () => void;
@@ -8,11 +9,11 @@ interface NewRecipeButtonProps {
 
 export default function NewRecipeButton({ onClick }: NewRecipeButtonProps) {
     return (
-        <div className="NewRecipeButton generate-button" onClick={onClick}>
+        <Link to="/recipe-generator" className="NewRecipeButton generate-button" onClick={onClick}>
             <div className="text-container">
                 <p className="text">Generate Again</p>
                 <img src={regenerateIcon} alt="regenerate icon" />
             </div>
-        </div>
+        </Link>
     )
 }

@@ -27,6 +27,17 @@ export default function Header({ onClick }: HeaderProps) {
                             Home
                         </span>
                     </Link>
+                    <Link to="/recipe">
+                        <span
+                            className={
+                                location.pathname === '/recipe'
+                                    ? 'bold'
+                                    : undefined
+                            }
+                        >
+                            Recipe
+                        </span>
+                    </Link>
                     <Link to="/contact">
                         <span
                             className={
