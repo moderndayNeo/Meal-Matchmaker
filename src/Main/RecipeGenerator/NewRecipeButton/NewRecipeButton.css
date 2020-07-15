@@ -5,6 +5,7 @@
     bottom: var(--generate-button-bottom);
     line-height: 18px;
     z-index: 2;
+    text-decoration: none;
 }
 
 .NewRecipeButton .text-container {
