@@ -7,3 +7,10 @@
     color: var(--primary-color-dark);
     font-weight: bold;
 }
+
+
+@media (min-width: 800px) {
+    .EmailButton {
+        /* width: 100%; */
+    }
+}

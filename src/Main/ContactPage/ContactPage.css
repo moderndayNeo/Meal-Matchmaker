@@ -51,17 +51,26 @@
 @media (min-width: 800px) {
     .ContactPage {
         height: auto;
-        
+    }
+
+    .ContactPage .summary {
+        width: 62.5%;
+    }
+
+    .ContactPage .title {
+        font-size: 50px;
+        line-height: 58px;
     }
 
     .ContactPage .team-members {
-        display: flex;
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     .ContactPage .contact-nav {
         display: none;
     }
+
     .ContactPage .main-wrapper {
         position: relative;
         background: white;
@@ -69,5 +78,9 @@
         border: 2px solid aqua;
         border-radius: 0;
         padding: 0;
+    }
+
+    .ContactPage {
+        
     }
 }
