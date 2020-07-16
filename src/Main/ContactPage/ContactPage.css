@@ -48,10 +48,10 @@
     .ContactPage .team-members {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        border: 3px solid purple;
+        /* border: 3px solid purple; */
     }
     .ContactPage article {
-        border: 3px solid green;
+        /* border: 3px solid green; */
     }
     .ContactPage .contact-nav {
         display: none;
@@ -61,7 +61,7 @@
         position: relative;
         background: white;
         top: 0;
-        border: 2px solid aqua;
+        /* border: 2px solid aqua; */
         border-radius: 0;
         padding: 0;
     }
@@ -73,7 +73,7 @@
         line-height: 75px;
     }
     .ContactPage article {
-        border: 3px solid green;
+        /* border: 3px solid green; */
     }
     .ContactPage main {
         display: grid;
