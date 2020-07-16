@@ -2,13 +2,24 @@
     width: 100%;
     height: 100%;
     position: relative;
-    /* border: 1px solid brown; */
+    border: 2px solid rgb(238, 234, 0);
 }
 
 @media (min-width: 800px) {
     .Main {
         width: auto;
-        padding: calc(143px - var(--header-height)) 0;
+        padding: calc(0.053 * 100vh) 0;
         margin: 0 var(--desktop-side-gutter);
+    }
+}
+
+@media (min-width: 1440px) {
+    .Main {
+        padding: calc(0.078 * 100vh) 0;
+    }
+}
+@media (min-width: 1920px) {
+    .Main {
+        padding: calc(0.085 * 100vh) 0;
     }
 }
