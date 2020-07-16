@@ -1,3 +1,15 @@
-.ContactLink {
-    
+.ContactLink img {
+    --contact-link-dimensions: auto;
+    width: var(--contact-link-dimensions);
+}
+
+@media (min-width: 1440px) {
+    .ContactLink img {
+        --contact-link-dimensions: 40px;
+    }
+}
+@media (min-width: 1920px) {
+    .ContactLink img {
+        --contact-link-dimensions: 48px;
+    }
 }

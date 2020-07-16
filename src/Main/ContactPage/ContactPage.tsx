@@ -26,24 +26,27 @@ export default function ContactPage() {
 
             <div className="main-wrapper">
                 <main>
-                    <h2 className="title">Our Team</h2>
-                    <ContactPageSummary />
-                    <div className="team-members">
-                        <TeamMember
-                            name="Putra Narassa (UI Designer)"
-                            github=""
-                            facebook="https://www.facebook.com/putra.narassa"
-                            linkedin=""
-                            mailto="putraanrss20@gmail.com"
-                        />
-                        <TeamMember
-                            name="Adam Zdrzalka (Web Developer)"
-                            github="https://github.com/moderndayNeo?tab=repositories"
-                            facebook=""
-                            linkedin="https://www.linkedin.com/in/adamzdrzalka/"
-                            mailto="adamzdrzalka@outlook.com"
-                        />
-                    </div>
+                    <article>
+                        <h2 className="title">Our Team</h2>
+                        <ContactPageSummary />
+                        <div className="team-members">
+                            <TeamMember
+                                name="Putra Narassa (UI Designer)"
+                                github=""
+                                facebook="https://www.facebook.com/putra.narassa"
+                                linkedin=""
+                                mailto="putraanrss20@gmail.com"
+                            />
+                            <TeamMember
+                                name="Adam Zdrzalka (Web Developer)"
+                                github="https://github.com/moderndayNeo?tab=repositories"
+                                facebook=""
+                                linkedin="https://www.linkedin.com/in/adamzdrzalka/"
+                                mailto="adamzdrzalka@outlook.com"
+                            />
+                        </div>
+                    </article>
+
                     <ContactPageImage />
                 </main>
             </div>

@@ -8,9 +8,9 @@
     font-weight: bold;
 }
 
-
 @media (min-width: 800px) {
     .EmailButton {
-        /* width: 100%; */
+        font-size: 20px;
+        line-height: 24px;
     }
 }

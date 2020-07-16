@@ -39,30 +39,20 @@
     margin-top: 0;
 }
 
-
-
 @media (min-width: 800px) {
-    .ContactPage {
-        height: auto;
-    }
-
     .ContactPage .title {
         font-size: 50px;
         line-height: 58px;
     }
 
-    .ContactPage .desktop-image {
-        display: block;
-    }
-    .ContactPage .mobile-image {
-        display: none;
-    }
-
     .ContactPage .team-members {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        border: 3px solid purple;
     }
-
+    .ContactPage article {
+        border: 3px solid green;
+    }
     .ContactPage .contact-nav {
         display: none;
     }
@@ -71,19 +61,32 @@
         position: relative;
         background: white;
         top: 0;
-        /* border: 2px solid aqua; */
+        border: 2px solid aqua;
         border-radius: 0;
         padding: 0;
-    }
-
-    .ContactPage {
     }
 }
 
 @media (min-width: 1440px) {
-    .ContactPage {
+    .ContactPage .title {
+        font-size: 67px;
+        line-height: 75px;
     }
-    .ContactPage .img {
-        /* float: right; */
+    .ContactPage article {
+        border: 3px solid green;
+    }
+    .ContactPage main {
+        display: grid;
+        grid-template-columns: 45fr 55fr;
+        grid-gap: 120px;
+    }
+    .ContactPage .team-members {
+        grid-template-columns: auto;
+    }
+}
+
+@media (min-width: 1440px) {
+    .ContactPage .title {
+        line-height: 83px;
     }
 }

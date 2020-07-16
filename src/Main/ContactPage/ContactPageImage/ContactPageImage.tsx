@@ -9,12 +9,12 @@ export default function ContactPageImage() {
             <img
                 src={developers}
                 alt="development team"
-                className="developer-image mobile-image"
+                className="mobile-image"
             />
             <img
                 src={developersDesktopImg}
                 alt="development team"
-                className="developer-image desktop-image"
+                className="desktop-image"
             />
         </div>
     )

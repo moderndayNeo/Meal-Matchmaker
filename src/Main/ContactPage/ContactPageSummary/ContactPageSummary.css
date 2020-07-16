@@ -4,7 +4,20 @@
 
 @media (min-width: 800px) {
     .ContactPageSummary {
-        width: 62.5%;
+        width: 80%;
     }
 }
 
+@media (min-width: 1440px) {
+    .ContactPageSummary {
+        width: auto;
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+@media (min-width: 1920px) {
+    .ContactPageSummary {
+        font-size: 21px;
+        line-height: 37px;
+    }
+}
