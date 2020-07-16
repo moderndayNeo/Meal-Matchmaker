@@ -22,7 +22,6 @@
 
 .WelcomePage img {
     width: 100%;
-    max-width: 697px;
     border: 3px solid violet;
 }
 
@@ -42,16 +41,26 @@
         line-height: 58px;
     }
 
+    .WelcomePage .subtext {
+        line-height: 32px;
+    }
+
     .WelcomePage .WelcomePageButton {
         max-width: 312px;
         margin: 0;
     }
 
-    .WelcomePage .text-container {
+    .WelcomePage .text-and-button {
         position: relative;
-        padding-top: 20px;
+        padding-top: 30px;
+        padding-top: 2vw;
         border: 3px solid teal;
         min-width: 50%;
+        display: flex;
+    }
+
+    .WelcomePage .text-only {
+        max-width: 685px;
     }
 
     .WelcomePage img {
@@ -67,14 +76,25 @@
 }
 
 @media (min-width: 1120px) {
-    .WelcomePage img {
+    .WelcomePage .text-only {
+    }
+    .WelcomePage .text-and-button {
+        padding-top: 8vw;
     }
 }
+
 @media (min-width: 1440px) {
     .WelcomePage {
         min-height: calc(0.45 * 100vh);
     }
-    .WelcomePage img {
+    .WelcomePage .subtext {
+        font-size: 22px;
+        line-height: 38px;
+    }
+
+    .WelcomePage .title {
+        font-size: 67px;
+        line-height: 75px;
     }
 }
 
@@ -82,10 +102,21 @@
     .WelcomePage {
         min-height: calc(0.47 * 100vh);
     }
+    .WelcomePage .text-and-button {
+    }
+
+    .WelcomePage .title {
+        line-height: 83px;
+    }
+
+    .WelcomePage .subtext {
+        font-size: 25px;
+        line-height: 33px;
+    }
 }
 
 @media (max-height: 700px) {
     .WelcomePage {
-        /* padding-top: 2rem; */
+        margin-top: 0;
     }
 }

@@ -11,12 +11,14 @@ export default function WelcomePage({ onClick }: WelcomePageProps) {
     return (
         <div className="WelcomePage">
             <div className="text-and-image">
-                <div className="text-container">
-                    <h1 className="title">Meal Matchmaker</h1>
-                    <p className="subtext">
-                        Get inspiration at the click of a button
-                    </p>
-            <WelcomePageButton onClick={onClick} />
+                <div className="text-and-button">
+                    <div className="text-only">
+                        <h1 className="title">Get today's recipe idea</h1>
+                        <p className="subtext">
+                            Inspiration at the click of a button
+                        </p>
+                    </div>
+                    <WelcomePageButton onClick={onClick} />
                 </div>
                 <img src={coffee} alt="man hugging coffee cup" />
             </div>
