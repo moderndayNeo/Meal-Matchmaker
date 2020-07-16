@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 4px solid hotpink;
+    /* border: 4px solid hotpink; */
 }
 
 .WelcomePage .title {
@@ -22,7 +22,7 @@
 
 .WelcomePage img {
     width: 100%;
-    border: 3px solid violet;
+    /* border: 3px solid violet; */
 }
 
 .WelcomePage .example-text {
@@ -54,7 +54,7 @@
         position: relative;
         padding-top: 30px;
         padding-top: 2vw;
-        border: 3px solid teal;
+        /* border: 3px solid teal; */
         min-width: 50%;
         display: flex;
     }
