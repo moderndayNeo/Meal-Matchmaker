@@ -10,3 +10,16 @@
 .Ingredients .ingred-and-qty p {
     margin: 8px 0;
 }
+
+@media (min-width: 1440px) {
+    .Ingredients .ingred-and-qty p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+@media (min-width: 1920px) {
+    .Ingredients .ingred-and-qty p {
+        font-size: 21px;
+        line-height: 37px;
+    }
+}

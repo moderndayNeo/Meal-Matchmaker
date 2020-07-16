@@ -5,3 +5,17 @@
 .Instructions p {
     line-height: 32px;
 }
+
+@media (min-width: 1440px) {
+    .Instructions p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .Instructions p {
+        font-size: 21px;
+        line-height: 37px;
+    }
+}

@@ -8,14 +8,15 @@
 }
 
 @media (min-width: 800px) {
-    .ContactPageImage  {
+    .ContactPageImage {
         display: block;
         border-radius: 24px;
     }
+
     .ContactPageImage .desktop-image {
         display: block;
-        /* border-radius: 50%; */
     }
+
     .ContactPageImage .mobile-image {
         display: none;
     }
@@ -25,8 +26,8 @@
     .ContactPageImage {
         overflow: hidden;
         height: 100%;
-        /* border: 3px solid brown; */
     }
+
     .ContactPageImage img {
         height: 785px;
         width: auto;
@@ -35,7 +36,6 @@
 }
 
 @media (min-width: 1920px) {
- 
     .ContactPageImage img {
         margin-left: -20vh;
     }
