@@ -39,26 +39,11 @@
     margin-top: 0;
 }
 
-.ContactPage .summary {
-    line-height: 24px;
-}
 
-.ContactPage .developer-image {
-    width: 100%;
-    border-radius: 24px;
-}
-
-.ContactPage .desktop-image {
-    display: none;
-}
 
 @media (min-width: 800px) {
     .ContactPage {
         height: auto;
-    }
-
-    .ContactPage .summary {
-        width: 62.5%;
     }
 
     .ContactPage .title {
@@ -92,5 +77,13 @@
     }
 
     .ContactPage {
+    }
+}
+
+@media (min-width: 1440px) {
+    .ContactPage {
+    }
+    .ContactPage .img {
+        /* float: right; */
     }
 }
