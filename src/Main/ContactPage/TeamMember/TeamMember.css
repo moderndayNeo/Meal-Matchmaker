@@ -9,7 +9,7 @@
 @media (min-width: 1440px) {
     .TeamMember .name {
         font-size: 28px;
-line-height: 32px;
+        line-height: 32px;
     }
 }
 @media (min-width: 1920px) {

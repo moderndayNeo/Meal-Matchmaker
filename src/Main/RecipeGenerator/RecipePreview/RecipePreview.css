@@ -29,20 +29,8 @@
     width: 100%;
 }
 
-
-
 @media (min-width: 800px) {
     .RecipePreview {
         width: 300px;
-    }
-  
-    .RecipePreview img {
-        /* width: 60%; */
-    }
-}
-
-@media (max-height: 700px) {
-    .RecipePreview {
-        /* top: 60px; */
     }
 }

@@ -10,14 +10,14 @@
 
 @media (max-height: 700px) {
     .RecipeGenerator .generator-mobile .RecipePreview img {
-        /* .RecipeGenerator .generator-mobile .RecipePreview a { */
         order: 2;
     }
+
     .RecipeGenerator .generator-mobile .RecipePreview .ViewRecipeButton {
-        /* order: 0; */
         margin-top: 10px;
         margin-bottom: 24px;
     }
+
     .RecipeGenerator .generator-mobile .RecipePreview .category {
         margin: 0;
         line-height: 24px;
@@ -36,8 +36,5 @@
 
     .RecipeGenerator .GeneratorDesktop {
         display: block;
-    }
-
-    .RecipeGenerator .NewRecipeButton {
     }
 }

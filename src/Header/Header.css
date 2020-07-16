@@ -1,7 +1,6 @@
 .Header {
     display: none;
     background-color: white;
-    /* border: 1px solid var(--primary-color-dark); */
     height: var(--header-height);
     justify-content: space-between;
     align-items: center;
@@ -18,11 +17,9 @@
     --header-button-width: 164px;
     width: var(--header-button-width);
     height: 48px;
-    align-self: center;
     font-size: 14px;
     border-radius: 14px;
     line-height: 16px;
-    bottom: 0;
     padding: 16px;
     margin-left: 32px;
     cursor: pointer;
@@ -35,11 +32,9 @@
 .Header .title {
     font-size: 20px;
     line-height: 28px;
-    /* border: 3px solid rgb(68, 83, 170); */
 }
 
 .Header .text-links {
-    /* width: 164px; */
     width: 300px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -47,12 +42,8 @@
 }
 
 .Header nav {
-    justify-content: space-between;
-    /* border: 3px solid rgb(34, 148, 53); */
     display: flex;
     align-items: center;
-    font-size: 16px;
-    line-height: 24px;
 }
 
 .Header a {

@@ -48,11 +48,8 @@
     .ContactPage .team-members {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        /* border: 3px solid purple; */
     }
-    .ContactPage article {
-        /* border: 3px solid green; */
-    }
+
     .ContactPage .contact-nav {
         display: none;
     }
@@ -61,7 +58,6 @@
         position: relative;
         background: white;
         top: 0;
-        /* border: 2px solid aqua; */
         border-radius: 0;
         padding: 0;
     }
@@ -72,14 +68,13 @@
         font-size: 67px;
         line-height: 75px;
     }
-    .ContactPage article {
-        /* border: 3px solid green; */
-    }
+
     .ContactPage main {
         display: grid;
         grid-template-columns: 45fr 55fr;
         grid-gap: 120px;
     }
+
     .ContactPage .team-members {
         grid-template-columns: auto;
     }

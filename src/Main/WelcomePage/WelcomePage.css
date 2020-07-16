@@ -5,7 +5,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* border: 4px solid hotpink; */
 }
 
 .WelcomePage .title {
@@ -22,7 +21,6 @@
 
 .WelcomePage img {
     width: 100%;
-    /* border: 3px solid violet; */
 }
 
 .WelcomePage .example-text {
@@ -54,7 +52,6 @@
         position: relative;
         padding-top: 30px;
         padding-top: 2vw;
-        /* border: 3px solid teal; */
         min-width: 50%;
         display: flex;
     }
@@ -76,8 +73,6 @@
 }
 
 @media (min-width: 1120px) {
-    .WelcomePage .text-only {
-    }
     .WelcomePage .text-and-button {
         padding-top: 8vw;
     }
@@ -87,6 +82,7 @@
     .WelcomePage {
         min-height: calc(0.45 * 100vh);
     }
+
     .WelcomePage .subtext {
         font-size: 22px;
         line-height: 38px;
@@ -101,8 +97,6 @@
 @media (min-width: 1920px) {
     .WelcomePage {
         min-height: calc(0.47 * 100vh);
-    }
-    .WelcomePage .text-and-button {
     }
 
     .WelcomePage .title {

@@ -1,5 +1,4 @@
 import React from 'react'
-import './HeaderLink.css'
 import { Link, useLocation } from 'react-router-dom'
 
 interface HeaderLinkProps {

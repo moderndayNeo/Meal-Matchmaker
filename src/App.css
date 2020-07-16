@@ -18,8 +18,6 @@ body {
 .App {
     height: 100vh;
     width: 100vw;
-    /* --desktop-side-gutter: 7.7%; */
-    /* --desktop-side-gutter: 32px; */
     --desktop-side-gutter: 4%;
     --mobile-side-padding: 24px;
     --primary-color-dark: #2c056a;
@@ -56,7 +54,6 @@ body {
     .App .components-and-footer {
         height: auto;
         margin-top: var(--header-height);
-        /* border: 1px solid green; */
     }
     .App .generate-button {
         --generate-button-bottom: 0;
@@ -66,6 +63,5 @@ body {
 @media (min-width: 1440px) {
     .App {
         --desktop-side-gutter: 112px;
-
     }
 }

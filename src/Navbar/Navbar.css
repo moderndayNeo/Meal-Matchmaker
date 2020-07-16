@@ -26,7 +26,6 @@
     --info-icon-dimensions: 35px;
     height: var(--info-icon-dimensions);
     width: var(--info-icon-dimensions);
-    align-self: center;
     border-radius: 50%;
 }
 

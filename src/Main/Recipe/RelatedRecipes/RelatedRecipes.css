@@ -7,7 +7,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: var(--grid-gap);
-    /* --preview-width: 264px; */
     --preview-width: 80%;
     --grid-gap: 15px;
     width: calc((3 * var(--preview-width)) + (2 * var(--grid-gap)));

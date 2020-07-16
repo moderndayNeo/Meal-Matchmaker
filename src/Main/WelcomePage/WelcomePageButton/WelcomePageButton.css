@@ -7,8 +7,3 @@
     line-height: 18px;
     margin: 0 var(--mobile-side-padding);
 }
-
-@media (min-width: 800px) {
-    .WelcomePageButton {
-    }
-}
