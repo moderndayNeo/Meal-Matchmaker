@@ -26,7 +26,7 @@ body {
     --secondary-color-warning: #e46a0c;
     --header-height: 96px;
     --footer-height: 312px;
-    font-family: 'Public Sans', sans-serif;
+    font-family: 'Public Sans', 'DM Sans', sans-serif;
     color: var(--primary-color-dark);
 }
 
