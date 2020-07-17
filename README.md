@@ -54,14 +54,103 @@ Recipe API credits go to the Meal DB: https://www.themealdb.com/api.php
 
 ## Some Snippets From The Code
 
-```js
-code goes here
+
+TypeScript ensures every component receives the data it needs, among many other uses.
+Don't wait for bugs in production; catch them in development!
+All components written in the latest 2020 TypeScript syntax as per the docs.
+```tsx
+interface MainProps {
+    onClick: () => void
+    meal: IMeal
+    setRandomRecipe: (meal: IMeal) => void
+    setLoading: (arg0: boolean) => void
+}
+
+export default function Main({ onClick, meal, setRandomRecipe }: MainProps) {
+    return (
+        <div className="Main">
+            <Switch>
+                <Route //...
 ```
 
-```ts
-code goes here
+
+Combining an API call, one reusable component and the map() function, I can set how many Related Recipes
+are displayed by updating a single line of code
+```tsx
+export default function RelatedRecipes({
+    meal,
+    setRandomRecipe,
+}: RelatedRecipesProps) {
+    const category = meal.strCategory
+    const [relatedMealsList, setRelatedMealsList] = useState<IMeal[]>([])
+
+    useEffect(() => {
+        ;(async function getRelatedRecipes() {
+            const response = await fetch(
+                `https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`
+            )
+            const data = await response.json()
+            const mealsList = await data.meals
+            const randomIndexes = getRandomValues(await data.meals.length)
+
+            setRelatedMealsList(
+                await Promise.all(
+                    randomIndexes.map(async (index) => {
+                        const mealId = await mealsList[index].idMeal
+                        const meal = await fetch(
+                            `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${await mealId}`
+                        )
+                        const response = await meal.json()
+                        return response.meals[0]
+                    })
+                )
+            )
+        })()
+    }, [meal, category])
+
+    return (
+        <section className="RelatedRecipes">
+            <h3 className="section-title">Related recipes</h3>
+            <div className="slider-container">
+                {relatedMealsList.map((meal) => (
+                    <RecipePreview
+                        key={meal.idMeal}
+                        meal={meal}
+                        setRandomRecipe={setRandomRecipe}
+                    />
+                ))}
+            </div>
+        </section>
+    )
+}
 ```
 
+CSS Animations combine with variables and media queries allowing me to set animation speeds,
+component dimensions and layouts by changing only a few key lines of CSS.
 ```css
-code goes here
+.Loader .expanding-overlay {
+    position: absolute;
+    bottom: -100px;
+    width: 100px;
+    height: var(--overlay-height);
+    border-radius: 50%;
+    background-color: var(--primary-color-accent);
+    animation: expand 500ms 500ms ease-in;
+}
+
+@keyframes expand {
+    from {
+        transform: scale(1, 1);
+    }
+    to {
+        transform: scale(var(--expand-limit), var(--expand-limit));
+    }
+}
+
+@media (min-width: 1440px) {
+    .Loader {
+        --expand-limit: 35;
+    }
+}
+
 ```

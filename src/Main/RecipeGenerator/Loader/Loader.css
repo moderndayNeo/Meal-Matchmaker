@@ -11,6 +11,7 @@
     z-index: 3;
     background-color: white;
     --expand-limit: 20;
+    --overlay-height: 100px;
 }
 
 .Loader .text {
@@ -56,15 +57,11 @@
 .Loader .expanding-overlay {
     position: absolute;
     bottom: -100px;
-    --overlay-height: 100px;
     width: 100px;
     height: var(--overlay-height);
     border-radius: 50%;
     background-color: var(--primary-color-accent);
-    animation-name: expand;
-    animation-duration: 500ms;
-    animation-delay: 500ms;
-    animation-timing-function: ease-in;
+    animation: expand 500ms 500ms ease-in;
 }
 
 @keyframes expand {

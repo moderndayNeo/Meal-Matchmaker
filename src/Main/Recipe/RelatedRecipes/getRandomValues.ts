@@ -6,6 +6,6 @@ export default function getRandomisedArray(length: number) {
         if (!helper.includes(value)) return helper.push(value)
         getRandomValue()
     }
-    while (helper.length < 3) getRandomValue()
+    while (helper.length < 3) getRandomValue() // Set the number of Related Recipes displayed
     return helper
 }
