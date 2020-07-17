@@ -113,8 +113,3 @@
     }
 }
 
-@media (max-height: 700px) {
-    .WelcomePage {
-        margin-top: 0;
-    }
-}
