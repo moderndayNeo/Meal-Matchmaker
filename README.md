@@ -7,7 +7,7 @@ A React-Typescript app that generates random recipes - so you never run out of i
 -   Live demo: https://meal-matchmaker.vercel.app/
 
 ## Mobile
-
+![mm-mobile-1](https://user-images.githubusercontent.com/57966028/87776831-4cba2e00-c820-11ea-9b20-02702c4faace.gif)
 gifs, screenshots
 
 ## Desktop
