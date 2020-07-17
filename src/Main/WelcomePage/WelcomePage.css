@@ -92,6 +92,10 @@
         font-size: 67px;
         line-height: 75px;
     }
+
+    .WelcomePage .text-and-button {
+        padding-top: 6vw;
+    }
 }
 
 @media (min-width: 1920px) {
