@@ -12,7 +12,7 @@ A React-Typescript app that generates random recipes - so you never run out of i
 
 ## Tablet
 
-<img width="802" alt="mm-tablet-screenshot" src="https://user-images.githubusercontent.com/57966028/87778145-a7548980-c822-11ea-8cbd-92a89496ea28.png">
+<img width="520" alt="mm-tablet-screenshot" src="https://user-images.githubusercontent.com/57966028/87778145-a7548980-c822-11ea-8cbd-92a89496ea28.png">
 
 ## Desktop
 
