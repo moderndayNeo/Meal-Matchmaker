@@ -33,7 +33,7 @@ To get the recipe data I make asynchronous calls to a recipe API and then displa
 and a handful of related recipes that users can also choose from.
 
 For the design I teamed up with UI Designer [Putra Narassa](https://www.facebook.com/putra.narassa).
-His incredible designs and efforts allowed me to focus on the code and on building an app that runs as smooth as possible.
+His incredible designs and efforts allowed me to focus on the code and build an app that runs as smooth as possible.
 
 For the CSS styles, I focused on creating a project that is both scalable and maintainable. I use
 CSS variables, media queries and relative sizes throughout the app to make my pages dynamic.
@@ -68,7 +68,7 @@ export default function Main({ onClick, meal, setRandomRecipe }: MainProps) {
                 <Route //...
 ```
 
-Combining an API call, one reusable component and the map() function, I can set how many Related Recipes
+Combining an API call (shown here), one reusable component and the map() function, I can set how many Related Recipes
 are displayed by updating a single line of code
 
 ```tsx
@@ -124,6 +124,23 @@ CSS Animations combine with variables and media queries allowing me to set anima
 component dimensions and layouts by changing only a few key lines of CSS.
 
 ```css
+.App {
+    height: 100vh;
+    width: 100vw;
+    --desktop-side-gutter: 4%;
+    --mobile-side-padding: 24px;
+    --primary-color-dark: #2c056a;
+    --primary-color-accent: #6610f2;
+    --neutral-color-light: #fff1ec;
+    --secondary-color-warning: #e46a0c;
+    --header-height: 96px;
+    --footer-height: 312px;
+    font-family: 'Public Sans', 'DM Sans', sans-serif;
+    color: var(--primary-color-dark);
+}
+```
+
+```css
 .Loader .expanding-overlay {
     position: absolute;
     bottom: -100px;
@@ -154,5 +171,4 @@ component dimensions and layouts by changing only a few key lines of CSS.
 
 -   Code: [Adam Zdrzalka](https://www.linkedin.com/in/adamzdrzalka)
 -   UI/UX: [Putra Narassa](https://www.facebook.com/putra.narassa)
-
-Recipe API: [The Meal DB](https://www.themealdb.com/api.php)
+-   Recipe API: [The Meal DB](https://www.themealdb.com/api.php)
