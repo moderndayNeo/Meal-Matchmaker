@@ -54,10 +54,10 @@ Recipe API credits go to the Meal DB: https://www.themealdb.com/api.php
 
 ## Some Snippets From The Code
 
-
 TypeScript ensures every component receives the data it needs, among many other uses.
 Don't wait for bugs in production; catch them in development!
 All components written in the latest 2020 TypeScript syntax as per the docs.
+
 ```tsx
 interface MainProps {
     onClick: () => void
@@ -73,9 +73,9 @@ export default function Main({ onClick, meal, setRandomRecipe }: MainProps) {
                 <Route //...
 ```
 
-
 Combining an API call, one reusable component and the map() function, I can set how many Related Recipes
 are displayed by updating a single line of code
+
 ```tsx
 export default function RelatedRecipes({
     meal,
@@ -127,6 +127,7 @@ export default function RelatedRecipes({
 
 CSS Animations combine with variables and media queries allowing me to set animation speeds,
 component dimensions and layouts by changing only a few key lines of CSS.
+
 ```css
 .Loader .expanding-overlay {
     position: absolute;
@@ -152,5 +153,4 @@ component dimensions and layouts by changing only a few key lines of CSS.
         --expand-limit: 35;
     }
 }
-
 ```
