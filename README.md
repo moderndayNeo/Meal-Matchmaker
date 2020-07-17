@@ -28,10 +28,10 @@ I coded the whole app using React Hooks with Typescript.
 To get the recipe data I make asynchronous calls to a recipe API and then display instructions, ingredients
 and a handful of related recipes that users can also choose from.
 
-For the design of the app I teamed up with UI Designer Putra Narassa (https://www.facebook.com/putra.narassa).
+For the design I teamed up with UI Designer [Putra Narassa](https://www.facebook.com/putra.narassa).
 His incredible designs and efforts allowed me to focus on the code and on building an app that runs as smooth as possible.
 
-For the CSS styles, I focused on creating a project that is as scalable and maintainable as possible. I use
+For the CSS styles, I focused on creating a project that is both scalable and maintainable. I use
 CSS variables, media queries and relative sizes throughout the app to make my pages dynamic.
 All animations and transitions are written in pure CSS to ensure speed.
 
@@ -42,13 +42,6 @@ All animations and transitions are written in pure CSS to ensure speed.
 -   HTML
 -   CSS
 -   REST API
-
-## Authors, Contributors
-
--   Code: Adam Zdrzalka - modernDayNeo
--   UI/UX: Putra Narassa - (https://www.facebook.com/putra.narassa)
-
-Recipe API credits go to the Meal DB: https://www.themealdb.com/api.php
 
 ## Some Snippets From The Code
 
@@ -152,3 +145,10 @@ component dimensions and layouts by changing only a few key lines of CSS.
     }
 }
 ```
+
+## Authors, Contributors
+
+-   Code: [Adam Zdrzalka](https://www.linkedin.com/in/adamzdrzalka)
+-   UI/UX: [Putra Narassa](https://www.facebook.com/putra.narassa)
+
+Recipe API: [The Meal DB](https://www.themealdb.com/api.php)
