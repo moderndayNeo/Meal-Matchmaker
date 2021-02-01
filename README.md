@@ -4,7 +4,7 @@
 
 A React-TypeScript app that generates random recipes - so you never run out of ideas in the kitchen.
 
--   Access MealMatchmaker: https://meal-matchmaker.vercel.app/
+Access MealMatchmaker: https://meal-matchmaker.vercel.app/
 
 ## Mobile
 
@@ -27,14 +27,9 @@ A React-TypeScript app that generates random recipes - so you never run out of i
 
 ## Outline
 
-To get the recipe data I make asynchronous calls to a recipe API and then display instructions, ingredients
-and a handful of related recipes that users can also choose from.
-
-
 * Paired with a designer based in Pakistan to design a ‘thoughtless’, intuitive UI resulting in an improved user experience that guides users to the key features of the app.
 * Adopted TypeScript type-checking to quickly catch bugs in development, allowing me to deploy the app with confidence
-* Designed clickable components that allow the user to fetch a random recipe, then make an asynchronous API call to display related recipes from the same category
-
+* Make asynchronous calls to a recipe API and then display instructions, ingredients and a handful of related recipes for users to explore
 ## Technologies
 
 -   React.js v16.13.1
@@ -42,6 +37,7 @@ and a handful of related recipes that users can also choose from.
 -   HTML5
 -   CSS3
 -   TheMealDB JSON API
+
 
 ## Some Snippets From The Code
 
