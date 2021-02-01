@@ -2,9 +2,9 @@
 
 # Meal Matchmaker
 
-A React-Typescript app that generates random recipes - so you never run out of ideas in the kitchen.
+A React-TypeScript app that generates random recipes - so you never run out of ideas in the kitchen.
 
--   Live demo: https://meal-matchmaker.vercel.app/
+-   Access MealMatchmaker: https://meal-matchmaker.vercel.app/
 
 ## Mobile
 
@@ -27,31 +27,25 @@ A React-Typescript app that generates random recipes - so you never run out of i
 
 ## Outline
 
-Meal Matchmaker provided me an opportunity to combine the latest coding practices into one project.
-I coded the whole app using React Hooks with Typescript.
 To get the recipe data I make asynchronous calls to a recipe API and then display instructions, ingredients
 and a handful of related recipes that users can also choose from.
 
-For the design I teamed up with UI Designer [Putra Narassa](https://www.facebook.com/putra.narassa).
-His incredible designs and efforts allowed me to focus on the code and build an app that runs as smooth as possible.
 
-For the CSS styles, I focused on creating a project that is both scalable and maintainable. I use
-CSS variables, media queries and relative sizes throughout the app to make my pages dynamic.
-All animations and transitions are written in pure CSS to ensure speed.
+* Paired with a designer based in Pakistan to design a ‘thoughtless’, intuitive UI resulting in an improved user experience that guides users to the key features of the app.
+* Adopted TypeScript type-checking to quickly catch bugs in development, allowing me to deploy the app with confidence
+* Designed clickable components that allow the user to fetch a random recipe, then make an asynchronous API call to display related recipes from the same category
 
 ## Technologies
 
--   ReactJS
--   Typescript
--   HTML
--   CSS
--   REST API
+-   React.js v16.13.1
+-   TypeScript v3.7.5
+-   HTML5
+-   CSS3
+-   TheMealDB JSON API
 
 ## Some Snippets From The Code
 
-TypeScript ensures every component receives the data it needs, among many other uses.
-Don't wait for bugs in production; catch them in development!
-All components written in the latest 2020 TypeScript syntax as per the docs.
+Employ TypeScript to ensure every component receives the right data. Don't wait for bugs in production; catch them in development! All components written in TypeScript with interfaced Props.
 
 ```tsx
 interface MainProps {
@@ -120,7 +114,7 @@ export default function RelatedRecipes({
 }
 ```
 
-CSS Animations combine with variables and media queries allowing me to set animation speeds,
+Combine animations with CSS3 variables and media queries, allowing me to set animation speeds,
 component dimensions and layouts by changing only a few key lines of CSS.
 
 ```css
@@ -170,5 +164,5 @@ component dimensions and layouts by changing only a few key lines of CSS.
 ## Authors, Contributors
 
 -   Code: [Adam Zdrzalka](https://www.linkedin.com/in/adamzdrzalka)
--   UI/UX: [Putra Narassa](https://www.facebook.com/putra.narassa)
+-   UI/UX: [Putra Rassa](https://www.facebook.com/putra.rassa12)
 -   Recipe API: [The Meal DB](https://www.themealdb.com/api.php)
