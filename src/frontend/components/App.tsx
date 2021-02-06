@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import './App.css'
-import Main from './components/Main/Main'
+import Main from './Main/Main'
 import { BrowserRouter } from 'react-router-dom'
-import { meal } from './media/response-example'
-import { IMeal } from './IMeal'
-import Footer from './components/Footer/Footer'
-import Loader from './components/Main/RecipeGenerator/Loader/Loader'
-import Header from './components/Header/Header'
+import { meal } from '../media/response-example'
+import { IMeal } from '../IMeal'
+import Footer from './Footer/Footer'
+import Loader from './Main/RecipeGenerator/Loader/Loader'
+import Header from './Header/Header'
 
 function App() {
     const [randomRecipe, setRandomRecipe] = useState<IMeal>(meal)
