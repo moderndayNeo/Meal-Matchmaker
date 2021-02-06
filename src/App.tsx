@@ -21,7 +21,7 @@ function App() {
     }
 
     const handleClick = (): void => {
-        getRandomRecipe()
+        getRandomRecipe().catch(error => console.log(error))
         setLoading(true)
         setTimeout(() => {
             setLoading(false)

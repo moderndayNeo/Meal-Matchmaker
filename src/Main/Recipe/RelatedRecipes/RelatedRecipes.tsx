@@ -37,7 +37,7 @@ export default function RelatedRecipes({
                     })
                 )
             )
-        })()
+        })().catch(error => console.log(error))
     }, [meal, category])
 
     return (
