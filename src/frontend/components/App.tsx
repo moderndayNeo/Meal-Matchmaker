@@ -21,12 +21,16 @@ function App() {
     }
 
     const handleClick = (): void => {
-        getRandomRecipe().catch(error => console.log(error))
+        getRandomRecipe().catch((error) => console.log(error))
         setLoading(true)
         setTimeout(() => {
             setLoading(false)
         }, 1000)
     }
+
+    fetch(`http://localhost:3001`)
+        .then((res) => res.json())
+        .then(data => console.log(data))
 
     return (
         <BrowserRouter>
