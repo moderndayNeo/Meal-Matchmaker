@@ -17,6 +17,9 @@ app.get('/', (req, res) => {
     res.send({ message: `Meal Matchmaker backend` })
 })
 
+
+require('./routes/user.routes')(app)
+
 const port = process.env.port || 3001
 
 app.listen(port, () => {
