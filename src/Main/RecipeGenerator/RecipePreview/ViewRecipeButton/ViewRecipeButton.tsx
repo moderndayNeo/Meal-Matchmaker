@@ -1,8 +1,8 @@
 import React from 'react'
 import './ViewRecipeButton.css'
-import { Link } from 'react-router-dom'
 import { IoMdArrowRoundForward } from 'react-icons/io'
 import { IMeal } from '../../../../IMeal'
+import { useHistory } from 'react-router-dom'
 
 interface ViewRecipeButtonProps {
     setRandomRecipe?: (meal: IMeal) => void
@@ -13,10 +13,15 @@ export default function ViewRecipeButton({
     setRandomRecipe,
     meal,
 }: ViewRecipeButtonProps) {
+    const history = useHistory()
+
     return (
-        <Link to="/recipe" className="ViewRecipeButton">
+        <button
+            onClick={(e) => history.push('/recipe')}
+            className="ViewRecipeButton"
+        >
             <p>View Recipe</p>
             <IoMdArrowRoundForward className="right-arrow" />
-        </Link>
+        </button>
     )
 }
