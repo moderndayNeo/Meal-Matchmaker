@@ -1,4 +1,4 @@
-<img src="src/media/shield.svg">
+<img src="src/frontend/media/shield.svg">
 
 # Meal Matchmaker
 

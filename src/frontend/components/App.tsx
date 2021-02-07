@@ -30,6 +30,7 @@ function App() {
     }
 
     APIUtil.getUsers().then((res) => console.log(res.data))
+    // APIUtil.createUser().then((res) => console.log(res.data))
 
     return (
         <BrowserRouter>
