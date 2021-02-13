@@ -2,7 +2,6 @@ import React from 'react'
 import './RecipePreview.css'
 import ViewRecipeButton from './ViewRecipeButton/ViewRecipeButton'
 import { IMeal } from '../../../../IMeal'
-import { Link } from 'react-router-dom'
 
 type RecipePreviewProps = {
     meal: IMeal
@@ -23,13 +22,13 @@ export default function RecipePreview({
     }
 
     return (
-        <Link to="/recipe" className="RecipePreview" onClick={handleClick}>
+        <section className="RecipePreview" onClick={handleClick}>
             <div className="text">
                 <h2 className="title">{shorten(meal.strMeal)}</h2>
                 <h4 className="category">{meal.strCategory}</h4>
             </div>
             <img src={meal.strMealThumb} alt={meal.idMeal} />
-            <ViewRecipeButton setRandomRecipe={setRandomRecipe} meal={meal} />
-        </Link>
+            <ViewRecipeButton />
+        </section>
     )
 }

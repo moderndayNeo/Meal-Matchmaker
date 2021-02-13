@@ -7,7 +7,7 @@ import { IMeal } from '../IMeal'
 import Footer from './Footer/Footer'
 import Loader from './Main/RecipeGenerator/Loader/Loader'
 import Header from './Header/Header'
-import APIUtil from '../util/api.utils'
+// import APIUtil from '../util/api.utils'
 
 function App() {
     const [randomRecipe, setRandomRecipe] = useState<IMeal>(meal)
@@ -29,8 +29,7 @@ function App() {
         }, 1000)
     }
 
-    APIUtil.getUsers().then((res) => console.log(res.data))
-    // APIUtil.createUser().then((res) => console.log(res.data))
+    // APIUtil.getUsers().then((res) => console.log(res.data))
 
     return (
         <BrowserRouter>

@@ -20,7 +20,7 @@ export default function GeneratorDesktop({
                 <h1 className="title">{meal.strMeal}</h1>
                 <div className="buttons">
                     <NewRecipeButton onClick={onClick} />
-                    <ViewRecipeButton meal={meal} />
+                    <ViewRecipeButton />
                 </div>
             </div>
             <RecipeDesktopImage meal={meal} />
