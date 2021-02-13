@@ -17,7 +17,6 @@ export default function RecipePreview({
         return str.length < 30 ? str : str.slice(0, 30).trim() + '...'
     }
     const handleClick = () => {
-        window.scrollTo(0, 0)
         return setRandomRecipe ? setRandomRecipe(meal) : undefined
     }
 

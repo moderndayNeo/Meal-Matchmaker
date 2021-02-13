@@ -7,8 +7,6 @@ interface WelcomePageProps {
     onClick: () => void
 }
 
-window.scrollTo(0, 1)
-
 export default function WelcomePage({ onClick }: WelcomePageProps) {
     return (
         <div className="WelcomePage">
