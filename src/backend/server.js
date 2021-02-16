@@ -19,11 +19,10 @@ app.get('/', (req, res) => {
     res.send({ message: `Meal Matchmaker backend` })
 })
 
-
 require('./routes/user.routes')(app)
 
-const port = process.env.port || 3001
+const PORT = process.env.PORT || 3001
 
-app.listen(port, () => {
-    console.log(`App listening on port ${port}...`)
+app.listen(PORT, () => {
+    console.log(`App listening on port ${PORT}...`)
 })

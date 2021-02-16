@@ -1,6 +1,10 @@
 {
   "name": "mealmatchmaker",
   "version": "0.1.0",
+  "engines": {
+    "node": "12.14.0",
+    "npm": "6.14.8"
+  },
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -25,10 +29,6 @@
     "react-scripts": "3.4.1",
     "sequelize": "^6.5.0",
     "typescript": "^3.7.5"
-  },
-  "engines": {
-    "node": "12.14.0",
-    "npm": "6.14.8"
   },
   "scripts": {
     "start": "react-scripts start",
