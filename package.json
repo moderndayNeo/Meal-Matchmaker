@@ -26,6 +26,10 @@
     "sequelize": "^6.5.0",
     "typescript": "^3.7.5"
   },
+  "engines": {
+    "node": "12.14.0",
+    "npm": "6.14.8"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
