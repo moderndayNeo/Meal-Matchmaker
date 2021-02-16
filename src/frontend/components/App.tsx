@@ -7,7 +7,7 @@ import { IMeal } from '../IMeal'
 import Footer from './Footer/Footer'
 import Loader from './Main/RecipeGenerator/Loader/Loader'
 import Header from './Header/Header'
-// import APIUtil from '../util/api.utils'
+import APIUtil from '../util/api.utils'
 
 function App() {
     const [randomRecipe, setRandomRecipe] = useState<IMeal>(meal)
