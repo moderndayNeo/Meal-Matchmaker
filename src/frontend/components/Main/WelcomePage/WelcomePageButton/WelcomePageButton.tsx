@@ -12,6 +12,7 @@ export default function WelcomePageButton({ onClick }: WelcomePageButtonProps) {
             className="WelcomePageButton generate-button"
             to="/recipe-generator"
             onClick={onClick}
+            title="welcome-page-button"
         >
             Find My Match!
         </Link>
