@@ -18,9 +18,7 @@ const db = {}
 db.Sequelize = Sequelize
 db.sequelize = sequelize
 
-// db.users = require('./')
+db.users = require('./user.model')(sequelize, Sequelize)
+// All models are imported here and then called by their respective controllers
 
 module.exports = db
-
-// db.tutorials = require('./tutorial.model.js')(sequelize, Sequelize)
-// db.languages = require('./language.model')(sequelize, Sequelize)

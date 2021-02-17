@@ -1,10 +1,8 @@
 const router = require('express').Router()
-// const user = require('') // user controller
+const users = require('../controllers/users.controller') // user controller
 
 module.exports = (app) => {
-    router.post('/', (req, res) => {
-        res.json({ action: 'creating user' })
-    })
+    router.post('/', users.create) // call the relevant users controller action
 
     router.get('/', (req, res) => {
         res.json({ page: 'user' })

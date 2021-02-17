@@ -1,5 +1,5 @@
 const db = require('../models/index')
-const User = require('../models/user.model')
+const User = db.users // access the user model from index.js (the 'central' model)
 
 exports.create = (req, res) => {
     if (!req.body.name) {
