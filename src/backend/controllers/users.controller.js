@@ -1,4 +1,3 @@
-// import validUsernameAndPassword from '../util/auth_utils'
 const AuthUtils = require('../util/auth_utils')
 const User = require('../models').User
 
@@ -22,24 +21,11 @@ exports.create = async (req, res) => {
         return
     }
 
-    // const users = await User.findAll({
-    //     where: { username: req.body.username }
-    // })
+    const { username, password } = req.body
+    // hash the password
+    // create user with the username and hashed password (passwordDigest)
 
-    // if (users === null) {
-    //     console.log('Not found!');
-    // } else {
-    //     res.send(users)
-    //   }
-
-    // res.send(user.id || "no user found")
-
-    const user = {
-        username: req.body.username,
-        password: req.body.password,
-    }
-
-    User.create(user)
+    User.create({ username, password })
         .then((data) => res.send(data))
         .catch((error) => {
             res.status(500).send({
