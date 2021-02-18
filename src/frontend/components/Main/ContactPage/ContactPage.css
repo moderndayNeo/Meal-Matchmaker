@@ -8,14 +8,6 @@
     margin-right: 30px;
 }
 
-.ContactPage .contact-nav {
-    position: absolute;
-    height: 64px;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-}
-
 .ContactPage .back-arrow {
     position: absolute;
     left: 6.67%;
@@ -48,10 +40,6 @@
     .ContactPage .team-members {
         display: grid;
         grid-template-columns: 1fr 1fr;
-    }
-
-    .ContactPage .contact-nav {
-        display: none;
     }
 
     .ContactPage .main-wrapper {

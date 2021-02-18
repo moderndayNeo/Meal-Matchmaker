@@ -1,0 +1,15 @@
+
+.ReturnNavbar {
+    position: absolute;
+    height: 64px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+}
+
+
+@media (min-width: 800px) {
+ .ReturnNavbar {
+    display: none;
+}
+}

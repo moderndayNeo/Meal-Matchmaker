@@ -1,28 +1,14 @@
 import React from 'react'
 import './ContactPage.css'
-import backArrow from '../../../media/Icon_left_arrow.svg'
-import { useHistory } from 'react-router-dom'
 import TeamMember from './TeamMember/TeamMember'
 import ContactPageSummary from './ContactPageSummary/ContactPageSummary'
 import ContactPageImage from './ContactPageImage/ContactPageImage'
+import ReturnNavbar from '../../common/ReturnNavbar'
 
 export default function ContactPage() {
-    const history = useHistory()
-
-    const goBack = (): void => {
-        history.goBack()
-    }
-
     return (
         <div className="ContactPage">
-            <div className="contact-nav">
-                <img
-                    src={backArrow}
-                    alt="back arrow"
-                    className="back-arrow"
-                    onClick={goBack}
-                />
-            </div>
+            <ReturnNavbar />
 
             <div className="main-wrapper">
                 <main>
