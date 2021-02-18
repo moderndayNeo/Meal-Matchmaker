@@ -11,7 +11,7 @@ export default function Signup() {
 
     const handleSubmit = (e: any) => {
         e.preventDefault()
-        APIUtil.createUser({ username }).then((res) => handleResponse(res))
+        APIUtil.createUser({ username, password }).then((res) => handleResponse(res))
     }
 
     interface ResObject {

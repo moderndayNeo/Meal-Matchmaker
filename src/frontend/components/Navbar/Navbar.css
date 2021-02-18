@@ -22,11 +22,17 @@
     color: var(--primary-color-dark);
 }
 
-.Navbar .infoIcon {
+.Navbar .icon {
     --info-icon-dimensions: 35px;
     height: var(--info-icon-dimensions);
     width: var(--info-icon-dimensions);
     border-radius: 50%;
+}
+
+.Navbar .navbar-icons {
+    width: 75px;
+    display: flex;
+    justify-content: space-between;
 }
 
 @media (min-width: 800px) {
