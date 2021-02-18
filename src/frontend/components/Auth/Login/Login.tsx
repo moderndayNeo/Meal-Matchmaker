@@ -7,5 +7,5 @@ export default function Login() {
     const [password, setPassword] = React.useState<string>('')
     const history = useHistory()
 
-    return <div>Signin page</div>
+    return <div>Login page</div>
 }

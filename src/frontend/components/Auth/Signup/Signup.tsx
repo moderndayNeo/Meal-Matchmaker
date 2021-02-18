@@ -1,7 +1,7 @@
 import React from 'react'
 import './Signup.css'
 import APIUtil from '../../../util/api.utils'
-import { useHistory } from 'react-router-dom'
+import { useHistory, Link } from 'react-router-dom'
 
 export default function Signup() {
     const [username, setUsername] = React.useState<string>('')
@@ -53,6 +53,11 @@ export default function Signup() {
                     Sign Up
                 </button>
             </form>
+
+            <hr/>
+            --- Or ---
+            <hr/>
+            <Link className="generate-button" to="/login">Log In</Link>
         </div>
     )
 }
