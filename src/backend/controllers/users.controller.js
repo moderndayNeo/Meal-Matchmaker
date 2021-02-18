@@ -49,10 +49,16 @@ exports.create = async (req, res) => {
 }
 
 exports.destroy = (req, res) => {
-    // query for params id
-    // if user exists, delete the record, else return 404
-
-    res.send('User destroy action')
+    User.destroy({
+        where: {
+            id: req.params.id,
+        },
+    }).then(() => {
+        // sequelize does not return anything from the .destroy() action
+        res.status(200).send({
+            message: `User successfully deleted`,
+        })
+    })
 }
 
 exports.update = (req, res) => {
