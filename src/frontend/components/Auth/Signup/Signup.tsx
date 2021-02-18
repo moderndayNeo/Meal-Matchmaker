@@ -30,6 +30,7 @@ export default function Signup() {
     const allFieldsEntered = [username, password, confirmPassword].every(
         (field) => field
     )
+    const passwordsDontMatch = password !== confirmPassword
 
     return (
         <div className="Signup">
@@ -60,9 +61,13 @@ export default function Signup() {
                     onChange={(e) => setConfirmPassword(e.target.value)}
                     // disabled
                 />
+                {
+                    passwordsDontMatch && <p>Passwords must match</p>
+                }
+
                 <br />
                 <button
-                    disabled={!allFieldsEntered}
+                    disabled={!allFieldsEntered || passwordsDontMatch}
                     className="generate-button"
                     onClick={handleSubmit}
                 >
