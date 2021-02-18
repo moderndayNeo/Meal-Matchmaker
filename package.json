@@ -37,7 +37,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "start-backend": "cd src/backend && node server.js",
+    "start-backend": "cd src/backend && nodemon server.js",
     "both": "npm-run-all -p start-frontend start-backend"
   },
   "eslintConfig": {

@@ -1,18 +1,17 @@
-const db = require('../models/index')
-const User = db.users // access the user model from index.js (the 'central' model)
+const User = require('../models').User
 
 exports.create = (req, res) => {
-    if (!req.body.name) {
+    if (!req.body.username) {
         res.status(400).send({
-            message: 'Content cannot be empty',
+            message: 'Must provide a username',
         })
         return
     }
 
     const user = {
-        name: req.body.name,
+        username: req.body.username,
     }
-
+    
     User.create(user)
         .then((data) => res.send(data))
         .catch((error) => {
