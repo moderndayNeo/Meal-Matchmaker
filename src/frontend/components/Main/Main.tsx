@@ -5,6 +5,7 @@ import RecipeGenerator from './RecipeGenerator/RecipeGenerator'
 import Recipe from './Recipe/Recipe'
 import ContactPage from './ContactPage/ContactPage'
 import Signup from '../Auth/Signup/Signup'
+import Login from '../Auth/Login/Login'
 import { Route, Switch } from 'react-router-dom'
 import { IMeal } from '../../IMeal'
 
@@ -48,7 +49,8 @@ export default function Main({ onClick, meal, setRandomRecipe }: MainProps) {
                         />
                     )}
                 />
-                <Route exact path="/signup" component={Signup} />
+                <Route exact path="/sign-up" component={Signup} />
+                <Route exact path="/login" component={Login} />
                 <Route exact path="/contact" component={ContactPage} />
                 <Route path="/:notfound" component={WelcomePage} />
             </Switch>
