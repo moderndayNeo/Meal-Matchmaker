@@ -22,6 +22,7 @@ body {
     --mobile-side-padding: 24px;
     --primary-color-dark: #2c056a;
     --primary-color-accent: #6610f2;
+    --primary-color-faded: rgb(104 18 243 / 50%);
     --neutral-color-light: #fff1ec;
     --secondary-color-warning: #e46a0c;
     --header-height: 96px;
@@ -40,6 +41,11 @@ body {
     box-shadow: 1px 1px 25px rgba(102, 16, 242, 0.2);
     border-radius: 24px;
     font-weight: bold;
+}
+
+.generate-button:disabled {
+    background: var(--primary-color-faded);
+    border-style: none;
 }
 
 .App .components-and-footer {
