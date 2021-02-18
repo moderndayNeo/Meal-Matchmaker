@@ -1,12 +1,8 @@
 import React from 'react'
 import { Redirect, Route } from 'react-router-dom'
+const loggedIn = true // refactor this to check if user if loggedIn
 
-export const ProtectedRoute = ({
-    exact,
-    path,
-    loggedIn,
-    component: Component,
-}) => (
+export const ProtectedRoute = ({ exact, path, component: Component }) => (
     <Route
         path={path}
         exact={exact}

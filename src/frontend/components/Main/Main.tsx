@@ -29,7 +29,6 @@ export default function Main({ onClick, meal, setRandomRecipe }: MainProps) {
                         <WelcomePage {...props} onClick={onClick} />
                     )}
                 />
-
                 <Route
                     path="/recipe-generator"
                     render={(props) => (
@@ -51,8 +50,7 @@ export default function Main({ onClick, meal, setRandomRecipe }: MainProps) {
                         />
                     )}
                 />
-                {/* <ProtectedRoute exact path="/profile" component={Profile} /> */}
-                <Route exact path="/profile" component={Profile} />
+                <ProtectedRoute exact path="/profile" component={Profile} />
                 <Route exact path="/sign-up" component={Signup} />
                 <Route exact path="/login" component={Login} />
                 <Route exact path="/contact" component={ContactPage} />
