@@ -33,11 +33,12 @@
   },
   "scripts": {
     "start": "serve -s build",
-    "dev": "react-scripts start",
+    "start-frontend": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "start-backend": "cd src/backend && node server.js"
+    "start-backend": "cd src/backend && node server.js",
+    "both": "npm-run-all -p start-frontend start-backend"
   },
   "eslintConfig": {
     "extends": "react-app"
