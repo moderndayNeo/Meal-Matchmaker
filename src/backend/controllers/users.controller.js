@@ -47,3 +47,18 @@ exports.create = async (req, res) => {
             })
         })
 }
+
+exports.destroy = (req, res) => {
+    // query for params id
+    // if user exists, delete the record, else return 404
+
+    res.send('User destroy action')
+}
+
+exports.update = (req, res) => {
+    // update user instance with req body,
+    // if update successful, return user,
+    // else, return error message
+
+    res.send('User update action')
+}
