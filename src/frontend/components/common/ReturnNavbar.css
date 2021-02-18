@@ -5,6 +5,17 @@
     left: 0px;
     right: 0px;
     top: 0px;
+    border: 1px solid var(--primary-color-dark);
+}
+
+.ReturnNavbar .back-arrow {
+    position: absolute;
+    left: 6.67%;
+    right: 84.44%;
+    top: 25%;
+    bottom: 25%;
+    height: 21px;
+    z-index: 1;
 }
 
 

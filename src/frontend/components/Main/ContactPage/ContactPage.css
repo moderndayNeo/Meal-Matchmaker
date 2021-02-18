@@ -8,16 +8,6 @@
     margin-right: 30px;
 }
 
-.ContactPage .back-arrow {
-    position: absolute;
-    left: 6.67%;
-    right: 84.44%;
-    top: 25%;
-    bottom: 25%;
-    height: 21px;
-    z-index: 1;
-}
-
 .ContactPage .main-wrapper {
     position: absolute;
     background: var(--neutral-color-light);
