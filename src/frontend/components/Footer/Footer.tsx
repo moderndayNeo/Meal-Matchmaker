@@ -16,7 +16,7 @@ export default function Footer() {
                     />
                     <FooterContact
                         github=""
-                        facebook="https://www.facebook.com/putra.narassa"
+                        facebook="https://www.facebook.com/putra.rassa12"
                         linkedin=""
                         mailto="putraanrss20@gmail.com"
                     />
