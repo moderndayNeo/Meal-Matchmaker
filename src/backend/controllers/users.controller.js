@@ -62,9 +62,18 @@ exports.destroy = (req, res) => {
 }
 
 exports.update = (req, res) => {
-    // update user instance with req body,
-    // if update successful, return user,
-    // else, return error message
-
+    // User.update({ user: req.body }, { where: { id: req.params.id } })
+    //     .then(() => {
+    //         res.status(200).send({
+    //             message: `User successfully updated`,
+    //         })
+    //     })
+    //     .catch((err) => {
+    //         res.status(500).send({
+    //             message:
+    //                 err.message ||
+    //                 `Could not update user with id: ${req.params.id}`,
+    //         })
+    //     })
     res.send('User update action')
 }
