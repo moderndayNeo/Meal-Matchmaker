@@ -97,7 +97,8 @@
 }
 
 .RecipeComponentsDesktop .RelatedRecipes .ViewRecipeButton .right-arrow {
-    background: white;
+    /* background: white; */
+    background: none;
 }
 
 @media (min-width: 800px) {

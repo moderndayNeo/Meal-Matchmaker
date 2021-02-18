@@ -37,5 +37,6 @@
 }
 
 .RelatedRecipes .ViewRecipeButton .right-arrow {
-    background: white;
+    /* background: white; */
+    background: none;
 }

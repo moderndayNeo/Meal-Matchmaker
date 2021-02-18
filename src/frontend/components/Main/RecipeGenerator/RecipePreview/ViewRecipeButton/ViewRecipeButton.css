@@ -17,6 +17,7 @@
 .ViewRecipeButton .right-arrow {
     width: 20px;
     height: 20px;
-    background: var(--neutral-color-light);
+    /* background: var(--neutral-color-light); */
+    background: none;
     margin: 0 5px;
 }
