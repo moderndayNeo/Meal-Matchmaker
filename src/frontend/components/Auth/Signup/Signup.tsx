@@ -6,6 +6,7 @@ import { useHistory, Link } from 'react-router-dom'
 export default function Signup() {
     const [username, setUsername] = React.useState<string>('')
     const [password, setPassword] = React.useState<string>('')
+    const [confirmPassword, setConfirmPassword] = React.useState<string>('')
     const history = useHistory()
 
     const handleSubmit = (e: any) => {
@@ -26,13 +27,16 @@ export default function Signup() {
         }
     }
 
+    const allFieldsEntered = [username, password, confirmPassword].every(
+        (field) => field
+    )
+
     return (
         <div className="Signup">
             <h1 className="title">Create your account</h1>
             <p className="subtext">
                 Sign up to save your favourite recipes and add your own
             </p>
-
             <form>
                 <input
                     type="text"
@@ -46,18 +50,31 @@ export default function Signup() {
                     placeholder="Password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    disabled
+                    // disabled
                 />
-
-                <button className="generate-button" onClick={handleSubmit}>
+                <br />
+                <input
+                    type="password"
+                    placeholder="Confirm Password"
+                    value={confirmPassword}
+                    onChange={(e) => setConfirmPassword(e.target.value)}
+                    // disabled
+                />
+                <br />
+                <button
+                    disabled={!allFieldsEntered}
+                    className="generate-button"
+                    onClick={handleSubmit}
+                >
                     Sign Up
                 </button>
             </form>
-
-            <hr/>
+            <hr />
             --- Or ---
-            <hr/>
-            <Link className="generate-button" to="/login">Log In</Link>
+            <hr />
+            <Link className="generate-button" to="/login">
+                Log In
+            </Link>
         </div>
     )
 }
