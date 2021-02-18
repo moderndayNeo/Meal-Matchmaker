@@ -19,6 +19,7 @@ export default function Header({ onClick }: HeaderProps) {
             </Link>
             <nav>
                 <div className="text-links">
+                    <HeaderLink destination="/signup" text="Signup" />
                     <HeaderLink destination="/" text="Home" />
                     <HeaderLink destination="/recipe" text="Recipe" />
                     <HeaderLink destination="/contact" text="Contact" />
