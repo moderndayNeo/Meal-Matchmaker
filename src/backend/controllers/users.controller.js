@@ -24,27 +24,44 @@ exports.register = (req, res) => {
     //     return
     // }
 
-    let { username, password } = req.body
+    // const  { errors, isValid } = validateRegisterInput(req.body)
+    let errors = {} // remove this later
+    // if (!isValid) return res.status(400).json(errors)
 
+    let { username, password } = req.body
     User.findOne({ where: { username } }).then((user) => {
         if (user) {
-            return res.status(400).json({
-                username: 'A user has already registered with this username',
-            })
-        } else {
-            const newUser = new User({ username, password })
-
-            bcrypt.genSalt(10, (err, salt) => {
-                bcrypt.hash(password, salt, (err, hash) => {
-                    if (err) throw err
-                    newUser.passwordDigest = hash
-                    newUser
-                        .save()
-                        .then((user) => res.json(user))
-                        .catch((err) => console.log(err))
-                })
-            })
+            errors.username = 'Username is already taken'
+            return res.status(400).json(errors)
         }
+
+        const newUser = new User({ username, password })
+        bcrypt.genSalt(10, (err, salt) => {
+            bcrypt.hash(password, salt, (err, hash) => {
+                newUser.passwordDigest = hash
+                newUser
+                    .save()
+                    .then((user) => {
+                        const payload = {
+                            id: newUser.id,
+                            password: newUser.passwordDigest,
+                        }
+
+                        jwt.sign(
+                            payload,
+                            keys.secretOrKey,
+                            { expiresIn: 3600 },
+                            (err, token) => {
+                                res.json({
+                                    success: true,
+                                    token: 'Bearer ' + token,
+                                })
+                            }
+                        )
+                    })
+                    .catch((err) => console.log(err))
+            })
+        })
     })
 }
 
@@ -52,7 +69,6 @@ exports.login = (req, res) => {
     let { username, password } = req.body
     let errors = {} // remove this later
     // const { errors, isValid } = validateLoginInput(req.body)
-
     // if (!isValid) return res.status(400).json(errors)
 
     User.findOne({ where: { username } }).then((user) => {
