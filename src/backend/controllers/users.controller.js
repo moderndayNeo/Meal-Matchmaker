@@ -4,7 +4,6 @@ const jwt = require('jsonwebtoken')
 const keys = require('../config/keys')
 const validateLoginInput = require('../validation/login')
 const validateRegisterInput = require('../validation/register')
-// const passport = require('passport')
 
 exports.findAll = (req, res) => {
     let errors = {}
@@ -20,12 +19,10 @@ exports.findAll = (req, res) => {
 }
 
 exports.current = (req, res) => {
-    res.json('Success')
-    // res.json({
-    //     id: req.user.id,
-    //     handle: req.user.handle,
-    //     email: req.user.email,
-    // })
+    res.json({
+        id: req.user.id,
+        username: req.user.username,
+    })
 }
 
 exports.register = (req, res) => {
