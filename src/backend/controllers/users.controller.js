@@ -50,50 +50,34 @@ exports.register = (req, res) => {
 
 exports.login = (req, res) => {
     let { username, password } = req.body
+    let errors = {} // remove this later
+    // const { errors, isValid } = validateLoginInput(req.body)
+
+    // if (!isValid) return res.status(400).json(errors)
 
     User.findOne({ where: { username } }).then((user) => {
-        if (user) {
-            bcrypt.compare(password, user.passwordDigest).then((isMatch) => {
-                if (isMatch) {
-                    const payload = { id: user.id, username: user.username }
-
-                    jwt.sign(
-                        payload,
-                        keys.secretOrKey,
-                        { expiresIn: 3600 },
-                        (err, token) => {
-                            res.json({
-                                success: true,
-                                token: 'Bearer ' + token,
-                            })
-                        }
-                    )
-
-                    // jwt.sign(
-                    //   payload,
-                    //   keys.secretOrKey,
-                    //   // Tell the key to expire in one hour
-                    //   {expiresIn: 3600},
-                    //   (err, token) => {
-                    //     res.json({
-                    //       success: true,
-                    //       token: 'Bearer ' + token
-                    //     });
-                    //   });
-
-                    // res.json({ message: 'Success' })
-                    // login user
-                } else {
-                    return res.status(400).json({
-                        message: 'Incorrect password',
-                    })
-                }
-            })
-        } else {
-            res.status(404).send({
-                message: `User with username ${username} not found`,
-            })
+        if (!user) {
+            errors.name = 'This user does not exist'
+            return res.status(400).json(errors)
         }
+
+        bcrypt.compare(password, user.passwordDigest).then((isMatch) => {
+            if (isMatch) {
+                const payload = { id: user.id, username: user.username }
+
+                jwt.sign(
+                    payload,
+                    keys.secretOrKey,
+                    { expiresIn: 3600 },
+                    (err, token) => {
+                        res.json({ success: true, token: 'Bearer ' + token })
+                    }
+                )
+            } else {
+                errors.password = 'Incorrect password'
+                return res.status(400).json(errors)
+            }
+        })
     })
 }
 
