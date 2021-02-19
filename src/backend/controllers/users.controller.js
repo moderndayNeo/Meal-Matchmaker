@@ -69,6 +69,16 @@ exports.login = (req, res) => {
     })
 }
 
+exports.findById = (req, res) => {
+    User.findByPk(req.params.id)
+        .then((user) => res.json(user))
+        .catch((err) =>
+            res.status(404).send({
+                message: err.message || 'User not found',
+            })
+        )
+}
+
 exports.destroy = (req, res) => {
     User.destroy({
         where: {
