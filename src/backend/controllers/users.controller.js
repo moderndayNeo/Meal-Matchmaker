@@ -51,8 +51,16 @@ exports.login = (req, res) => {
 
     User.findOne({ where: { username } }).then((user) => {
         if (user) {
-            // check password is correct,
-            // login user
+            bcrypt.compare(password, user.passwordDigest).then((isMatch) => {
+                if (isMatch) {
+                    res.json({ message: 'Success' })
+                    // login user
+                } else {
+                    return res.status(400).json({
+                        message: 'Incorrect password',
+                    })
+                }
+            })
         } else {
             res.status(404).send({
                 message: `User with username ${username} not found`,
