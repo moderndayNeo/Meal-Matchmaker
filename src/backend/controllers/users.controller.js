@@ -1,6 +1,8 @@
 const AuthUtils = require('../util/auth_utils')
 const User = require('../models').User
 const bcrypt = require('bcryptjs')
+const jwt = require('jsonwebtoken')
+const keys = require('../../../config/keys')
 
 exports.findAll = (req, res) => {
     res.send(req)
@@ -53,7 +55,33 @@ exports.login = (req, res) => {
         if (user) {
             bcrypt.compare(password, user.passwordDigest).then((isMatch) => {
                 if (isMatch) {
-                    res.json({ message: 'Success' })
+                    const payload = { id: user.id, username: user.username }
+
+                    jwt.sign(
+                        payload,
+                        keys.secretOrKey,
+                        { expiresIn: 3600 },
+                        (err, token) => {
+                            res.json({
+                                success: true,
+                                token: 'Bearer ' + token,
+                            })
+                        }
+                    )
+
+                    // jwt.sign(
+                    //   payload,
+                    //   keys.secretOrKey,
+                    //   // Tell the key to expire in one hour
+                    //   {expiresIn: 3600},
+                    //   (err, token) => {
+                    //     res.json({
+                    //       success: true,
+                    //       token: 'Bearer ' + token
+                    //     });
+                    //   });
+
+                    // res.json({ message: 'Success' })
                     // login user
                 } else {
                     return res.status(400).json({
