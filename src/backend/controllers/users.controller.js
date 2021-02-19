@@ -4,6 +4,7 @@ const jwt = require('jsonwebtoken')
 const keys = require('../config/keys')
 const validateLoginInput = require('../validation/login')
 const validateRegisterInput = require('../validation/register')
+// const passport = require('passport')
 
 exports.findAll = (req, res) => {
     res.send(req)
@@ -15,6 +16,15 @@ exports.findAll = (req, res) => {
                 message: err.message || `No users found`,
             })
         })
+}
+
+exports.current = (req, res) => {
+    res.json("Success")
+    // res.json({
+    //     id: req.user.id,
+    //     handle: req.user.handle,
+    //     email: req.user.email,
+    // })
 }
 
 exports.register = (req, res) => {

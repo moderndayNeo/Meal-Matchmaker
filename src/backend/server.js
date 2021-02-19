@@ -1,7 +1,7 @@
 const express = require('express')
 const cors = require('cors')
-const bodyParser = require('body-parser');
-const passport = require('passport');
+const bodyParser = require('body-parser')
+const passport = require('passport')
 
 const app = express()
 
@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
     res.send({ message: `Meal Matchmaker backend` })
 })
 
-app.use(passport.initialize());
+app.use(passport.initialize())
 require('./config/passport')(passport)
 
 require('./routes/user.routes')(app)
@@ -30,6 +30,3 @@ const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
     console.log(`App listening on port ${PORT}...`)
 })
-
-
-// move keys into BE config folder, update imports
