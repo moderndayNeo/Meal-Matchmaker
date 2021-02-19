@@ -3,6 +3,8 @@ const User = require('../models').User
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 const keys = require('../../../config/keys')
+const validateLoginInput = require('../validation/login')
+const validateRegisterInput = require('../validation/register')
 
 exports.findAll = (req, res) => {
     res.send(req)
@@ -17,16 +19,8 @@ exports.findAll = (req, res) => {
 }
 
 exports.register = (req, res) => {
-    // if (!AuthUtils.validUsernameAndPassword(req.body)) {
-    //     res.status(500).send({
-    //         message: invalidCredentialsMessage,
-    //     })
-    //     return
-    // }
-
-    // const  { errors, isValid } = validateRegisterInput(req.body)
-    let errors = {} // remove this later
-    // if (!isValid) return res.status(400).json(errors)
+    const { errors, isValid } = validateRegisterInput(req.body)
+    if (!isValid) return res.status(400).json(errors)
 
     let { username, password } = req.body
     User.findOne({ where: { username } }).then((user) => {
@@ -67,9 +61,8 @@ exports.register = (req, res) => {
 
 exports.login = (req, res) => {
     let { username, password } = req.body
-    let errors = {} // remove this later
-    // const { errors, isValid } = validateLoginInput(req.body)
-    // if (!isValid) return res.status(400).json(errors)
+    const { errors, isValid } = validateLoginInput(req.body)
+    if (!isValid) return res.status(400).json(errors)
 
     User.findOne({ where: { username } }).then((user) => {
         if (!user) {
