@@ -14,7 +14,7 @@ exports.findAll = (req, res) => {
         })
 }
 
-exports.create = async (req, res) => {
+exports.register = (req, res) => {
     // if (!AuthUtils.validUsernameAndPassword(req.body)) {
     //     res.status(500).send({
     //         message: invalidCredentialsMessage,
@@ -41,6 +41,21 @@ exports.create = async (req, res) => {
                         .then((user) => res.json(user))
                         .catch((err) => console.log(err))
                 })
+            })
+        }
+    })
+}
+
+exports.login = (req, res) => {
+    let { username, password } = req.body
+
+    User.findOne({ where: { username } }).then((user) => {
+        if (user) {
+            // check password is correct,
+            // login user
+        } else {
+            res.status(404).send({
+                message: `User with username ${username} not found`,
             })
         }
     })

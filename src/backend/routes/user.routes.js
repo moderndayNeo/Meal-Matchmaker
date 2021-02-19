@@ -2,7 +2,9 @@ const router = require('express').Router()
 const users = require('../controllers/users.controller')
 
 module.exports = (app) => {
-    router.post('/', users.create)
+    router.post('/', users.register)
+
+    router.post('/login', users.login)
 
     router.get('/', users.findAll)
 
