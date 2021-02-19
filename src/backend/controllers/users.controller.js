@@ -7,19 +7,20 @@ const validateRegisterInput = require('../validation/register')
 // const passport = require('passport')
 
 exports.findAll = (req, res) => {
-    res.send(req)
+    let errors = {}
 
-    User.findAll()
-        .then((data) => res.send(data))
-        .catch((err) => {
-            res.status(404).send({
-                message: err.message || `No users found`,
-            })
-        })
+    User.findAll().then((users) => {
+        if (!users.length) {
+            errors.users = 'No users found'
+            res.status(404).json(errors)
+        } else {
+            res.status(200).send(users)
+        }
+    })
 }
 
 exports.current = (req, res) => {
-    res.json("Success")
+    res.json('Success')
     // res.json({
     //     id: req.user.id,
     //     handle: req.user.handle,
