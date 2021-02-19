@@ -1,7 +1,10 @@
 const AuthUtils = require('../util/auth_utils')
 const User = require('../models').User
+const bcrypt = require('bcryptjs')
 
 exports.findAll = (req, res) => {
+    res.send(req)
+
     User.findAll()
         .then((data) => res.send(data))
         .catch((err) => {
@@ -12,26 +15,35 @@ exports.findAll = (req, res) => {
 }
 
 exports.create = async (req, res) => {
-    const invalidCredentialsMessage = 'Invalid username or password'
+    // if (!AuthUtils.validUsernameAndPassword(req.body)) {
+    //     res.status(500).send({
+    //         message: invalidCredentialsMessage,
+    //     })
+    //     return
+    // }
 
-    if (!AuthUtils.validUsernameAndPassword(req.body)) {
-        res.status(500).send({
-            message: invalidCredentialsMessage,
-        })
-        return
-    }
+    let { username, password } = req.body
 
-    const { username, password } = req.body
-    // hash the password
-    // create user with the username and hashed password (passwordDigest)
-
-    User.create({ username, password })
-        .then((data) => res.send(data))
-        .catch((error) => {
-            res.status(500).send({
-                message: error.message || 'User could not be created',
+    User.findOne({ where: { username } }).then((user) => {
+        if (user) {
+            return res.status(400).json({
+                username: 'A user has already registered with this username',
             })
-        })
+        } else {
+            const newUser = new User({ username, password })
+
+            bcrypt.genSalt(10, (err, salt) => {
+                bcrypt.hash(password, salt, (err, hash) => {
+                    if (err) throw err
+                    newUser.passwordDigest = hash
+                    newUser
+                        .save()
+                        .then((user) => res.json(user))
+                        .catch((err) => console.log(err))
+                })
+            })
+        }
+    })
 }
 
 exports.destroy = (req, res) => {
