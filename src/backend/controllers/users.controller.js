@@ -70,13 +70,16 @@ exports.login = (req, res) => {
 }
 
 exports.findById = (req, res) => {
-    User.findByPk(req.params.id)
-        .then((user) => res.json(user))
-        .catch((err) =>
+    User.findByPk(req.params.id).then((user) => {
+        if (!user) {
             res.status(404).send({
-                message: err.message || 'User not found',
+                message: 'User not found',
             })
-        )
+            return
+        }
+
+        res.send(user)
+    })
 }
 
 exports.destroy = (req, res) => {
