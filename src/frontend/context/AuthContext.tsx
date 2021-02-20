@@ -1,4 +1,5 @@
 import React, { createContext, useEffect, useReducer } from 'react'
+import { Association } from 'sequelize/types'
 import APIUtil from '../util/api.utils'
 import { setAuthToken } from '../util/http-common'
 
@@ -10,29 +11,37 @@ interface LoginProps {
     password: string
 }
 
-export const Auth: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+interface AuthState {
+    isLoggedIn: boolean
+    token: string
+    user: object
+}
+
+const Auth: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     const initialState = {
         isLoggedIn: false,
         token: null,
         user: {},
     }
 
-    interface AuthState {
-        isLoggedIn: boolean
-        token: string
-        user: object
-    }
-
-    function reducer(state: AuthState, action: any) {
+    function reducer(prevState: AuthState, action: any) {
         switch (action.type) {
+            case 'RESTORE TOKEN':
+                return {
+                    ...prevState,
+                    token: action.token,
+                    user: action.user,
+                }
             case 'SIGN IN':
                 return {
+                    ...prevState,
                     isLoggedIn: true,
                     token: action.token,
                     user: action.user,
                 }
             case 'SIGN OUT':
                 return {
+                    ...prevState,
                     isLoggedIn: false,
                     token: null,
                     user: {},
@@ -45,13 +54,13 @@ export const Auth: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     const [state, dispatch] = useReducer(reducer, initialState)
 
     useEffect(() => {
-        // check for JWT in browser localStorage
-        // if JWT found, attach it to axios Authorization header
-        // if no JWT,
+        const token = localStorage.getItem(LOCAL_STORAGE_AUTH_TOKEN)
+        // if (!token) return
 
-        return () => {
-            // cleanup
-        }
+        // setAuthToken(token)
+        // send token to BE,
+        // if valid get back user from BE, update token in state, set token in LS.
+        //
     }, [])
 
     const authContext = {
@@ -89,6 +98,8 @@ export const Auth: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         </AuthContext.Provider>
     )
 }
+
+export default Auth
 
 // imports
 // declare constants
