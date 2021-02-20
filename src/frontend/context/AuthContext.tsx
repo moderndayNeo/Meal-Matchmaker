@@ -1,6 +1,9 @@
 import React, { createContext, useEffect, useReducer } from 'react'
+import APIUtil from '../util/api.utils'
+import { setAuthToken } from '../util/http-common'
 
 const AuthContext = createContext<any>({})
+const LOCAL_STORAGE_AUTH_TOKEN = 'auth_jwt'
 
 interface LoginProps {
     username: string
@@ -8,9 +11,19 @@ interface LoginProps {
 }
 
 export const Auth: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-    const initialState = { isLoggedIn: false, token: null, user: null }
+    const initialState = {
+        isLoggedIn: false,
+        token: null,
+        user: {},
+    }
 
-    function reducer(state: any, action: any) {
+    interface AuthState {
+        isLoggedIn: boolean
+        token: string
+        user: object
+    }
+
+    function reducer(state: AuthState, action: any) {
         switch (action.type) {
             case 'SIGN IN':
                 return {
@@ -19,7 +32,11 @@ export const Auth: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                     user: action.user,
                 }
             case 'SIGN OUT':
-                return { isLoggedIn: false, token: null, user: null }
+                return {
+                    isLoggedIn: false,
+                    token: null,
+                    user: {},
+                }
             default:
                 return initialState
         }
@@ -28,24 +45,39 @@ export const Auth: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     const [state, dispatch] = useReducer(reducer, initialState)
 
     useEffect(() => {
-        // check for JWT
+        // check for JWT in browser localStorage
+        // if JWT found, attach it to axios Authorization header
+        // if no JWT,
+
         return () => {
             // cleanup
         }
     }, [])
 
     const authContext = {
-        signIn: ({ username, password }: LoginProps) => {
-            // attempt to login user on BE
-            // if successful, set JWT in LS
-            dispatch({
-                type: 'SIGN IN',
-                token: '1234',
-                user: { username: 'Guest', password: 'GuestAccount' },
+        signIn: async ({ username, password }: LoginProps) => {
+            const response: any = await APIUtil.signInUser({
+                username,
+                password,
             })
+
+            if (response.success) {
+                setAuthToken(response.token)
+                localStorage.setItem(LOCAL_STORAGE_AUTH_TOKEN, response.token)
+                dispatch({
+                    type: 'SIGN IN',
+                    token: response.token,
+                    user: { username },
+                })
+            } else {
+                setAuthToken(null)
+                localStorage.removeItem(LOCAL_STORAGE_AUTH_TOKEN)
+                dispatch({ type: 'SIGN OUT' }) // do we want to sign out the user here?
+            }
         },
         signOut: () => {
-            // sign out user
+            setAuthToken(null)
+            localStorage.removeItem(LOCAL_STORAGE_AUTH_TOKEN)
             dispatch({ type: 'SIGN OUT' })
         },
         user: state.user,
