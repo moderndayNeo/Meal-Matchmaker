@@ -11,7 +11,9 @@ export default function Signup() {
 
     const handleSubmit = (e: any) => {
         e.preventDefault()
-        APIUtil.createUser({ username, password }).then((res) => handleResponse(res))
+        APIUtil.createUser({ username, password }).then((res) =>
+            handleResponse(res)
+        )
     }
 
     interface ResObject {
@@ -61,9 +63,7 @@ export default function Signup() {
                     onChange={(e) => setConfirmPassword(e.target.value)}
                     // disabled
                 />
-                {
-                    passwordsDontMatch && <p>Passwords must match</p>
-                }
+                {passwordsDontMatch && <p>Passwords must match</p>}
 
                 <br />
                 <button
