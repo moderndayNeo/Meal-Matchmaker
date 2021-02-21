@@ -30,9 +30,12 @@
 }
 
 .Navbar .navbar-icons {
-    width: 75px;
     display: flex;
     justify-content: space-between;
+}
+
+.Navbar .navbar-icons > * {
+    padding-left: 5px;
 }
 
 @media (min-width: 800px) {
