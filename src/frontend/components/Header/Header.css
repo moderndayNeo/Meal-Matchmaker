@@ -34,11 +34,40 @@
     line-height: 28px;
 }
 
+.Header .header-left {
+    display: flex;
+    align-items: center;
+}
+
+.Header .header-left > * {
+    padding-right: 15px;
+}
+
+.Header .header-left .logged-in-display {
+    display: flex;
+    align-items: center;
+}
+
 .Header .text-links {
-    width: 300px;
+    width: auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
     text-align: right;
+}
+
+.Header .text-links > * {
+    padding-left: 15px;
+}
+
+.Header .sign-out-button {
+    cursor: pointer;
+}
+
+.Header .username {
+    font-weight: bold;
+    font-size: 1.25em;
+    padding: 0 20px;
 }
 
 .Header nav {
