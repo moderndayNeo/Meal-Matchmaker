@@ -74,7 +74,7 @@ exports.login = (req, res) => {
     User.findOne({ where: { username } }).then((user) => {
         if (!user) {
             errors.name = 'This user does not exist'
-            return res.status(400).json(errors)
+            return res.status(404).json(errors)
         }
 
         bcrypt.compare(password, user.passwordDigest).then((isMatch) => {
@@ -86,7 +86,11 @@ exports.login = (req, res) => {
                     keys.secretOrKey,
                     { expiresIn: 3600 },
                     (err, token) => {
-                        res.json({ success: true, token: 'Bearer ' + token, user: payload })
+                        res.json({
+                            success: true,
+                            token: 'Bearer ' + token,
+                            user: payload,
+                        })
                     }
                 )
             } else {
