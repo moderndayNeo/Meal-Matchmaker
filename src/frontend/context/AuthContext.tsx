@@ -2,7 +2,7 @@ import React, { createContext, useEffect, useReducer } from 'react'
 import APIUtil from '../util/api.utils'
 import { setAuthToken } from '../util/http-common'
 
-const AuthContext = createContext<any>({})
+export const AuthContext = createContext<any>({})
 const LOCAL_STORAGE_AUTH_TOKEN = 'auth_jwt'
 
 interface LoginProps {
@@ -68,25 +68,33 @@ const Auth: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             .catch((err) => console.log(err))
     }, [])
 
+    /*
+    make login page work
+    login with guest account
+    call the login function from the login page
+    check that JWT is held in LS
+    if user is logged in, we should we Welcome, Username in the navbar
+    */
+
     const authContext = {
         signIn: async ({ username, password }: LoginProps) => {
-            const response: any = await APIUtil.signInUser({
-                username,
-                password,
-            })
+            try {
+                const response: any = await APIUtil.signInUser({
+                    password,
+                    username,
+                })
 
-            if (response.success) {
-                setAuthToken(response.token)
-                localStorage.setItem(LOCAL_STORAGE_AUTH_TOKEN, response.token)
+                const { token, id } = await response.data
+                setAuthToken(token)
+                localStorage.setItem(LOCAL_STORAGE_AUTH_TOKEN, token)
                 dispatch({
                     type: 'SIGN IN',
-                    token: response.token,
-                    user: { username },
+                    token,
+                    user: { username, id },
                 })
-            } else {
-                setAuthToken(null)
-                localStorage.removeItem(LOCAL_STORAGE_AUTH_TOKEN)
-                dispatch({ type: 'SIGN OUT' }) // do we want to sign out the user here?
+                console.log('login successful')
+            } catch (err) {
+                console.log('Login attempt failed', { err })
             }
         },
         signOut: () => {
@@ -95,6 +103,7 @@ const Auth: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             dispatch({ type: 'SIGN OUT' })
         },
         user: state.user,
+        isLoggedIn: state.isLoggedIn,
     }
 
     return (
