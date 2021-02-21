@@ -1,7 +1,7 @@
 import http from './http-common'
 
 interface User {
-    username: string,
+    username: string
     password: string
 }
 
@@ -11,8 +11,11 @@ const createUser = (user: User) => http.post('/users', user)
 
 const signInUser = (user: User) => http.post('/login', user)
 
+const checkToken = () => http.get('/current')
+
 export default {
     getUsers,
     createUser,
-    signInUser
+    signInUser,
+    checkToken,
 }

@@ -1,5 +1,4 @@
 import React, { createContext, useEffect, useReducer } from 'react'
-import { Association } from 'sequelize/types'
 import APIUtil from '../util/api.utils'
 import { setAuthToken } from '../util/http-common'
 
@@ -55,12 +54,18 @@ const Auth: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
     useEffect(() => {
         const token = localStorage.getItem(LOCAL_STORAGE_AUTH_TOKEN)
-        // if (!token) return
+        if (!token) {
+            console.log('No token in localStorage')
+            return
+        }
 
-        // setAuthToken(token)
-        // send token to BE,
         // if valid get back user from BE, update token in state, set token in LS.
-        //
+        setAuthToken(token) // add auth token to axios header
+        APIUtil.checkToken() // make a get request to see if BE verifies it
+            .then((user) => {
+                dispatch({ type: 'SIGN IN', user, token })
+            })
+            .catch((err) => console.log(err))
     }, [])
 
     const authContext = {
