@@ -9,9 +9,9 @@ const getUsers = () => http.get('/users')
 
 const createUser = (user: User) => http.post('/users', user)
 
-const signInUser = (user: User) => http.post('/login', user)
+const signInUser = (user: User) => http.post('/users/login', user)
 
-const checkToken = () => http.get('/current')
+const checkToken = () => http.get('/users/current')
 
 export default {
     getUsers,
