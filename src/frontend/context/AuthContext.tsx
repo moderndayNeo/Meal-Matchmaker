@@ -1,6 +1,6 @@
 import React, { createContext, useEffect, useReducer } from 'react'
 import APIUtil from '../util/api.utils'
-import { setAuthToken } from '../util/http-common'
+import { setAxiosAuthHeader } from '../util/http-common'
 import jwt_decode, { JwtPayload } from 'jwt-decode'
 export const AuthContext = createContext<any>({})
 const LOCAL_STORAGE_AUTH_TOKEN = 'auth_jwt'
@@ -67,7 +67,7 @@ const Auth: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             console.log('code expired')
         }
 
-        // setAuthToken(token)
+        // setAxiosAuthHeader(token)
         // APIUtil.checkToken()
         //     .then((user) => {
         //         dispatch({ type: 'SIGN IN', user, token })
@@ -90,7 +90,7 @@ const Auth: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                     password,
                 }).then(extractData)
 
-                setAuthToken(token)
+                setAxiosAuthHeader(token)
                 localStorage.setItem(LOCAL_STORAGE_AUTH_TOKEN, token)
                 dispatch({
                     type: 'SIGN IN',
@@ -103,7 +103,7 @@ const Auth: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             }
         },
         signOut: () => {
-            setAuthToken(null)
+            setAxiosAuthHeader(null)
             localStorage.removeItem(LOCAL_STORAGE_AUTH_TOKEN)
             dispatch({ type: 'SIGN OUT' })
         },

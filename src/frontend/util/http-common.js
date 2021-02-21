@@ -7,7 +7,7 @@ export default axios.create({
     },
 })
 
-export const setAuthToken = (token) => {
+export const setAxiosAuthHeader = (token) => {
     if (token) {
         axios.defaults.headers.common['Authorization'] = token
     } else {
