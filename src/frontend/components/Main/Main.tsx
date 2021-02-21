@@ -8,7 +8,7 @@ import Signup from '../Auth/Signup/Signup'
 import Login from '../Auth/Login/Login'
 import Profile from '../Profile/Profile'
 import { Route, Switch } from 'react-router-dom'
-import { ProtectedRoute } from '../../util/route_utils'
+import { ProtectedRoute, AuthRoute } from '../../util/route_utils'
 import { IMeal } from '../../IMeal'
 
 interface MainProps {
@@ -53,7 +53,7 @@ export default function Main({ onClick, meal, setRandomRecipe }: MainProps) {
                 />
                 <ProtectedRoute exact path="/profile" component={Profile} />
                 <Route exact path="/sign-up" component={Signup} />
-                <Route exact path="/login" component={Login} />
+                <AuthRoute exact path="/login" component={Login} />
                 <Route exact path="/contact" component={ContactPage} />
                 <Route path="/:notfound" component={WelcomePage} />
             </Switch>
