@@ -1,16 +1,18 @@
 import React from 'react'
 import './Login.css'
 import { useHistory, Link } from 'react-router-dom'
+import { AuthContext } from '../../../context/AuthContext'
 
 export default function Login() {
     const [username, setUsername] = React.useState<string>('')
     const [password, setPassword] = React.useState<string>('')
     const history = useHistory()
+    const { signIn } = React.useContext(AuthContext)
 
     const handleSubmit = (e: any) => {
         e.preventDefault()
 
-        // attempt to login the user, handle response
+        signIn({ username, password })
     }
 
     return (
@@ -29,7 +31,7 @@ export default function Login() {
                     placeholder="Password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    disabled
+                    // disabled
                 />
 
                 <button className="generate-button" onClick={handleSubmit}>
