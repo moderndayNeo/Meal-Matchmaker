@@ -27,6 +27,10 @@
     margin: 0;
 }
 
+.SignInModal .modal .title {
+    font-size: 17px;
+}
+
 .SignInModal .modal .login-link {
     text-decoration: none;
     width: 60%;
@@ -35,5 +39,5 @@
 
 .SignInModal .modal .cancel-button {
     color: var(--secondary-color-warning);
-    /* color: var(--primary-color-accent); */
+    font-weight: bold;
 }
