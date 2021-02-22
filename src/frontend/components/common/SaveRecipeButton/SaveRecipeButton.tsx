@@ -11,6 +11,7 @@ export default function SaveRecipeButton() {
     const handleClick = () => {
         if (isLoggedIn) {
             // save recipe
+            console.log('saving recipe')
         } else {
             // show sign in modal
             setSignInModal(true)
@@ -21,3 +22,4 @@ export default function SaveRecipeButton() {
         <UnfilledStarIcon className="SaveRecipeButton" onClick={handleClick} />
     )
 }
+ 
