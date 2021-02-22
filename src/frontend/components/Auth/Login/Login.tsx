@@ -56,7 +56,9 @@ export default function Login() {
 
                 <button
                     className="generate-button login-button"
-                    // onClick={login with guest account}
+                    // onClick={() =>
+                    //     signIn({ username: 'Guest', password: 'guestaccount' })
+                    // }
                 >
                     Continue as Guest
                 </button>

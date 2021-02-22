@@ -22,11 +22,11 @@ body {
     --mobile-side-padding: 24px;
     --primary-color-dark: #2c056a;
     --primary-color-accent: #6610f2;
+    --secondary-color-warning: #e46a0c;
     --primary-color-faded: rgb(104 18 243 / 50%);
     --neutral-color-light: #fff1ec;
     --light-grey: rgb(219, 219, 219);
     --dark-grey: rgb(142, 142, 142);
-    --secondary-color-warning: #e46a0c;
     --header-height: 96px;
     --footer-height: 312px;
     --mobile-navbar-height: 64px;
