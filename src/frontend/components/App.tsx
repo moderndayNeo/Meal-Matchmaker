@@ -7,7 +7,7 @@ import { IMeal } from '../IMeal'
 import Footer from './Footer/Footer'
 import Loader from './Main/RecipeGenerator/Loader/Loader'
 import Header from './Header/Header'
-import SignInModal from './common/SignInModal'
+import SignInModal from './common/SignInModal/SignInModal'
 import UIContext from '../contexts/UI/UIContext'
 
 function App() {

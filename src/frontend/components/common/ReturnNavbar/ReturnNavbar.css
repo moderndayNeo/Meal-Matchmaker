@@ -1,4 +1,3 @@
-
 .ReturnNavbar {
     position: absolute;
     height: 64px;
@@ -18,9 +17,8 @@
     z-index: 1;
 }
 
-
 @media (min-width: 800px) {
- .ReturnNavbar {
-    display: none;
-}
+    .ReturnNavbar {
+        display: none;
+    }
 }

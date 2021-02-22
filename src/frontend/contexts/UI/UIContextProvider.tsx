@@ -2,7 +2,7 @@ import React from 'react'
 import UIContext from './UIContext'
 
 const UI: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-    const [signInModal, setSignInModal] = React.useState<boolean>(true)
+    const [signInModal, setSignInModal] = React.useState<boolean>(false)
 
     const uiContext = {
         signInModal,

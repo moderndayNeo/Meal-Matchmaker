@@ -1,6 +1,6 @@
 import React from 'react'
 import './ReturnNavbar.css'
-import backArrow from '../../media/Icon_left_arrow.svg'
+import backArrow from '../../../media/Icon_left_arrow.svg'
 import { useHistory } from 'react-router-dom'
 
 export default function ReturnNavbar() {

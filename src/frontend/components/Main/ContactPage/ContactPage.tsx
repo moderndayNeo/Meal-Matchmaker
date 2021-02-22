@@ -3,7 +3,7 @@ import './ContactPage.css'
 import TeamMember from './TeamMember/TeamMember'
 import ContactPageSummary from './ContactPageSummary/ContactPageSummary'
 import ContactPageImage from './ContactPageImage/ContactPageImage'
-import ReturnNavbar from '../../common/ReturnNavbar'
+import ReturnNavbar from '../../common/ReturnNavbar/ReturnNavbar'
 
 export default function ContactPage() {
     return (

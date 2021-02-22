@@ -1,6 +1,6 @@
 import React from 'react'
 import './Profile.css'
-import ReturnNavbar from '../common/ReturnNavbar'
+import ReturnNavbar from '../common/ReturnNavbar/ReturnNavbar'
 
 export default function Profile() {
     return (

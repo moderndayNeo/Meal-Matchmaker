@@ -1,7 +1,7 @@
 import React from 'react'
 import './SignInModal.css'
 import { Link } from 'react-router-dom'
-import UIContext from '../../contexts/UI/UIContext'
+import UIContext from '../../../contexts/UI/UIContext'
 
 export default function SignInModal() {
     const { setSignInModal } = React.useContext(UIContext)
