@@ -7,8 +7,8 @@ import { IMeal } from '../IMeal'
 import Footer from './Footer/Footer'
 import Loader from './Main/RecipeGenerator/Loader/Loader'
 import Header from './Header/Header'
+import SignInModal from './common/SignInModal'
 import UIContext from '../contexts/UI/UIContext'
-// import APIUtil from '../util/api.utils'
 
 function App() {
     const [randomRecipe, setRandomRecipe] = useState<IMeal>(meal)
@@ -31,11 +31,10 @@ function App() {
         }, 1000)
     }
 
-    // APIUtil.getUsers().then((res) => console.log(res.data))
-
     return (
         <BrowserRouter>
             <div className="App">
+                {signInModal && <SignInModal />}
                 <Header onClick={handleClick} />
                 <div className="components-and-footer">
                     <Main
