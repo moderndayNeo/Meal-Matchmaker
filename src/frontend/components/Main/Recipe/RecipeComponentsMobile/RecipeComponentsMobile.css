@@ -4,7 +4,7 @@
 }
 
 .RecipeComponentsMobile .recipe-nav {
-    height: 64px;
+    height: var(--mobile-navbar-height);
     background: rgba(44, 5, 106, 0.3);
     position: absolute;
     top: 0;

@@ -11,7 +11,7 @@
 .ContactPage .main-wrapper {
     position: absolute;
     background: var(--neutral-color-light);
-    top: 88px;
+    top: var(--mobile-navbar-height);
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
     padding: 33px var(--mobile-side-padding);

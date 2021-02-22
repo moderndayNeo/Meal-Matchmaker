@@ -1,10 +1,10 @@
 .ReturnNavbar {
     position: absolute;
-    height: 64px;
+    height: var(--mobile-navbar-height);
     left: 0px;
     right: 0px;
     top: 0px;
-    border: 1px solid var(--primary-color-dark);
+    /* border: 1px solid var(--primary-color-dark); */
 }
 
 .ReturnNavbar .back-arrow {
