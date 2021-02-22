@@ -3,12 +3,12 @@ import './AuthPage.css'
 import ReturnNavbar from '../common/ReturnNavbar/ReturnNavbar'
 import { Link } from 'react-router-dom'
 import AuthContext from '../../contexts/Auth/AuthContext'
-// import UIContext from '../../../contexts/UI/UIContext'
 
-const AuthPage: React.FC<{ children: React.ReactNode; title: string }> = ({
-    children,
-    title,
-}) => {
+const AuthPage: React.FC<{
+    children: React.ReactNode
+    title: string
+    alternate: string
+}> = ({ children, title, alternate }) => {
     const { signIn } = React.useContext(AuthContext)
 
     return (
@@ -33,10 +33,17 @@ const AuthPage: React.FC<{ children: React.ReactNode; title: string }> = ({
                     Continue as Guest
                 </button>
 
-                {/* <section className="sign-up-link">
-                    <p>{alternateText} have an account?</p>
-                    <Link to={alternateHref}>{alternateLinkText}</Link>
-                </section> */}
+                {alternate === 'signup' ? (
+                    <section className="sign-up-link">
+                        <p>Don't have an account?</p>
+                        <Link to="/sign-up">Sign Up</Link>
+                    </section>
+                ) : (
+                    <section className="alternate-link">
+                        <p>Already have an account?</p>
+                        <Link to="/login">Log In</Link>
+                    </section>
+                )}
             </main>
         </div>
     )
