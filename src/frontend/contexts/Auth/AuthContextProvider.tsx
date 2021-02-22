@@ -1,8 +1,8 @@
-import React, { createContext, useEffect, useReducer } from 'react'
-import APIUtil from '../util/api.utils'
-import { setAxiosAuthHeader } from '../util/http-common'
+import React, { useEffect, useReducer } from 'react'
+import AuthContext from './AuthContext'
+import APIUtil from '../../util/api.utils'
+import { setAxiosAuthHeader } from '../../util/http-common'
 import jwt_decode, { JwtPayload } from 'jwt-decode'
-export const AuthContext = createContext<any>({})
 const LOCAL_STORAGE_AUTH_TOKEN = 'auth_jwt'
 
 interface LoginProps {

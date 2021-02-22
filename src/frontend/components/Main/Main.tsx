@@ -19,7 +19,6 @@ interface MainProps {
 }
 
 export default function Main({ onClick, meal, setRandomRecipe }: MainProps) {
-
     return (
         <div className="Main">
             <Switch>

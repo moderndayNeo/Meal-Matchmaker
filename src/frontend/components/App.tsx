@@ -7,11 +7,13 @@ import { IMeal } from '../IMeal'
 import Footer from './Footer/Footer'
 import Loader from './Main/RecipeGenerator/Loader/Loader'
 import Header from './Header/Header'
+import UIContext from '../contexts/UI/UIContext'
 // import APIUtil from '../util/api.utils'
 
 function App() {
     const [randomRecipe, setRandomRecipe] = useState<IMeal>(meal)
     const [loading, setLoading] = useState<boolean>(false)
+    const { signInModal } = React.useContext(UIContext)
 
     async function getRandomRecipe(): Promise<void> {
         const response = await fetch(

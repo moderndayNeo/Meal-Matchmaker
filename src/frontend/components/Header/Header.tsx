@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { AuthContext } from '../../context/AuthContext'
+import AuthContext from '../../contexts/Auth/AuthContext'
 import NewRecipeButton from '../Main/RecipeGenerator/NewRecipeButton/NewRecipeButton'
 import './Header.css'
 import HeaderLink from './HeaderLink/HeaderLink'

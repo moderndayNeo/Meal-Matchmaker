@@ -3,7 +3,7 @@ import './Navbar.css'
 import infoIcon from '../../media/Icons_info_dark.svg'
 import homeIcon from '../../media/icons_home.svg'
 import { Link } from 'react-router-dom'
-import { AuthContext } from '../../context/AuthContext'
+import AuthContext from '../../contexts/Auth/AuthContext'
 
 export default function Navbar() {
     const { isLoggedIn } = React.useContext(AuthContext)
