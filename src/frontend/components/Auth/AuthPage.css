@@ -1,0 +1,67 @@
+.AuthPage {
+    text-align: center;
+}
+
+.AuthPage .auth-container {
+    position: absolute;
+    top: var(--mobile-navbar-height);
+    padding: 12%;
+    width: 100%;
+}
+
+.AuthPage .title {
+    margin: 20px 0;
+}
+
+.AuthPage form input {
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    outline: none;
+    background-color: #fafafa;
+    padding: 3px 9px;
+    margin: 3px 0;
+    line-height: 30px;
+    font-size: 13px;
+    width: 100%;
+}
+
+.AuthPage .login-button {
+    width: 100%;
+    margin: 15px auto;
+    padding: 5px;
+}
+
+.AuthPage .or-separator {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.or-separator .separator-line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--light-grey);
+}
+
+.or-separator p {
+    padding: 10px;
+    margin: 3px 0;
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--dark-grey);
+}
+
+.AuthPage .sign-up-link {
+    margin: 30px 0;
+    padding: 10px 0;
+}
+
+.AuthPage .sign-up-link p {
+    display: inline;
+    color: black;
+}
+
+.AuthPage .sign-up-link a {
+    margin: 0 10px;
+    font-weight: bold;
+}
