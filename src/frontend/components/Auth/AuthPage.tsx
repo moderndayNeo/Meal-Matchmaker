@@ -34,7 +34,7 @@ const AuthPage: React.FC<{
                 </button>
 
                 {alternate === 'signup' ? (
-                    <section className="sign-up-link">
+                    <section className="alternate-link">
                         <p>Don't have an account?</p>
                         <Link to="/sign-up">Sign Up</Link>
                     </section>
