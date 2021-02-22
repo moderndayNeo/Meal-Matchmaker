@@ -4,11 +4,14 @@ import './frontend/components/index.css'
 import App from './frontend/components/App'
 import * as serviceWorker from './frontend/serviceWorker'
 import AuthContextProvider from './frontend/context/AuthContext'
+import UIContextProdiver from './frontend/context/UIContext'
 
 ReactDOM.render(
     <React.StrictMode>
         <AuthContextProvider>
-            <App />
+            <UIContextProdiver>
+                <App />
+            </UIContextProdiver>
         </AuthContextProvider>
     </React.StrictMode>,
     document.getElementById('root')
