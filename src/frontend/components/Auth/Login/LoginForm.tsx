@@ -29,7 +29,7 @@ export default function LoginForm() {
             />
 
             <button
-                className="generate-button login-button"
+                className="generate-button auth-button"
                 onClick={handleSubmit}
             >
                 Log In

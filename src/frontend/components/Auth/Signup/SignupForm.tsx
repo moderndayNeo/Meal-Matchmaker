@@ -64,7 +64,7 @@ export default function SignupForm() {
             <br />
             <button
                 disabled={!allFieldsEntered || passwordsDontMatch}
-                className="generate-button"
+                className="generate-button auth-button"
                 onClick={handleSubmit}
             >
                 Sign Up

@@ -25,7 +25,7 @@ const AuthPage: React.FC<{
                 </div>
 
                 <button
-                    className="generate-button login-button"
+                    className="generate-button auth-button"
                     // onClick={() =>
                     //     signIn({ username: 'Guest', password: 'guestaccount' })
                     // }
