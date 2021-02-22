@@ -2,12 +2,16 @@ import React from 'react'
 import './Login.css'
 import { Link } from 'react-router-dom'
 import AuthContext from '../../../contexts/Auth/AuthContext'
+import UIContext from '../../../contexts/UI/UIContext'
 
 export default function Login() {
     const { signIn } = React.useContext(AuthContext)
+    const { setSignInModal } = React.useContext(UIContext)
 
     const [username, setUsername] = React.useState<string>('')
     const [password, setPassword] = React.useState<string>('')
+
+    React.useEffect(() => setSignInModal(false))
 
     const handleSubmit = (e: any) => {
         e.preventDefault()
