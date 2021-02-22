@@ -3,7 +3,7 @@ import './RecipeComponentsMobile.css'
 import RecipeDetails from '../RecipeDetails/RecipeDetails'
 import { IMeal } from '../../../../IMeal'
 import { ReactComponent as BackButton } from '../../../../media/Icons_left_arrow_white.svg'
-import { ReactComponent as UnfilledStarIcon } from '../../../../media/Icons_star_unfilled.svg'
+import SaveRecipeButton from '../../../common/SaveRecipeButton/SaveRecipeButton'
 import { Link } from 'react-router-dom'
 
 interface RecipeComponentsMobileProps {
@@ -24,7 +24,7 @@ export default function RecipeComponentsMobile({
                         onClick={() => setRandomRecipe(meal)}
                     />
                 </Link>
-                <UnfilledStarIcon className="save-recipe-icon" />
+                <SaveRecipeButton />
             </nav>
             <img src={meal.strMealThumb} className="recipe-image" alt="meal" />
             <RecipeDetails meal={meal} setRandomRecipe={setRandomRecipe} />

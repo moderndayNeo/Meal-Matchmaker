@@ -17,20 +17,9 @@
 }
 
 .RecipeComponentsMobile .back-button {
-    /* position: absolute;
-    left: 6.67%;
-    top: 25%;
-    bottom: 25%; */
     --back-button-dimensions: 21px;
     height: var(--back-button-dimensions);
     width: var(--back-button-dimensions);
-}
-
-.RecipeComponentsMobile .save-recipe-icon {
-    fill: white;
-    --save-icon-dimensions: 25px;
-    height: var(--save-icon-dimensions);
-    width: var(--save-icon-dimensions);
 }
 
 @media (min-width: 800px) {

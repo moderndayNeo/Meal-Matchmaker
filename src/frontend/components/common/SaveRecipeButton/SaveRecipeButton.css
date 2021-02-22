@@ -1,0 +1,6 @@
+.SaveRecipeButton {
+    fill: white;
+    --save-icon-dimensions: 25px;
+    height: var(--save-icon-dimensions);
+    width: var(--save-icon-dimensions);
+}
