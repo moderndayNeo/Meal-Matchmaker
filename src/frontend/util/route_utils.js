@@ -24,7 +24,7 @@ export const AuthRoute = ({ exact, path, component: Component }) => {
             path={path}
             exact={exact}
             render={(props) =>
-                isLoggedIn ? <Redirect to="/" /> : <Component {...props} />
+                isLoggedIn ? <Redirect to="/recipe-generator" /> : <Component {...props} />
             }
         />
     )
