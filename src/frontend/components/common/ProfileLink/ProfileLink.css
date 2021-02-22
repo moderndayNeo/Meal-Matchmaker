@@ -1,0 +1,6 @@
+.ProfileLink svg {
+    --profile-icon-dimensions: 32px;
+    height: var(--profile-icon-dimensions);
+    width: var(--profile-icon-dimensions);
+    fill: var(--primary-color-dark);
+}

@@ -1,12 +1,10 @@
 import React from 'react'
 import './Navbar.css'
 import infoIcon from '../../media/Icons_info_dark.svg'
-import profileIcon from '../../media/Icons_profile.svg'
+import ProfileLink from '../common/ProfileLink/ProfileLink'
 import { Link } from 'react-router-dom'
-import AuthContext from '../../contexts/Auth/AuthContext'
 
 export default function Navbar() {
-    const { isLoggedIn } = React.useContext(AuthContext)
     return (
         <div className="Navbar">
             <Link to="/">
@@ -21,13 +19,7 @@ export default function Navbar() {
                         alt="info icon"
                     />
                 </Link>
-                <Link to={isLoggedIn ? '/profile' : '/login'}>
-                    <img
-                        className="icon profile-icon"
-                        src={profileIcon}
-                        alt="profile icon"
-                    />
-                </Link>
+                <ProfileLink />
             </div>
         </div>
     )

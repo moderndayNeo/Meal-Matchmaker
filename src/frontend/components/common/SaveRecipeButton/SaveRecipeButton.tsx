@@ -22,4 +22,3 @@ export default function SaveRecipeButton() {
         <UnfilledStarIcon className="SaveRecipeButton" onClick={handleClick} />
     )
 }
- 

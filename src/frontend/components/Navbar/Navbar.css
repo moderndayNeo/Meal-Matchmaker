@@ -41,12 +41,6 @@
     width: var(--info-icon-dimensions);
 }
 
-.Navbar .profile-icon {
-    --profile-icon-dimensions: 32px;
-    height: var(--profile-icon-dimensions);
-    width: var(--profile-icon-dimensions);
-}
-
 @media (min-width: 800px) {
     .Navbar {
         display: none;
